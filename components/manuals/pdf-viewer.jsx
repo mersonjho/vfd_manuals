@@ -39,18 +39,16 @@ export default function PDFViewer({ url, title }) {
       try {
         const pdfjs = await import('pdfjs-dist');
         const { getDocument, GlobalWorkerOptions } = pdfjs;
-        // Always set a valid workerSrc string; Next/webpack resolves this URL at build time.
-        try {
-          GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
-        } catch {}
-
-        let loadingTask;
-        try {
-          loadingTask = getDocument({ url: src });
-        } catch (e) {
-          // As a safe fallback, render without worker (main thread)
-          loadingTask = getDocument({ url: src, disableWorker: true });
+        const isProd = process.env.NODE_ENV === 'production';
+        // In dev, set workerSrc via URL so worker runs off-main-thread; in prod (Vercel), avoid bundling the mjs worker to fix Terser error
+        if (!isProd) {
+          try {
+            GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
+          } catch {}
         }
+
+        // In production, force disableWorker to avoid worker bundling issues on Vercel
+        let loadingTask = getDocument(isProd ? { url: src, disableWorker: true } : { url: src });
         pdfDoc = await loadingTask.promise;
         if (canceled) return;
         setPageCount(pdfDoc.numPages);
