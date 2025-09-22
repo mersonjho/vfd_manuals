@@ -40,15 +40,15 @@ export default function PDFViewer({ url, title }) {
         const pdfjs = await import('pdfjs-dist');
         const { getDocument, GlobalWorkerOptions } = pdfjs;
         const isProd = process.env.NODE_ENV === 'production';
-        // In dev, set workerSrc via URL so worker runs off-main-thread; in prod (Vercel), avoid bundling the mjs worker to fix Terser error
+        // In dev, set workerSrc via URL so worker runs off-main-thread; in prod (Vercel), do not set it
         if (!isProd) {
           try {
             GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
           } catch {}
         }
 
-        // In production, force disableWorker to avoid worker bundling issues on Vercel
-        let loadingTask = getDocument(isProd ? { url: src, disableWorker: true } : { url: src });
+  // In production, force disableWorker to avoid worker bundling issues on Vercel
+  let loadingTask = getDocument(isProd ? { url: src, disableWorker: true } : { url: src });
         pdfDoc = await loadingTask.promise;
         if (canceled) return;
         setPageCount(pdfDoc.numPages);
