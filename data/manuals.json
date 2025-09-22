@@ -1,0 +1,85 @@
+{
+  "manuals": [
+    {
+      "id": "CHZIRI",
+      "title": "ACHZIRI",
+      "description": "",
+      "images": [
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "CHZIRI" },
+        { "label": "Model", "value": "ZVF300H" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF300H-MODBUS-SETUP.pdf" },
+        { "label": "Register list", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-REGISTER-ADDRESS-LIST.pdf"},
+        { "label": "Rs485 setup", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-RS485-SETUP.pdf" },
+        { "label": "Catalog", "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-Series-Catalog.pdf" },
+        { "label": "User Manual", "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-User-Manual.pdf" }
+      ]
+    },
+    {
+      "id": "FRENIC-ACE",
+      "title": "FRENIC-ACE",
+      "description": "",
+      "images": [
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
+        "/manuals/FRENIC/RS485-NOTES.png",
+        "/manuals/FRENIC/RS485-PINOUT.png"
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "FRENIC" },
+        { "label": "Model", "value": "ACE" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "User Manual", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Global-Model-User-Manual.pdf" },
+        { "label": "Instruction", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf" },
+        { "label": "rs485 setup", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf" }
+      ]
+    },
+    {
+      "id": "TECO",
+      "title": "TECO",
+      "description": "",
+      "images": [
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "TECO" },
+        { "label": "Model", "value": "A510/S" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/TECO/guide/TECO-A510-A510S-MODBUS-SETUP.pdf" },
+        { "label": "Register list", "url": "/manuals/TECO/guide/TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf" },
+        { "label": "A510 Communication", "url": "/manuals/TECO/A510-Communication-Addendum.pdf" },
+        { "label": "A510 Instruction", "url": "/manuals/TECO/A510-Instruction-Manual.pdf" },
+        { "label": "A510 Brief Manual", "url": "/manuals/TECO/A510s-Instruction-Brief-Manual.pdf" },
+        { "label": "A510s Instruction", "url": "/manuals/TECO/A510s-Instruction-Manual.pdf" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VFDManuals",
+  "type": "object",
+  "properties": {
+    "manuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "images", "pdf"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "images": { "type": "array", "items": { "type": "string" } },
+          "details": {
+            "type": "array",
+            "items": { "type": "object", "properties": { "label": {"type":"string"}, "value": {"type":"string"} } }
+          },
+          "installation": { "type": "array", "items": { "type": "string" } },
+          "remarks": { "type": "string" },
+          "pdf": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["manuals"]
+}

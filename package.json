@@ -1,0 +1,25 @@
+{
+  "name": "manual-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VFD Manual Monitoring portal built with Next.js and Tailwind CSS",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "clean-unused": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$ErrorActionPreference='SilentlyContinue'; Remove-Item -LiteralPath 'data/manuals.js' -Force; Remove-Item -LiteralPath 'public/manuals/abb-acs880/manual.pdf' -Force; Remove-Item -LiteralPath 'public/manuals/abb-acs880/img-4.svg' -Force; if (Test-Path '_backup_20250922_212406') { Remove-Item -Recurse -Force -LiteralPath '_backup_20250922_212406' }\""
+  },
+  "dependencies": {
+    "next": "^14.2.32",
+    "next-themes": "^0.4.6",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "yet-another-react-lightbox": "^3.25.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.10"
+  }
+}
