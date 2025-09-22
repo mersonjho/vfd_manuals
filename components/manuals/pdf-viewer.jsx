@@ -40,16 +40,33 @@ export default function PDFViewer({ url, title }) {
         const pdfjs = await import('pdfjs-dist');
         const { getDocument, GlobalWorkerOptions } = pdfjs;
         const isProd = process.env.NODE_ENV === 'production';
-        // In dev, set workerSrc via URL so worker runs off-main-thread; in prod (Vercel), do not set it
-        if (!isProd) {
+        // Prefer worker in both dev and prod; in prod use a CDN URL to avoid bundling the worker.
+        // Fallback: if worker setup fails at runtime, retry with disableWorker: true.
+        const workerCdnUrl = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs';
+        if (isProd) {
+          try {
+            GlobalWorkerOptions.workerSrc = workerCdnUrl;
+          } catch {}
+        } else {
           try {
             GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
           } catch {}
         }
 
-  // In production, force disableWorker to avoid worker bundling issues on Vercel
-  let loadingTask = getDocument(isProd ? { url: src, disableWorker: true } : { url: src });
-        pdfDoc = await loadingTask.promise;
+        let loadingTask;
+        try {
+          loadingTask = getDocument({ url: src });
+          pdfDoc = await loadingTask.promise;
+        } catch (err) {
+          const msg = String(err?.message || err || '');
+          if (/GlobalWorkerOptions\.workerSrc/i.test(msg) || /No\s+"GlobalWorkerOptions\.workerSrc"/i.test(msg)) {
+            // Retry without a worker if workerSrc not set/blocked
+            loadingTask = getDocument({ url: src, disableWorker: true });
+            pdfDoc = await loadingTask.promise;
+          } else {
+            throw err;
+          }
+        }
         if (canceled) return;
         setPageCount(pdfDoc.numPages);
 
