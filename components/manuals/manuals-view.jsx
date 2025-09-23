@@ -6,17 +6,21 @@ import ManualDetails from './manuals.details';
 export default function ManualList() {
   const [query, setQuery] = useState('');
   const manuals = data.manuals || [];
-  const [activeId, setActiveId] = useState(manuals[0]?.id ?? null);
+  // Sort manuals alphabetically by title (case-insensitive)
+  const sortedManuals = useMemo(() => {
+    return [...manuals].sort((a, b) => (a?.title || '').localeCompare(b?.title || '', 'en', { sensitivity: 'base' }));
+  }, [manuals]);
+  const [activeId, setActiveId] = useState(sortedManuals[0]?.id ?? null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return manuals;
-    return manuals.filter(m =>
+    if (!q) return sortedManuals;
+    return sortedManuals.filter(m =>
       m.title.toLowerCase().includes(q) ||
       (m.description && m.description.toLowerCase().includes(q)) ||
       (m.details || []).some(d => `${d.label} ${d.value}`.toLowerCase().includes(q))
     );
-  }, [query]);
+  }, [query, sortedManuals]);
 
   const active = filtered.find(m => m.id === activeId) || filtered[0] || null;
 

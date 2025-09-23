@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-// Consistent, multi-page PDF viewer using pdf.js (works on mobile and desktop)
+// Consistent, multi-page PDF viewer using pdf.js with virtualization and responsive UI
 export default function PDFViewer({ url, title }) {
   const containerRef = useRef(null);
   const [error, setError] = useState(null);
@@ -9,6 +9,7 @@ export default function PDFViewer({ url, title }) {
   const [pageCount, setPageCount] = useState(0);
   const [userScale, setUserScale] = useState(1);
   const [pageInput, setPageInput] = useState('1');
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Normalize to same-origin via API route for external URLs
   const src = useMemo(() => {
@@ -30,8 +31,8 @@ export default function PDFViewer({ url, title }) {
     let resizeObserver = null;
     let io = null;
     let firstPageSize = { width: 0, height: 0 }; // at scale 1
-  const renderTasks = new Map(); // pageNum -> RenderTask
-  let refreshing = false;
+    const renderTasks = new Map(); // pageNum -> RenderTask
+    let refreshing = false;
 
     async function load() {
       setLoading(true);
@@ -40,17 +41,11 @@ export default function PDFViewer({ url, title }) {
         const pdfjs = await import('pdfjs-dist');
         const { getDocument, GlobalWorkerOptions } = pdfjs;
         const isProd = process.env.NODE_ENV === 'production';
-        // Prefer worker in both dev and prod; in prod use a CDN URL to avoid bundling the worker.
-        // Fallback: if worker setup fails at runtime, retry with disableWorker: true.
         const workerCdnUrl = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs';
         if (isProd) {
-          try {
-            GlobalWorkerOptions.workerSrc = workerCdnUrl;
-          } catch {}
+          try { GlobalWorkerOptions.workerSrc = workerCdnUrl; } catch {}
         } else {
-          try {
-            GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
-          } catch {}
+          try { GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString(); } catch {}
         }
 
         let loadingTask;
@@ -60,7 +55,6 @@ export default function PDFViewer({ url, title }) {
         } catch (err) {
           const msg = String(err?.message || err || '');
           if (/GlobalWorkerOptions\.workerSrc/i.test(msg) || /No\s+"GlobalWorkerOptions\.workerSrc"/i.test(msg)) {
-            // Retry without a worker if workerSrc not set/blocked
             loadingTask = getDocument({ url: src, disableWorker: true });
             pdfDoc = await loadingTask.promise;
           } else {
@@ -73,7 +67,7 @@ export default function PDFViewer({ url, title }) {
         const container = containerRef.current;
         if (!container) return;
 
-        // Compute base width of page 1 at scale 1 for fit-width math
+        // Measure base width/height for fit-width math
         const first = await pdfDoc.getPage(1);
         const firstViewport = first.getViewport({ scale: 1 });
         firstPageSize = { width: firstViewport.width, height: firstViewport.height };
@@ -83,7 +77,7 @@ export default function PDFViewer({ url, title }) {
           return Math.max(0.5, Math.min(3, width / firstPageSize.width));
         }
 
-        // Create page wrappers once (virtualization containers)
+        // Create virtualization wrappers
         function ensureWrappers() {
           if (container.children.length === pdfDoc.numPages) return;
           container.innerHTML = '';
@@ -95,7 +89,6 @@ export default function PDFViewer({ url, title }) {
             wrapper.dataset.page = String(i);
             wrapper.style.display = 'block';
             wrapper.style.marginBottom = '16px';
-            // Placeholder height to avoid large layout shifts
             wrapper.style.height = `${Math.ceil(estHeight)}px`;
             container.appendChild(wrapper);
           }
@@ -123,12 +116,10 @@ export default function PDFViewer({ url, title }) {
             canvas.style.background = '#ffffff';
             canvas.style.boxShadow = '0 0 4px rgba(0,0,0,0.12)';
           }
-          // Update sizes
           const targetCssW = Math.ceil(viewport.width);
           const targetCssH = Math.ceil(viewport.height);
           const targetPxW = Math.ceil(viewport.width * dpr);
           const targetPxH = Math.ceil(viewport.height * dpr);
-          const alreadySized = canvas.width === targetPxW && canvas.height === targetPxH;
           canvas.style.width = `${targetCssW}px`;
           canvas.style.height = `${targetCssH}px`;
           canvas.width = targetPxW;
@@ -136,14 +127,12 @@ export default function PDFViewer({ url, title }) {
           wrapper.style.height = `${Math.ceil(viewport.height)}px`;
           const ctx = canvas.getContext('2d', { alpha: false });
           const transform = dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null;
-          // Avoid double rendering the same size while a previous render is in progress
           cancelRender(pageNum);
           const task = page.render({ canvasContext: ctx, viewport, transform });
           renderTasks.set(pageNum, task);
           try {
             await task.promise;
           } catch (err) {
-            // Ignore cancellations; rethrows for real errors
             const msg = String(err?.message || err || '');
             if (!/cancel/i.test(msg)) throw err;
           } finally {
@@ -182,7 +171,6 @@ export default function PDFViewer({ url, title }) {
           host.scrollLeft = Math.max(0, Math.min(leftRatio * denomNew, denomNew));
         }
 
-        // Observe pages and render on demand
         function setupIO(scale) {
           const host = container.parentElement;
           if (io) io.disconnect();
@@ -194,8 +182,6 @@ export default function PDFViewer({ url, title }) {
               if (entry.isIntersecting) {
                 renderPage(pageNum, scale);
               } else {
-                // Optionally drop canvases far from view to save memory
-                const children = Array.from(container.children);
                 const visibleTop = host.scrollTop;
                 const idx = pageNum - 1;
                 const distance = Math.abs(idx - Math.floor(visibleTop / (el.offsetHeight + 16)));
@@ -216,27 +202,22 @@ export default function PDFViewer({ url, title }) {
         const host = container.parentElement;
         const initialScale = fitWidthScale(host) * userScale;
         setupIO(initialScale);
-        // Eagerly render first few pages
         const initialCount = Math.min(5, pdfDoc.numPages);
         for (let i = 1; i <= initialCount; i++) {
           await renderPage(i, initialScale);
         }
 
-        // Re-render visible pages on container resize or userScale change while preserving anchor
         async function refreshScale() {
           const anchor = getTopAnchor();
           refreshing = true;
           container.style.visibility = 'hidden';
           const newScale = fitWidthScale(container.parentElement) * userScale;
-          // Update placeholder heights quickly
           const estHeight = firstPageSize.height * newScale;
           Array.from(container.children).forEach((el, idx) => {
             el.style.height = `${Math.ceil(estHeight)}px`;
-            // cancel any in-flight renders when scale changes
             cancelRender(idx + 1);
           });
           setupIO(newScale);
-          // Render around anchor page first, then restore and reveal
           const start = Math.max(1, anchor.idx + 1 - 2);
           const end = Math.min(pdfDoc.numPages, anchor.idx + 1 + 6);
           for (let p = start; p <= end; p++) {
@@ -270,6 +251,21 @@ export default function PDFViewer({ url, title }) {
     };
   }, [src, userScale]);
 
+  // Fullscreen: lock body scroll and allow ESC to exit
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const prev = document.body.style.overflow;
+    if (isFullscreen) {
+      document.body.style.overflow = 'hidden';
+    }
+    const onKey = (e) => { if (e.key === 'Escape') setIsFullscreen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prev || '';
+    };
+  }, [isFullscreen]);
+
   function scrollToPage(n) {
     const container = containerRef.current;
     if (!container || pageCount <= 0) return;
@@ -282,50 +278,32 @@ export default function PDFViewer({ url, title }) {
   }
 
   return (
-    <div>
-      <div className="flex items-center justify-between mb-2 gap-2">
-        <div className="text-sm font-medium truncate" title={title}></div>
-        <div className="flex items-center gap-2">
-          {pageCount > 0 && (
-            <div className="text-xs text-gray-500">{pageCount} page{pageCount>1?'s':''}</div>
-          )}
-          {/* Page jump */}
-          <form
-            className="flex items-center gap-1 text-xs"
-            onSubmit={(e) => { e.preventDefault(); scrollToPage(pageInput); }}
-          >
-            <span>Page</span>
-            <input
-              className="w-14 px-2 py-1 border rounded bg-white dark:bg-gray-900"
-              type="number"
-              min={1}
-              max={Math.max(1, pageCount)}
-              value={pageInput}
-              onChange={(e) => setPageInput(e.target.value)}
-              disabled={!pageCount}
-            />
-            <button
-              type="submit"
-              className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900"
-              disabled={!pageCount}
-            >Go</button>
+    <div className={isFullscreen ? 'fixed inset-0 z-50 bg-white dark:bg-gray-950 flex flex-col p-2 md:p-3' : ''}>
+      {/* Toolbar: responsive and wraps to avoid overlap on mobile */}
+      <div className={`flex flex-wrap items-center justify-between mb-2 gap-2 ${isFullscreen ? 'sticky top-0 z-10 bg-white dark:bg-gray-950 pb-2' : ''}`}>
+        <div className="flex items-center gap-2 min-w-0">
+          {title && <div className="text-sm font-medium truncate max-w-[60vw] sm:max-w-[40vw]" title={title}>{title}</div>}
+          {pageCount > 0 && <div className="text-xs text-gray-500 shrink-0">{pageCount} page{pageCount>1?'s':''}</div>}
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <form className="flex items-center gap-1 text-xs" onSubmit={(e) => { e.preventDefault(); scrollToPage(pageInput); }}>
+            <span className="hidden sm:inline">Page</span>
+            <input className="w-12 sm:w-14 px-2 py-1 border rounded bg-white dark:bg-gray-900" type="number" min={1} max={Math.max(1, pageCount)} value={pageInput} onChange={(e) => setPageInput(e.target.value)} disabled={!pageCount} />
+            <button type="submit" className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" disabled={!pageCount} aria-label="Go to page">Go</button>
           </form>
           <div className="flex items-center gap-1 text-xs">
-            <button className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(s => Math.max(0.5, s - 0.1))}>-</button>
-            <div className="w-12 text-center select-none">{Math.round(userScale * 100)}%</div>
-            <button className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(s => Math.min(3, s + 0.1))}>+</button>
-            <button className="ml-2 px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(1)}>Reset</button>
+            <button className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(s => Math.max(0.5, s - 0.1))} aria-label="Zoom out">-</button>
+            <div className="w-12 text-center select-none" aria-label="Zoom level">{Math.round(userScale * 100)}%</div>
+            <button className="px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(s => Math.min(3, s + 0.1))} aria-label="Zoom in">+</button>
+            <button className="ml-1 px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setUserScale(1)} aria-label="Reset zoom">Reset</button>
+            <button className="ml-1 px-2 py-1 border rounded md:hover:bg-gray-50 dark:md:hover:bg-gray-900" onClick={() => setIsFullscreen(v => !v)} aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}>{isFullscreen ? 'Exit' : 'Fullscreen'}</button>
           </div>
         </div>
       </div>
 
-  <div className="h-[70vh] md:h-[75vh] lg:h-[80vh] xl:h-[85vh] w-full rounded-lg border border-gray-200 dark:border-gray-800 overflow-auto bg-white dark:bg-white text-left" style={{ overflowAnchor: 'none' }}>
-        {loading && (
-          <div className="p-4 text-sm text-gray-500">Loading PDF…</div>
-        )}
-        {error && (
-          <div className="p-4 text-sm text-red-600">{error}</div>
-        )}
+      <div className={isFullscreen ? 'flex-1 w-full rounded-none border-0 overflow-auto bg-white dark:bg-white text-left' : 'h-[70vh] md:h-[75vh] lg:h-[80vh] xl:h-[85vh] w-full rounded-lg border border-gray-200 dark:border-gray-800 overflow-auto bg-white dark:bg-white text-left'} style={{ overflowAnchor: 'none' }}>
+        {loading && <div className="p-4 text-sm text-gray-500">Loading PDF…</div>}
+        {error && <div className="p-4 text-sm text-red-600">{error}</div>}
         <div ref={containerRef} className="px-3 py-3 min-w-max" style={{ overflowAnchor: 'none' }} />
       </div>
     </div>

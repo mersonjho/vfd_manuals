@@ -50,8 +50,60 @@
       "pdf": "",
       "pdfs": [
         { "label": "User Manual", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Global-Model-User-Manual.pdf" },
-        { "label": "Instruction", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf" },
-        { "label": "rs485 setup", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf" }
+        { "label": "Instruction Manual", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf" },
+        { "label": "RS485 Setup", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf" }
+      ]
+    },
+    {
+      "id": "FRENIC-ECO",
+      "title": "FRENIC-ECO",
+      "description": "",
+      "images": [
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
+        "/manuals/FRENIC/RS485-NOTES.png",
+        "/manuals/FRENIC/RS485-PINOUT.png"
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "FRENIC" },
+        { "label": "Model", "value": "ECO" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Parameter List", "url": "/manuals/FRENIC/FRENIC-ECO/FRENIC-Eco-Parameter-List.pdf" }
+      ]
+    },
+    {
+      "id": "FRENIC-MEGA",
+      "title": "FRENIC-MEGA",
+      "description": "",
+      "images": [
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
+        "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
+        "/manuals/FRENIC/RS485-NOTES.png",
+        "/manuals/FRENIC/RS485-PINOUT.png"
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "FRENIC" },
+        { "label": "Model", "value": "MEGA" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "User Manual", "url": "/manuals/FRENIC/FRENIC-MEGA/FRENIC-MEGA-User-Manual.pdf" }
       ]
     },
     {
@@ -79,6 +131,233 @@
         { "label": "A510 Instruction", "url": "/manuals/TECO/A510-Instruction-Manual.pdf" },
         { "label": "A510 Brief Manual", "url": "/manuals/TECO/A510s-Instruction-Brief-Manual.pdf" },
         { "label": "A510s Instruction", "url": "/manuals/TECO/A510s-Instruction-Manual.pdf" }
+      ]
+    },
+    {
+      "id": "DANAHE",
+      "title": "DANAHE",
+      "description": "",
+      "images": [
+      ],
+      "details": [
+        { "label": "Manufacturer", "value": "DANAHE" },
+        { "label": "Model", "value": "D31" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/DANAHE/guide/D31%20MODBUS%20COMMUNICATION%20SETUP.pdf" },
+        { "label": "Register mapping", "url": "/manuals/DANAHE/guide/D31%20Modbus%20REGISTER%20ADDRESS%20MAPPING.pdf" },
+        { "label": "D31 Brochure", "url": "/manuals/DANAHE/D31%20SERIES%20%20VFD%20BROCHURE.pdf" },
+        { "label": "D31 User Manual", "url": "/manuals/DANAHE/D31-USER-MANUAL.pdf" }
+      ]
+    }
+    ,
+    {
+      "id": "HITACHI-SH1",
+      "title": "HITACHI SH1 / P1 SERIES",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "HITACHI" },
+        { "label": "Model", "value": "SH1 / P1" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Basic Guide", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Basic-Guide.pdf" },
+        { "label": "Register Address", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Register-Address.pdf" },
+        { "label": "User Manual", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-User-Manual.pdf" }
+      ]
+    },
+    {
+      "id": "HITACHI-SJ700",
+      "title": "HITACHI SJ700 SERIES",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "HITACHI" },
+        { "label": "Model", "value": "SJ700" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "SJ700/L700 Drives", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-SJ700-L700-Drives.pdf" },
+        { "label": "Instruction Brief", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-sj7002-Instruction-Brief-Manual.pdf" },
+        { "label": "Instruction Manual", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/HITACHI-SJ7002-Instruction-Manual.pdf" },
+        { "label": "Modbus Setup", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-MODBUS-SETUP.pdf" },
+        { "label": "Register Address List", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-REGISTER-ADDRESS-LIST.pdf" },
+        { "label": "RS485 Setup", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/Hitachi-SJ7002-RS485-SETUP.pdf" }
+      ]
+    },
+    {
+      "id": "HITACHI-SJ700N",
+      "title": "HITACHI SJ700N SERIES",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "HITACHI" },
+        { "label": "Model", "value": "SJ700N" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "User Manual", "url": "/manuals/HITACHI/HITACHI-SJ700N-SERIES/HITACHI-SJ700N.pdf" }
+      ]
+    }
+    ,
+    {
+      "id": "SCHNEIDER-ATV320",
+      "title": "SCHNEIDER ALTIVAR ATV320",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "SCHNEIDER" },
+        { "label": "Model", "value": "ATV320" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-MODBUS-SETUP.pdf" },
+        { "label": "Register address list", "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-REGISTER-ADDRESS-LIST.pdf" },
+        { "label": "Manual", "url": "/manuals/SCHNEIDER/ATV320%20MANUAL.pdf" },
+        { "label": "Safety function manual", "url": "/manuals/SCHNEIDER/ATV320%20safety%20function%20manual%20EN.pdf" },
+        { "label": "D11M3C Datasheet (PH)", "url": "/manuals/SCHNEIDER/ATV320D11M3C_DATASHEET_PH_en-PH.pdf" },
+        { "label": "Modbus manual", "url": "/manuals/SCHNEIDER/ATV320_Modbus_manual_EN_NVE41308_01.pdf" },
+        { "label": "Programming manual", "url": "/manuals/SCHNEIDER/ATV320_Programming_Manual_EN_NVE41295_06.pdf" },
+        { "label": "ATVR programming manual", "url": "/manuals/SCHNEIDER/ATVR%20PROGRAMMING%20MANUAL.pdf" }
+      ]
+    }
+    ,
+    {
+      "id": "TEK-F8",
+      "title": "TEK DRIVE TDS-F8",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "TEK DRIVE" },
+        { "label": "Model", "value": "TDS-F8" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus Communication Manual", "url": "/manuals/TEK%20DRIVE/guide/TDS-F8/TDS-F8-MODBUS-Communication-Manual.pdf" },
+        { "label": "F8 Brief Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf" },
+        { "label": "F8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf" },
+        { "label": "V8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf" },
+        { "label": "AC Motor", "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf" }
+      ]
+    },
+    {
+      "id": "TEK-V8",
+      "title": "TEK DRIVE TDS-V8",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "TEK DRIVE" },
+        { "label": "Model", "value": "TDS-V8" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus instruction", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/tds-v8-modbus-instuction.pdf" },
+        { "label": "Modbus setup", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-MODBUS-SETUP.pdf" },
+        { "label": "Register address list", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-REGISTER-ADDRESS-LIST.pdf" },
+        { "label": "F8 Brief Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf" },
+        { "label": "F8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf" },
+        { "label": "V8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf" },
+        { "label": "AC Motor", "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf" }
+      ]
+    }
+    ,
+    {
+      "id": "VACON-100",
+      "title": "VACON 100",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "VACON" },
+        { "label": "Model", "value": "100" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/VACON/guide/VACON-100-MODBUS-SETUP.pdf" },
+        { "label": "Register address list", "url": "/manuals/VACON/guide/VACON-100-REGISTER-ADDRESS-LIST.pdf" },
+        { "label": "Flow Application Manual (D)", "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083D-UK.pdf" },
+        { "label": "Flow Application Manual (G)", "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083G-UK.pdf" },
+        { "label": "Modbus User Manual", "url": "/manuals/VACON/Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf" }
+      ]
+    },
+    {
+      "id": "YASKAWA-A1000",
+      "title": "YASKAWA A1000",
+      "description": "",
+      "images": [],
+      "details": [
+        { "label": "Manufacturer", "value": "YASKAWA" },
+        { "label": "Model", "value": "A1000" },
+        { "label": "Voltage", "value": "N/A" }
+      ],
+      "installation": [
+        "Mount the drive in a well-ventilated cabinet.",
+        "Ensure proper grounding and cable shielding.",
+        "Follow torque specs on terminals."
+      ],
+      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "pdf": "",
+      "pdfs": [
+        { "label": "Modbus setup", "url": "/manuals/YASKAWA/guide/YASKAWA-A1000%20Modbus%20communication%20SETUP.pdf" },
+        { "label": "Register address mapping", "url": "/manuals/YASKAWA/guide/YASKAWA%20A1000%20Modbus%20REGISTER%20ADDRESS%20MAPPING%20.pdf" },
+        { "label": "User Manual", "url": "/manuals/YASKAWA/YASKAWA%20A1000%20USER%20MANUAL.pdf" }
       ]
     }
   ]
