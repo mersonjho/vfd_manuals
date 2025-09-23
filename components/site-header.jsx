@@ -11,7 +11,7 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/70 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="mx-auto w-full max-w-[1920px] px-4 h-14 flex items-center gap-4">
+      <div className="mx-auto w-full max-w-screen-xl px-4 h-14 flex items-center gap-4">
         <Link href="/" className="font-semibold whitespace-nowrap">VFD Manuals</Link>
         <div className="flex-1 flex justify-center">
           <nav className="hidden sm:flex items-center text-sm bg-gray-100 dark:bg-gray-800 rounded-full p-1 shadow-inner">

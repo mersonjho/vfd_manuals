@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <SiteHeader />
-          <main className="mx-auto w-full max-w-[1920px] px-4 py-6">{children}</main>
+          <main className="mx-auto w-full max-w-screen-xl px-4 py-6">{children}</main>
         </Providers>
       </body>
     </html>
