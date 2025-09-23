@@ -59,19 +59,26 @@ export default function ManualList() {
         </div>
         <div className="overflow-auto">
           <ul className="py-2">
-            {filtered.map((m) => (
-              <li key={m.id}>
-                <button
-                  className={`w-full text-left px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-900 ${active?.id === m.id ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
-                  onClick={() => setActiveId(m.id)}
-                >
-                  <div className="font-medium text-sm">{m.title}</div>
-                  {m.description && (
-                    <div className="text-xs text-gray-500 line-clamp-1">{m.description}</div>
-                  )}
-                </button>
-              </li>
-            ))}
+            {filtered.map((m) => {
+              const isActive = active?.id === m.id;
+              const base = 'w-full text-left px-3 py-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40 border-l-2';
+              const activeCls = 'bg-blue-50 dark:bg-blue-900/30 border-blue-500 dark:border-blue-400';
+              const idleCls = 'border-transparent hover:bg-gray-50 dark:hover:bg-gray-800';
+              return (
+                <li key={m.id}>
+                  <button
+                    className={`${base} ${isActive ? activeCls : idleCls}`}
+                    onClick={() => setActiveId(m.id)}
+                    aria-current={isActive ? 'true' : undefined}
+                  >
+                    <div className={`font-medium text-sm ${isActive ? 'text-blue-700 dark:text-blue-300' : ''}`}>{m.title}</div>
+                    {m.description && (
+                      <div className="text-xs text-gray-500 line-clamp-1">{m.description}</div>
+                    )}
+                  </button>
+                </li>
+              );
+            })}
             {filtered.length === 0 && (
               <li className="text-xs text-gray-500 px-3 py-2">No results.</li>
             )}
