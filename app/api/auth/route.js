@@ -21,13 +21,14 @@ export async function POST(request) {
 
     const response = NextResponse.json({ ok: true });
 
-    // Set httpOnly secure cookie — valid for 30 days
+    // Set httpOnly secure cookie — 48h idle timeout, refreshed on each visit
+    // by the middleware (sliding session).
     response.cookies.set('vfd_auth', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
       path: '/',
-      maxAge: 60 * 60 * 24 * 30, // 30 days
+      maxAge: 60 * 60 * 48, // 48 hours
     });
 
     return response;

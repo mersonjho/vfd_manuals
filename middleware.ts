@@ -14,7 +14,8 @@ export function middleware(request) {
   // Allow Next.js internal assets and static files needed for the login page
   if (
     pathname.startsWith('/_next') ||
-    pathname.startsWith('/favicon.ico')
+    pathname.startsWith('/favicon.ico') ||
+    pathname === '/bits_logo.png'
   ) {
     return NextResponse.next();
   }
@@ -24,7 +25,17 @@ export function middleware(request) {
   const token = authCookie?.value;
 
   if (token === VALID_TOKEN) {
-    return NextResponse.next();
+    // Sliding session: refresh the cookie on every visit so it expires
+    // only after 48h of inactivity, and resets each time the client returns.
+    const response = NextResponse.next();
+    response.cookies.set('vfd_auth', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 60 * 48, // 48 hours idle timeout
+    });
+    return response;
   }
 
   // Not authenticated — redirect to login
@@ -42,6 +53,6 @@ export const config = {
      * - _next static files
      * - favicon
      */
-    '/((?!login|api/auth|_next|favicon.ico).*)',
+    '/((?!login|api/auth|_next|favicon.ico|bits_logo.png).*)',
   ],
 };
