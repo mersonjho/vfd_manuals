@@ -1,0 +1,1711 @@
+{
+  "VACON": {
+    "Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf": {
+      "modbus rtu": [
+        {
+          "page": 1,
+          "context": "00 hvac\nvacon\u00ae 100 x\nac drives\nmodbus tcp/udp and modbus rtu\nuser manual",
+          "full_match": "modbus rtu\n"
+        },
+        {
+          "page": 3,
+          "context": "............................................8\n3.1 Modbus RTU protocol.........................................................................................................8\n3.2 Modbus TCP protocol.............................................................................",
+          "full_match": "Modbus RTU protocol................................................................................."
+        },
+        {
+          "page": 3,
+          "context": "...........................................23\n5.2 Modbus RTU parameters and monitoring values (M5.8.3)..............................................23\n5.2.1 Slave address.................................................................................",
+          "full_match": "Modbus RTU parameters and monitoring values (M5.8.3)..............................................23"
+        }
+      ],
+      "modbus": [
+        {
+          "page": 1,
+          "context": "\u00ae 100 flow\nvacon\u00ae 100 hvac\nvacon\u00ae 100 x\nac drives\nmodbus tcp/udp and modbus rtu\nuser manual",
+          "full_match": "modbus tcp/udp and modbus rtu\n"
+        },
+        {
+          "page": 3,
+          "context": ".............................................5\n2. Modbus - general info.......................................................................................6\n3. Modbus technical data............................................................................",
+          "full_match": "Modbus - general info..............................................................................."
+        },
+        {
+          "page": 3,
+          "context": ".............................................6\n3. Modbus technical data......................................................................................8\n3.1 Modbus RTU protocol.............................................................................",
+          "full_match": "Modbus technical data..............................................................................."
+        }
+      ],
+      "baud rate": [
+        {
+          "page": 3,
+          "context": ".........................................24\n5.2.2 Baud rate...........................................................................................................................24\n5.2.3 Parity type...................................................................................",
+          "full_match": "Baud rate..........................................................................................."
+        },
+        {
+          "page": 25,
+          "context": "unication speed\n300\n600\n1200\n2400\n4800\nP5.8.3.1.2 Baud rate 300\u2026230400 6 2378 9600\n19200\n38400\n57600\n76800\n115200\n230400\n1 = 1 stop bit\nP5.8.3.1.4 Stopbits 1\u20263 3 2380 2 = 1.5 stop bit",
+          "full_match": "Baud rate 300\u2026230400 6 2378 9600\n"
+        },
+        {
+          "page": 26,
+          "context": "e addressed independently\nfrom other nodes.\n5.2.2 Baud rate\nSelect the communication speed for the network. The default value is 9600 baud.\n5.2.3 Parity type\nYo",
+          "full_match": "Baud rate\n"
+        }
+      ],
+      "baud": [
+        {
+          "page": 3,
+          "context": ".........................................24\n5.2.2 Baud rate...........................................................................................................................24\n5.2.3 Parity type...................................................................................",
+          "full_match": "Baud rate..........................................................................................."
+        },
+        {
+          "page": 25,
+          "context": "unication speed\n300\n600\n1200\n2400\n4800\nP5.8.3.1.2 Baud rate 300\u2026230400 6 2378 9600\n19200\n38400\n57600\n76800\n115200\n230400\n1 = 1 stop bit\nP5.8.3.1.4 Stopbits 1\u20263 3 2380 2 = 1.5 stop bit",
+          "full_match": "Baud rate 300\u2026230400 6 2378 9600\n"
+        },
+        {
+          "page": 26,
+          "context": "e addressed independently\nfrom other nodes.\n5.2.2 Baud rate\nSelect the communication speed for the network. The default value is 9600 baud.\n5.2.3 Parity type\nYo",
+          "full_match": "Baud rate\n"
+        }
+      ],
+      "parity": [
+        {
+          "page": 3,
+          "context": ".........................................24\n5.2.3 Parity type.........................................................................................................................24\n5.2.4 Stop bits.....................................................................................",
+          "full_match": "Parity type........................................................................................."
+        },
+        {
+          "page": 3,
+          "context": "..................................26\n5.2.14Memory parity error.........................................................................................................26\n5.2.15Slave device failure..........................................................................",
+          "full_match": "parity error........................................................................................"
+        },
+        {
+          "page": 25,
+          "context": "1.5 stop bits\n3 = 2 stop bits\n0 = Even\nP5.8.3.1.3 Parity type 0\u20262 0 2379 1 = Odd\n2 = None\nCommunication Unit is seconds\nP5.8.3.1.5 0\u202665535 10 2321\ntime-out 0 = Not used\n0 = Slave\nP5",
+          "full_match": "Parity type 0\u20262 0 2379 1 = Odd\n"
+        }
+      ],
+      "rs485": [
+        {
+          "page": 3,
+          "context": ".................13\n4.1.2 Prepare for use through RS485........................................................................................15\n4.2 Installation in VACON\u00ae 100 X....................................................................",
+          "full_match": "RS485........................................................................................15\n"
+        },
+        {
+          "page": 3,
+          "context": ".................19\n4.2.2 Prepare for use through RS485........................................................................................20\n5. Fiedlbus parametrization ........................................................................",
+          "full_match": "RS485........................................................................................20\n"
+        },
+        {
+          "page": 8,
+          "context": "ructure of Modbus frame\nOn simple interfaces like RS485, the Modbus messages are sent in plain form over the network. In\nthis case the network is dedicated to Modbus. When using more versatile network systems like\nTCP/IP",
+          "full_match": "RS485, the Modbus messages are sent in plain form over the network. In\n"
+        }
+      ],
+      "communication": [
+        {
+          "page": 3,
+          "context": ".........................................24\n5.2.5 Communication timeout...................................................................................................24\n5.2.6 Operate mode..................................................................................",
+          "full_match": "Communication timeout..............................................................................."
+        },
+        {
+          "page": 3,
+          "context": ".........................................25\n5.2.9 Communication status......................................................................................................25\n5.2.10Illegal functions.............................................................................",
+          "full_match": "Communication status................................................................................"
+        },
+        {
+          "page": 4,
+          "context": ".........................................29\n5.3.11Communication timeout...................................................................................................29\n5.3.12IDMap IDs.....................................................................................",
+          "full_match": "Communication timeout..............................................................................."
+        }
+      ],
+      "fault": [
+        {
+          "page": 3,
+          "context": ".........................4\n1.3 Earthing and earth fault protection....................................................................................5\n2. Modbus - general info............................................................................",
+          "full_match": "fault protection...................................................................................."
+        },
+        {
+          "page": 3,
+          "context": "....................................26\n5.2.16Last fault response...........................................................................................................26\n5.2.17Control word..................................................................................",
+          "full_match": "fault response......................................................................................"
+        },
+        {
+          "page": 3,
+          "context": ".................................28\n5.3.5 Fixed default gateway.......................................................................................................28\n5.3.6 Active IP address, subnet mask and default gateway............................................",
+          "full_match": "fault gateway......................................................................................."
+        }
+      ],
+      "register": [
+        {
+          "page": 4,
+          "context": "...................................31\n6.3.1 Coils registers...................................................................................................................31\n6.3.2 Clearing resettable counters..................................................................",
+          "full_match": "registers..........................................................................................."
+        },
+        {
+          "page": 4,
+          "context": ".................................31\n6.3.4 Holding registers and input registers..............................................................................32\n6.3.5 Vacon Application IDs.........................................................................",
+          "full_match": "registers and input registers......................................................................."
+        }
+      ],
+      "holding register": [
+        {
+          "page": 4,
+          "context": ".........................................31\n6.3.4 Holding registers and input registers..............................................................................32\n6.3.5 Vacon Application IDs.........................................................................",
+          "full_match": "Holding registers and input registers..............................................................."
+        }
+      ],
+      "input register": [
+        {
+          "page": 4,
+          "context": "...................31\n6.3.4 Holding registers and input registers..............................................................................32\n6.3.5 Vacon Application IDs.........................................................................",
+          "full_match": "input registers..............................................................................32\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 5,
+          "context": "llows:\nTable 1. Warning signs\n= DANGER! Dangerous voltage\n9000.emf\n= WARNING or CAUTION\n13006.emf\n= Caution! Hot surface\n9001.emf\n1.1 Danger\nThe components of",
+          "full_match": "voltage\n"
+        },
+        {
+          "page": 5,
+          "context": "to mains\npotential. Coming into contact with this voltage is extremely dangerous and may\n9000.emf cause death or severe injury.\nThe motor terminals U, V, W and the brake resistor terminals",
+          "full_match": "voltage is extremely dangerous and may\n"
+        },
+        {
+          "page": 5,
+          "context": "emf\nsuring equipment to absolutely ensure that no voltage is present. Always ensure\nabsence of voltage before starting any electrical work!\nThe control I/O-terminals are isolated from",
+          "full_match": "voltage is present. Always ensure\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 5,
+          "context": "surface\n9001.emf\n1.1 Danger\nThe components of the power unit are live when the drive is connected to mains\npotential. Coming into contact with this voltage is extremely dangerous and may\n9000.emf cause death",
+          "full_match": "power unit are live when the drive is connected to mains\n"
+        },
+        {
+          "page": 6,
+          "context": "rts delivered by VACON\u00ae can be used.\n13006.emf\nAt power-up, power break or fault reset the motor will start immediately if the\nstart signal is active, unless the pulse control for Start/Stop logic has been selected.\nFuthermore,",
+          "full_match": "power-up, power break or fault reset the motor will start immediately if the\n"
+        },
+        {
+          "page": 21,
+          "context": "the cable through the conduit plate.\nRemount the powerhead.\n2\nNOTE: When planning the cable runs, remember to keep the distance between\nthe Ethernet cable and t",
+          "full_match": "powerhead.\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 6,
+          "context": "nnected to the mains.\n13006.emf\nThe earth leakage current of the AC drives exceeds 3.5mA AC. According to stan-\ndard EN61800-5-1, a reinforced protective ground connection must be ensured.\n13006.emf See chapter 1",
+          "full_match": "current of the AC drives exceeds 3.5mA AC. According to stan-\n"
+        },
+        {
+          "page": 7,
+          "context": "earthing terminal\nmarked with .\nThe earth leakage current of the drive exceeds 3.5mA AC. According to EN61800-5-1, one or more\nof the following conditions for the associated protective circuit shall be satisfied:\nb) The protect",
+          "full_match": "current of the drive exceeds 3.5mA AC. According to EN61800-5-1, one or more\n"
+        },
+        {
+          "page": 7,
+          "context": "d for personal safety.\nDue to the high capacitive currents present in the AC drive, fault current protective switches may\nnot function properly.\nDo not perform any voltage withstand tests on any part of the AC drive. There",
+          "full_match": "currents present in the AC drive, fault current protective switches may\n"
+        }
+      ],
+      "9600": [
+        {
+          "page": 10,
+          "context": "col Reference Guide\u201d\n300, 600, 1200, 2400, 4800, 9600, 19200,\nBitrate 38400, 57600, 76800, 115200 and 230400\nbits/s\nAddresses 1 to 247\n3.2 Modbus TCP protocol\nTab",
+          "full_match": "9600, 19200,\n"
+        },
+        {
+          "page": 13,
+          "context": "odbus RTU specification\nstates that for a maximum 9600 bits/second bitrate and AWG26 or wider gauge, the maximum\nlength is 1000 meters. The actual cable length used in an installation can be lower than this number",
+          "full_match": "9600 bits/second bitrate and AWG26 or wider gauge, the maximum\n"
+        },
+        {
+          "page": 25,
+          "context": "2400\n4800\nP5.8.3.1.2 Baud rate 300\u2026230400 6 2378 9600\n19200\n38400\n57600\n76800\n115200\n230400\n1 = 1 stop bit\nP5.8.3.1.4 Stopbits 1\u20263 3 2380 2 = 1.5 stop bit",
+          "full_match": "9600\n"
+        }
+      ],
+      "19200": [
+        {
+          "page": 10,
+          "context": "eference Guide\u201d\n300, 600, 1200, 2400, 4800, 9600, 19200,\nBitrate 38400, 57600, 76800, 115200 and 230400\nbits/s\nAddresses 1 to 247\n3.2 Modbus TCP protocol\nTab",
+          "full_match": "19200,\n"
+        },
+        {
+          "page": 25,
+          "context": "4800\nP5.8.3.1.2 Baud rate 300\u2026230400 6 2378 9600\n19200\n38400\n57600\n76800\n115200\n230400\n1 = 1 stop bit\nP5.8.3.1.4 Stopbits 1\u20263 3 2380 2 = 1.5 stop bits\n3 =",
+          "full_match": "19200\n"
+        }
+      ],
+      "38400": [
+        {
+          "page": 10,
+          "context": "300, 600, 1200, 2400, 4800, 9600, 19200,\nBitrate 38400, 57600, 76800, 115200 and 230400\nbits/s\nAddresses 1 to 247\n3.2 Modbus TCP protocol\nTable 3.\nInterface 100BaseTX, IEEE 802.3 compatibl",
+          "full_match": "38400, 57600, 76800, 115200 and 230400\n"
+        },
+        {
+          "page": 25,
+          "context": "P5.8.3.1.2 Baud rate 300\u2026230400 6 2378 9600\n19200\n38400\n57600\n76800\n115200\n230400\n1 = 1 stop bit\nP5.8.3.1.4 Stopbits 1\u20263 3 2380 2 = 1.5 stop bits\n3 = 2 stop",
+          "full_match": "38400\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 10,
+          "context": "r method Ethernet half/full -duplex\nData transfer speed 10/100 MBit/s, autosensing\nProtocol Modbus TCP\nConnections and\nConnector Shielded RJ45 connector\ncommunications\nCable type CAT5",
+          "full_match": "speed 10/100 MBit/s, autosensing\n"
+        },
+        {
+          "page": 13,
+          "context": "The VACON\u00ae 100 family AC drive supports 10/100Mb speeds in both Full- and Half-duplex modes.\nHowever, real-time process control requires the Full-duplex mode and the 100-megabit speed.\nDrives m",
+          "full_match": "speeds in both Full- and Half-duplex modes.\n"
+        },
+        {
+          "page": 13,
+          "context": "requires the Full-duplex mode and the 100-megabit speed.\nDrives must be connected to the Ethernet network with a Shielded Twisted Pair (STP) CAT-5e cable\n(or",
+          "full_match": "speed.\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 24,
+          "context": "n)\nParameter name ID Value Default Panel Tree\n0 = Frequency\nControl mode 600 1 = Speed 0 P 3.1.2.1\n2 = Torque\nRemote control place 172 1 = Fieldbus CTRL 0 P 3.2",
+          "full_match": "Frequency\n"
+        },
+        {
+          "page": 24,
+          "context": "etrisation has to be made in order to control the frequency control with torque\ncontrol. The following instructions are for the VACON\u00ae 100 family AC drives, see the application\nspe",
+          "full_match": "frequency control with torque\n"
+        }
+      ]
+    }
+  },
+  "TECO": {
+    "A510-Communication-Addendum.pdf": {
+      "modbus rtu": [
+        {
+          "page": 1,
+          "context": "INVERTER\nA510\nCommunication - Addendum\nModbus RTU / ASCII\nPro(cid:246)bus\nDOCUMENT - TECO-A510-AC001\nVer 01: 2015.04",
+          "full_match": "Modbus RTU / ASCII\n"
+        },
+        {
+          "page": 3,
+          "context": "ate with a PC or PLC via RS485 or RS232 using the Modbus RTU or Modbus\nACSII protocol. The maximum frame length is 80 bytes.\nNetwork Connection\nA510 A510 A510 A510\nControl",
+          "full_match": "Modbus RTU or Modbus\n"
+        }
+      ],
+      "modbus": [
+        {
+          "page": 1,
+          "context": "INVERTER\nA510\nCommunication - Addendum\nModbus RTU / ASCII\nPro(cid:246)bus\nDOCUMENT - TECO-A510-AC001\nVer 01: 2015.04",
+          "full_match": "Modbus RTU / ASCII\n"
+        },
+        {
+          "page": 2,
+          "context": "Table of Contents\n1.0 Modbus Protocol Description ............................................................................................. 1-1\n1.0.1 Communication Connection and Data Frame ......................................................",
+          "full_match": "Modbus Protocol Description ........................................................................"
+        },
+        {
+          "page": 2,
+          "context": "......................... A-1\nA1.1 RS485 Network (Modbus) .......................................................................................................... A-1\n1-0",
+          "full_match": "Modbus) ............................................................................................"
+        }
+      ],
+      "communication": [
+        {
+          "page": 1,
+          "context": "INVERTER\nA510\nCommunication - Addendum\nModbus RTU / ASCII\nPro(cid:246)bus\nDOCUMENT - TECO-A510-AC001\nVer 01: 2015.04",
+          "full_match": "Communication - Addendum\n"
+        },
+        {
+          "page": 2,
+          "context": "....................................... 1-1\n1.0.1 Communication Connection and Data Frame .............................................................................. 1-1\n1.0.2 Register and Data Format .....................................................................",
+          "full_match": "Communication Connection and Data Frame ............................................................"
+        },
+        {
+          "page": 2,
+          "context": "............................... 1-14\n1.1 Profibus Communication Option Card ............................................................................. 1-25\n1.1.1 Introduction .................................................................................",
+          "full_match": "Communication Option Card .........................................................................."
+        }
+      ],
+      "rs485": [
+        {
+          "page": 2,
+          "context": "........................................ A-1\nA1.1 RS485 Network (Modbus) .......................................................................................................... A-1\n1-0",
+          "full_match": "RS485 Network (Modbus) ............................................................................."
+        },
+        {
+          "page": 3,
+          "context": "The inverter can communicate with a PC or PLC via RS485 or RS232 using the Modbus RTU or Modbus\nACSII protocol. The maximum frame length is 80 bytes.\nNetwork Connection\nA510 A510 A510 A510\nControl",
+          "full_match": "RS485 or RS232 using the Modbus RTU or Modbus\n"
+        }
+      ],
+      "register": [
+        {
+          "page": 2,
+          "context": "....................................... 1-1\n1.0.2 Register and Data Format ............................................................................................................ 1-5\n1.0.3 Parameter Data ...............................................................................",
+          "full_match": "Register and Data Format ..........................................................................."
+        },
+        {
+          "page": 4,
+          "context": "max to No. 254 (FEH)\nFunction Code\n03H: Read the register contents\n1-2",
+          "full_match": "register contents\n"
+        },
+        {
+          "page": 5,
+          "context": "06H: Write a WORD to register\n08H: Loop test\n10H: Write several data to register (complex number register write)\nChecksum Calculat",
+          "full_match": "register\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 3,
+          "context": "S- signal\nVCC of isolated 5V\n3 RS-485 S+ signal 7\npower supply\nGND of isolated 5V\n4 Rx signal 8\npower supply\nFor RS-485 communication use pin 1 or pin 3 for S (+)",
+          "full_match": "power supply\n"
+        },
+        {
+          "page": 3,
+          "context": "l 7\npower supply\nGND of isolated 5V\n4 Rx signal 8\npower supply\nFor RS-485 communication use pin 1 or pin 3 for S (+) and pin 2 or pin 6 for S (-)\n1-1",
+          "full_match": "power supply\n"
+        }
+      ],
+      "node address": [
+        {
+          "page": 4,
+          "context": "ata Frame for ASCII Mode\nSTX(3AH) Start Bit = 3AH\nNode Address Hi\nCommunication Address(Station):\nNode Address Lo\n2-digit ASCII Code\nFunction Hi\nFunction Code (comman",
+          "full_match": "Node Address Hi\n"
+        },
+        {
+          "page": 4,
+          "context": "H\nNode Address Hi\nCommunication Address(Station):\nNode Address Lo\n2-digit ASCII Code\nFunction Hi\nFunction Code (command):\nFunction Lo\n2-digit ASCII Code\nCommand Start",
+          "full_match": "Node Address Lo\n"
+        },
+        {
+          "page": 4,
+          "context": "ength varies depending on the command (Function).\nNode Address\nFunction Code\nDATA\nCRC CHECK\nSignal Interval\n** The inverter response time is 10ms.\nNode Address\n00H",
+          "full_match": "Node Address\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 7,
+          "context": "orque Command set by Communication 1: \u201cON\u201d\n2502H *Frequency Command (Unit: 0.01Hz)\n2503H Torque Command (+/-8192 corresponding to the rated torque +/-100%)\n2504H Speed limit (+/- 120",
+          "full_match": "Frequency Command (Unit: 0.01Hz)\n"
+        },
+        {
+          "page": 7,
+          "context": "to a reserved register.\n** If the maximum output frequency of the motor is over 300Hz the frequency resolution is 0.1Hz\n1-5",
+          "full_match": "frequency of the motor is over 300Hz the frequency resolution is 0.1Hz\n"
+        },
+        {
+          "page": 8,
+          "context": "\u201cON\u201d\n5 Zero Speed 1 :\u201cON\u201d\n6 Is440V 1 :\u201cON\u201d\nS\nta\n7 Frequency Agree 1 :\u201cON\u201d\nte\n2520H\nS\n8 Set Frequency Agree 1 :\u201cON\u201d\nig\n9 Frequency Detection 1 1 :\u201cON\u201d\nn\na\nl A Frequency Detect",
+          "full_match": "Frequency Agree 1 :\u201cON\u201d\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 7,
+          "context": "~ 1000): Voltage (corresponding to 0.00~10.00V); Current (\n2506H\ncorresponding to 4mA~20mA)\n2507H DO\n2508H Reserved\n2509H Reserved\n250AH Reserved\n250BH Reserve",
+          "full_match": "Current (\n"
+        },
+        {
+          "page": 9,
+          "context": "rved\n2526H DC voltage command (0.1V)\n2527H Output current (0.1A)\n0 No alarm 20 EF4 40 EF 60 Reserved\n1 OV 21 EF5 41 Reserved 61 RETRY\n2 UV 22 EF6 42 Reserved 62 SE07",
+          "full_match": "current (0.1A)\n"
+        },
+        {
+          "page": 10,
+          "context": "~ 1000): Voltage (corresponding to 0.00~10.00V); Current\n252BH\n(corresponding to 4mA~20mA)\n252CH Analog Input 1 (0.1%)\n252DH Analog Input 2 (0.1%)\n252EH Rese",
+          "full_match": "Current\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 7,
+          "context": "-120%)\n2505H AO1 (0.00V ~ 10.00V)\nAO2 (0 ~ 1000): Voltage (corresponding to 0.00~10.00V); Current (\n2506H\ncorresponding to 4mA~20mA)\n2507H DO\n2508H Reserved\n2509H Reserved\n250AH Reserved\n250BH Reserve",
+          "full_match": "Voltage (corresponding to 0.00~10.00V); Current (\n"
+        },
+        {
+          "page": 8,
+          "context": "ON\u201d\nn\na\nl A Frequency Detection 2 1 :\u201cON\u201d\nB Under Voltage 1 :\u201cON\u201d\nC Baseblock 1 :\u201cON\u201d\nD Freq Ref. not from Comm. 1 :\u201cON\u201d\nE Seq. not from Comm. 1 :\u201cON\u201d\nF Over Torque 1",
+          "full_match": "Voltage 1 :\u201cON\u201d\n"
+        },
+        {
+          "page": 9,
+          "context": "Output frequency (0.01Hz)\n2525H Reserved\n2526H DC voltage command (0.1V)\n2527H Output current (0.1A)\n0 No alarm 20 EF4 40 EF 60 Reserved\n1 OV 21 EF5 41 Reserved 61 RETRY\n2 U",
+          "full_match": "voltage command (0.1V)\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 7,
+          "context": "everse Command 1 : Reverse 0 : Forward\n2 External Fault 1 : Fault\n3 Fault Reset 1 : Reset\n4 Reserved\nO 5 Reserved\np\ne 6 Multi-function Comm S1 1 :\u201cON\u201d\nr\na\n2501H\ntio 7",
+          "full_match": "Fault 1 : Fault\n"
+        },
+        {
+          "page": 7,
+          "context": "Reverse 0 : Forward\n2 External Fault 1 : Fault\n3 Fault Reset 1 : Reset\n4 Reserved\nO 5 Reserved\np\ne 6 Multi-function Comm S1 1 :\u201cON\u201d\nr\na\n2501H\ntio 7 Multi-function Comm S2",
+          "full_match": "Fault Reset 1 : Reset\n"
+        },
+        {
+          "page": 8,
+          "context": "orward\n2 Inverter ready 1 : ready 0 : Not ready\n3 Fault 1 : Abnormal\n4 Warning 1 :\u201cON\u201d\n5 Zero Speed 1 :\u201cON\u201d\n6 Is440V 1 :\u201cON\u201d\nS\nta\n7 Frequency Agree 1 :\u201cON\u201d\nte\n2520H\nS\n8",
+          "full_match": "Fault 1 : Abnormal\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 7,
+          "context": "corresponding to the rated torque +/-100%)\n2504H Speed limit (+/- 120 corresponding +/-120%)\n2505H AO1 (0.00V ~ 10.00V)\nAO2 (0 ~ 1000): Voltage (corresponding to 0.00~10.00V); Current (\n2506H\nc",
+          "full_match": "Speed limit (+/- 120 corresponding +/-120%)\n"
+        },
+        {
+          "page": 8,
+          "context": "ady\n3 Fault 1 : Abnormal\n4 Warning 1 :\u201cON\u201d\n5 Zero Speed 1 :\u201cON\u201d\n6 Is440V 1 :\u201cON\u201d\nS\nta\n7 Frequency Agree 1 :\u201cON\u201d\nte\n2520H\nS\n8 Set Frequency Agree 1 :\u201cON\u201d\nig\n9 Freque",
+          "full_match": "Speed 1 :\u201cON\u201d\n"
+        },
+        {
+          "page": 8,
+          "context": "521H e 13 Output Phase Loss 43\ns\nc\nr ip 14 PG Overspeed 44\ntio\n15 PG Open 45\nn\n16 PG Speed Deviation 46\n17 External Fault 01 47 SS1\n18 External Fault 02 48 CF2",
+          "full_match": "speed 44\n"
+        }
+      ],
+      "holding register": [
+        {
+          "page": 11,
+          "context": "Read Holding Register [03H]\nRead consecutive holding registers. The address of the first holding register is specified in the pr",
+          "full_match": "Holding Register [03H]\n"
+        },
+        {
+          "page": 11,
+          "context": "Read Holding Register [03H]\nRead consecutive holding registers. The address of the first holding register is specified in the protocol\nExample: Read frequency command from the inverter with node address 1.\nASCII Mode\nCommand Message Re",
+          "full_match": "holding registers. The address of the first holding register is specified in the protocol\n"
+        },
+        {
+          "page": 13,
+          "context": "Write Single Holding Register [06H]\nWrite single holding register. The register address of the holding register is specified in the mess",
+          "full_match": "Holding Register [06H]\n"
+        }
+      ],
+      "baud": [
+        {
+          "page": 27,
+          "context": "l Board\nMaximum Connection 32 DP-Slave nodes\nAuto-Baud Search(bit/Sec) 9.6K 19.2K 93.75K 187.5K 500K 1.5M 3M 6M 12M\nTransmission Distance(m) 1200 1200 1200 1000 400 200 100 100 100\nConnection Medium Profibus Layer 2",
+          "full_match": "Baud Search(bit/Sec) 9.6K 19.2K 93.75K 187.5K 500K 1.5M 3M 6M 12M\n"
+        }
+      ]
+    }
+  },
+  "FRENIC": {
+    "FRENIC-MEGA-User-Manual.pdf": {
+      "communication": [
+        {
+          "page": 2,
+          "context": "User's Manual\nfor RS-485 Communications Card",
+          "full_match": "Communications Card"
+        },
+        {
+          "page": 4,
+          "context": "through RJ-45 connector (modular jack) *1,\nRS-485 communications card (option) *2, and control circuit terminal base *3. Using these\nconnection methods, the inverter function can be expanded to such a level where RS-485\ncommunication",
+          "full_match": "communications card (option) *2, and control circuit terminal base *3. Using these\n"
+        },
+        {
+          "page": 4,
+          "context": "tion can be expanded to such a level where RS-485\ncommunications can be used. Use of RJ-45 connector for connection with the keypad permits\nremote operation from the keypad.\n*1 FRENIC-Eco/Multi/MEGA\n*2 FRENIC-Mini/Eco/Multi\n*3 FRENIC-MEGA\nT",
+          "full_match": "communications can be used. Use of RJ-45 connector for connection with the keypad permits\n"
+        }
+      ],
+      "register": [
+        {
+          "page": 3,
+          "context": "ctric Systems Co., Ltd.\nMicrosoft and Windows are registered trademarks or trademarks of Microsoft Corporation, U.S. The other\ncompany and product names used herein are generally trademarks or registered trademarks of other\ncom",
+          "full_match": "registered trademarks or trademarks of Microsoft Corporation, U.S. The other\n"
+        },
+        {
+          "page": 3,
+          "context": "uct names used herein are generally trademarks or registered trademarks of other\ncompanies.\nAny information contained herein is subject to change without prior notice for improvemen",
+          "full_match": "registered trademarks of other\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 6,
+          "context": "rs for equipment and machinery\nrelated to nuclear power control, aerospace uses, medical uses or transportation. When the product is to\nbe used with any machinery or equipment on which lives depend or with machinery or equipment which\nc",
+          "full_match": "power control, aerospace uses, medical uses or transportation. When the product is to\n"
+        },
+        {
+          "page": 6,
+          "context": "Wiring\n- Before starting wiring, confirm that the power is turned OFF (open).\nAn electric shock may result.\n- The product cannot be connected directly to an RS-232C interface of",
+          "full_match": "power is turned OFF (open).\n"
+        },
+        {
+          "page": 6,
+          "context": "eration\n- Note that the inverter starts to supply power to the motor and the motor runs upon resetting of an\nalarm with the operation command ON (closed).\nAn accident may result.\niii",
+          "full_match": "power to the motor and the motor runs upon resetting of an\n"
+        }
+      ],
+      "modbus rtu": [
+        {
+          "page": 7,
+          "context": "...................................2-25\nCHAPTER 3 Modbus RTU PROTOCOL1\n3.1 Messages........................................................................................",
+          "full_match": "Modbus RTU PROTOCOL1\n"
+        },
+        {
+          "page": 11,
+          "context": "nications protocols for controlling inverter, the Modbus RTU widely used by a\nvariety of appliances, and the Fuji general-purpose inverter protocol common to Fuji's inverters\nare",
+          "full_match": "Modbus RTU widely used by a\n"
+        },
+        {
+          "page": 11,
+          "context": "rotocol common to Fuji's inverters\nare available.\nModbus RTU protocol\nThe Modbus RTU protocol is a set of communications specifications defined to connect Modicon's\nPLCs",
+          "full_match": "Modbus RTU protocol\n"
+        }
+      ],
+      "modbus": [
+        {
+          "page": 7,
+          "context": "...................................2-25\nCHAPTER 3 Modbus RTU PROTOCOL1\n3.1 Messages........................................................................................",
+          "full_match": "Modbus RTU PROTOCOL1\n"
+        },
+        {
+          "page": 11,
+          "context": "nications protocols for controlling inverter, the Modbus RTU widely used by a\nvariety of appliances, and the Fuji general-purpose inverter protocol common to Fuji's inverters\nare",
+          "full_match": "Modbus RTU widely used by a\n"
+        },
+        {
+          "page": 11,
+          "context": "rotocol common to Fuji's inverters\nare available.\nModbus RTU protocol\nThe Modbus RTU protocol is a set of communications specifications defined to connect Modicon's\nPLCs",
+          "full_match": "Modbus RTU protocol\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 8,
+          "context": "..................6-5\n6.6.7 Reading and resetting faults..........................................................................................6-5\n6.6.8 Address limitations...........................................................................",
+          "full_match": "faults..........................................................................................6-5\n"
+        },
+        {
+          "page": 27,
+          "context": "insertion switch\nOFF OFF\n(RS-485\ncommunications Default\nport 1) setting\nON\n-\nT\nin\ne\ns\nr\ne\nm\nrt\nin\nio\na\nn\nl\ns\nr\nw\nes\nit\ni\nc\ns\nh\nta nce ON\n(RS-485\ncommunicati",
+          "full_match": "fault\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 11,
+          "context": "ations time in response to operation commands and frequency\nsetting which are required quick response by using optional transmission frames.\n- Since the protoco",
+          "full_match": "frequency\n"
+        },
+        {
+          "page": 12,
+          "context": "the inverter model.)\n-Alarm reset command (\"RST\")\nFrequency Either of the following three setting methods can be selected:\nsetting\n-Set up as \"\u00b120000/maximum frequency.\"\n-Frequency (adjustable unit: 0.01 Hz) without polarit",
+          "full_match": "Frequency Either of the following three setting methods can be selected:\n"
+        },
+        {
+          "page": 12,
+          "context": "n be selected:\nsetting\n-Set up as \"\u00b120000/maximum frequency.\"\n-Frequency (adjustable unit: 0.01 Hz) without polarity\n-Rotation speed (adjustable unit: 1r/min) Onl",
+          "full_match": "frequency.\"\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 12,
+          "context": "tor\n-Frequency command\n-Actual values (frequency, current, voltage, etc.)\n-Operation status, information on general-purpose output terminals,\netc.\nMaintenance The items below",
+          "full_match": "current, voltage, etc.)\n"
+        },
+        {
+          "page": 12,
+          "context": "s)\nOperation information (output/set frequencies, current, voltage,\netc.)\nOperation status, information on general-purpose output terminals\nMaintenance information (cum",
+          "full_match": "current, voltage,\n"
+        },
+        {
+          "page": 25,
+          "context": "inserted into total two positions. Note that the current capacity of\nsignals may be insufficient if terminating resistors are inserted into three or more devices.\nIf the",
+          "full_match": "current capacity of\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 12,
+          "context": "uency command\n-Actual values (frequency, current, voltage, etc.)\n-Operation status, information on general-purpose output terminals,\netc.\nMaintenance The items below",
+          "full_match": "voltage, etc.)\n"
+        },
+        {
+          "page": 12,
+          "context": "codes\nmonitor -Cumulative operation time, DC link voltage W codes\n-Information to determine the service life of parts to be periodically X codes\nreplaced (main circui",
+          "full_match": "voltage W codes\n"
+        },
+        {
+          "page": 12,
+          "context": "ion information (output/set frequencies, current, voltage,\netc.)\nOperation status, information on general-purpose output terminals\nMaintenance information (cum",
+          "full_match": "voltage,\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 12,
+          "context": "ustable unit: 0.01 Hz) without polarity\n-Rotation speed (adjustable unit: 1r/min) Only MEGA has a polarity.\nPID command -Set up as \"\u00b120000/100%.\"\nOperation The items below can be monitored:\nmonitor\n-Frequency",
+          "full_match": "speed (adjustable unit: 1r/min) Only MEGA has a polarity.\n"
+        },
+        {
+          "page": 14,
+          "context": "racter\nTransmission mode Half-duplex\nTransmission speed 2400, 4800, 9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n(bps)\nMaximum 500m\ntransmission cable\nlength\nNo. of available 1 to 31 1 to 247 1 to 255\nstation addr",
+          "full_match": "speed 2400, 4800, 9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n"
+        },
+        {
+          "page": 14,
+          "context": "able length Variable length\n16 bytes (fixed)\nHigh-speed transmission:\n8 or 12 bytes\nMaximum transfer Write: 1 word Write: 50 words Write: 41 words\ndata Read: 1 word Read:",
+          "full_match": "speed transmission:\n"
+        }
+      ],
+      "9600": [
+        {
+          "page": 14,
+          "context": "n mode Half-duplex\nTransmission speed 2400, 4800, 9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n(bps)\nMaximum 500m\ntransmission cable\nlength\nNo. of available 1 to 31 1 to 247 1 to 255\nstation addr",
+          "full_match": "9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n"
+        }
+      ],
+      "19200": [
+        {
+          "page": 14,
+          "context": "Half-duplex\nTransmission speed 2400, 4800, 9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n(bps)\nMaximum 500m\ntransmission cable\nlength\nNo. of available 1 to 31 1 to 247 1 to 255\nstation addr",
+          "full_match": "19200 and 38400 (maximum 19200 for FRENIC-Mini)\n"
+        }
+      ],
+      "38400": [
+        {
+          "page": 14,
+          "context": "ex\nTransmission speed 2400, 4800, 9600, 19200 and 38400 (maximum 19200 for FRENIC-Mini)\n(bps)\nMaximum 500m\ntransmission cable\nlength\nNo. of available 1 to 31 1 to 247 1 to 255\nstation addr",
+          "full_match": "38400 (maximum 19200 for FRENIC-Mini)\n"
+        }
+      ],
+      "parity": [
+        {
+          "page": 14,
+          "context": "8 bits (fixed) 8 bits (fixed)\nthe function code)\nParity Even, Odd, or None (selectable by the function Even\ncode)\nStop bit length 1 or 2 bits (selectable by No parity: 2 bits 1 bit (fixed)\nthe function code)",
+          "full_match": "Parity Even, Odd, or None (selectable by the function Even\n"
+        },
+        {
+          "page": 14,
+          "context": "de)\nStop bit length 1 or 2 bits (selectable by No parity: 2 bits 1 bit (fixed)\nthe function code)\nEven or Odd parity:\n1 bit\nError checking Sum-check CRC-16 Sum-check",
+          "full_match": "parity: 2 bits 1 bit (fixed)\n"
+        },
+        {
+          "page": 14,
+          "context": "bits 1 bit (fixed)\nthe function code)\nEven or Odd parity:\n1 bit\nError checking Sum-check CRC-16 Sum-check",
+          "full_match": "parity:\n"
+        }
+      ],
+      "baud rate": [
+        {
+          "page": 30,
+          "context": "error may result during communications at a high baud rate. In this\ncase, reduce the baud rate by changing the setting of function code y04.\n[2] Measures against noise",
+          "full_match": "baud rate. In this\n"
+        },
+        {
+          "page": 30,
+          "context": "ons at a high baud rate. In this\ncase, reduce the baud rate by changing the setting of function code y04.\n[2] Measures against noise sources\nReducing carrier frequency\nBy lowering data of function code F26",
+          "full_match": "baud rate by changing the setting of function code y04.\n"
+        }
+      ],
+      "baud": [
+        {
+          "page": 30,
+          "context": "error may result during communications at a high baud rate. In this\ncase, reduce the baud rate by changing the setting of function code y04.\n[2] Measures against noise",
+          "full_match": "baud rate. In this\n"
+        },
+        {
+          "page": 30,
+          "context": "ons at a high baud rate. In this\ncase, reduce the baud rate by changing the setting of function code y04.\n[2] Measures against noise sources\nReducing carrier frequency\nBy lowering data of function code F26",
+          "full_match": "baud rate by changing the setting of function code y04.\n"
+        }
+      ]
+    },
+    "FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf": {
+      "power": [
+        {
+          "page": 1,
+          "context": "r type FRN****E2S/E2E-2G\ufffd/4G\ufffd/7G\ufffd for the initial power supply.\nWithout setting the destination, the inverter cannot be operated. For details, refer to 4.4 Destinat",
+          "full_match": "power supply.\n"
+        },
+        {
+          "page": 4,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 4-1\n4.2 Checking Prior to Powering On \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 4-2\n4.3 Powering ON and Checking \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "Powering On \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7"
+        },
+        {
+          "page": 4,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 4-2\n4.3 Powering ON and Checking \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 4-3\n4.4 Destination setting \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "Powering ON and Checking \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7"
+        }
+      ],
+      "speed": [
+        {
+          "page": 1,
+          "context": "igned to drive a three-phase motor under variable speed control. Read through this\ninstruction manual and become familiar with the handling procedure for correct use.\n\u2022 Improper handl",
+          "full_match": "speed control. Read through this\n"
+        },
+        {
+          "page": 3,
+          "context": "permanent magnet synchronous motor under variable speed control.\nThis manual provides all the information on the FRENIC-Ace (Global model) series of inverters includ",
+          "full_match": "speed control.\n"
+        },
+        {
+          "page": 8,
+          "context": "anual, the\nmotor may rotate with a torque or at a speed not permitted for the machine.\n\u2022 Starting auto-tuning involves motor rotation. Sufficiently check that motor rotation brings no dan",
+          "full_match": "speed not permitted for the machine.\n"
+        }
+      ],
+      "register": [
+        {
+          "page": 2,
+          "context": "names mentioned in this manual are trademarks or registered trademarks of\ntheir respective holders.\nThe information contained herein is subject to change without prior notice",
+          "full_match": "registered trademarks of\n"
+        }
+      ],
+      "modbus rtu": [
+        {
+          "page": 3,
+          "context": "anual 24A7-E-0021* communications specifications, Modbus RTU/Fuji\ngeneral-purpose inverter protocol, function codes\nand related data formats\nUser\u2019s Manual for China m",
+          "full_match": "Modbus RTU/Fuji\n"
+        }
+      ],
+      "modbus": [
+        {
+          "page": 3,
+          "context": "anual 24A7-E-0021* communications specifications, Modbus RTU/Fuji\ngeneral-purpose inverter protocol, function codes\nand related data formats\nUser\u2019s Manual for China m",
+          "full_match": "Modbus RTU/Fuji\n"
+        }
+      ],
+      "communication": [
+        {
+          "page": 3,
+          "context": "functions implemented by using\nFRENIC-Ace RS-485 communications facility, its\nRS-485 Communication User's Manual 24A7-E-0021* communications specifications, Modbus RTU/Fuji\ngener",
+          "full_match": "communications facility, its\n"
+        },
+        {
+          "page": 3,
+          "context": "IC-Ace RS-485 communications facility, its\nRS-485 Communication User's Manual 24A7-E-0021* communications specifications, Modbus RTU/Fuji\ngeneral-purpose inverter protocol, function codes\nand related data formats\nUser\u2019s Manual for China m",
+          "full_match": "Communication User's Manual 24A7-E-0021* communications specifications, Modbus RTU/Fuji\n"
+        },
+        {
+          "page": 8,
+          "context": "rnal equipment (remote) by turning ON the\n\"Enable communications link\" command LE disables the key. To enable the key for an emergency stop,\nselect the STOP key priority with function code H96 (= 1 or 3).\n\u2022 If any of the protective functions",
+          "full_match": "communications link\" command LE disables the key. To enable the key for an emergency stop,\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 4,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 5-3\n5.2.3 Factory default value per applicable electric motor capacitance \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 5-35\nChapter 6 TROUBLESHOOTING\n6.1 Protective Function \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "fault value per applicable electric motor capacitance \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 5-3"
+        },
+        {
+          "page": 7,
+          "context": "eakage current) detective device such as a ground-fault relay is installed in the\nupstream power supply line, in order to avoid the entire power supply system's shutdown undesirable",
+          "full_match": "fault relay is installed in the\n"
+        },
+        {
+          "page": 22,
+          "context": "output) show the functions assigned as factory default.\n(Note 11) These are connectors for switching the main circuit. For details, refer to \u201c2.2.7 Switchin",
+          "full_match": "fault.\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 5,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 1\n[ 2 ] Compliance with the low voltage directive in the EU \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 6\nG.2 Harmonic Component Regulation in the EU \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "voltage directive in the EU \u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7 6\n"
+        },
+        {
+          "page": 7,
+          "context": "ure that the number of input phases and the rated voltage of the product match the number of phases and\nthe voltage of the AC power supply to which the product is to be connected.\nOtherwise, a fire or an",
+          "full_match": "voltage of the product match the number of phases and\n"
+        },
+        {
+          "page": 7,
+          "context": "of the product match the number of phases and\nthe voltage of the AC power supply to which the product is to be connected.\nOtherwise, a fire or an accident could occur.\n\u2022 Do not connect the power supply wires to output term",
+          "full_match": "voltage of the AC power supply to which the product is to be connected.\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 7,
+          "context": "Wiring\n\u2022 If no zero-phase current (earth leakage current) detective device such as a ground-fault relay is installed in the\nupstream power supply line, in order to avoid the entire power supply system's shutdown undesirable",
+          "full_match": "current (earth leakage current) detective device such as a ground-fault relay is installed in the\n"
+        },
+        {
+          "page": 7,
+          "context": "esirable to\nfactory operation, install a residual-current-operated protective device (RCD)/earth leakage circuit breaker\n(ELCB) individually to inverters to break the individual inverter power supply lines only.\nOtherwise",
+          "full_match": "current-operated protective device (RCD)/earth leakage circuit breaker\n"
+        },
+        {
+          "page": 7,
+          "context": "ed molded case circuit breaker (MCCB) or\nresidual-current-operated protective device (RCD)/earth leakage circuit breaker (ELCB) (with overcurrent\nprotection) in the path of each pair of power lines to inverters. Use the recommended devices within",
+          "full_match": "current-operated protective device (RCD)/earth leakage circuit breaker (ELCB) (with overcurrent\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 8,
+          "context": "ter may operate with acceleration/deceleration or frequency\ndifferent from the commanded ones. Design the machine so that safety is ensured even in such cases.",
+          "full_match": "frequency\n"
+        },
+        {
+          "page": 9,
+          "context": ", stop commands (e.g., \"Coast to a stop\" BX), and frequency\nchange commands can be assigned to digital input terminals. Depending upon the assignment states of",
+          "full_match": "frequency\n"
+        },
+        {
+          "page": 9,
+          "context": "with the digital input signals, switching run or frequency command sources with\nthe related terminal commands (e.g., SS1, SS2, SS4, SS8, Hz2/Hz1, Hz/PID, IVS, and LE) may cause a\ns",
+          "full_match": "frequency command sources with\n"
+        }
+      ]
+    }
+  },
+  "HITACHI": {
+    "HITACHI-SJ7002-Instruction-Manual.pdf": {
+      "current": [
+        {
+          "page": 2,
+          "context": "anual code\n1 First edition July 2007 NT204X\n- The current edition of this Instruction Manual also includes some corrections of simple misprints,\nmissing letters, misdescriptions and certain added explanations other than those listed in the above",
+          "full_match": "current edition of this Instruction Manual also includes some corrections of simple misprints,\n"
+        },
+        {
+          "page": 8,
+          "context": "lass models) are suited to circuits that transmit current not\nexceeding 100k rms symmetrical amperes and with voltage of no more than 240 V.\n3. Inverter models wi",
+          "full_match": "current not\n"
+        },
+        {
+          "page": 8,
+          "context": "lass models) are suited to circuits that transmit current not\nexceeding 100k rms symmetrical amperes and with voltage of no more than 480 V.\n4. The inverter must",
+          "full_match": "current not\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 2,
+          "context": "implement maintenance and inspections to prevent faults occurring.\nWhen using the inverter together with optional products, also read the manuals for those products. N",
+          "full_match": "faults occurring.\n"
+        },
+        {
+          "page": 4,
+          "context": "the wire, resulting in a short circuit or ground fault.\n\uff01 CAUTION\n- Make sure that the voltage of AC power supply matches the rated voltage of your inverter",
+          "full_match": "fault.\n"
+        },
+        {
+          "page": 19,
+          "context": "of inquiry\nFor an inquiry about product damage or faults or a question about the product, notify your supplier of the\nfollowing information:\n(1) Model of your inverter\n(2) Serial number (MFG No.)\n(3) Date of purchase\n(",
+          "full_match": "faults or a question about the product, notify your supplier of the\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 4,
+          "context": "t or ground fault.\n\uff01 CAUTION\n- Make sure that the voltage of AC power supply matches the rated voltage of your inverter. Otherwise,\nyou run the risk of injury or fire.\n- Do not input single-phase power into the inverter. Otherwise,",
+          "full_match": "voltage of AC power supply matches the rated voltage of your inverter. Otherwise,\n"
+        },
+        {
+          "page": 5,
+          "context": "while power is being supplied to the inverter or voltage remains inside. Otherwise,\nyou run the risk of electric shock.\n- Do not operate switches with wet hands. Otherwise, you run the",
+          "full_match": "voltage remains inside. Otherwise,\n"
+        },
+        {
+          "page": 6,
+          "context": "the Charge lamp on the inverter is off and the DC voltage between\nterminals P and N is 45 V or less.)\n- Commit only a designated person to maintenance, inspection, an",
+          "full_match": "voltage between\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 4,
+          "context": "hock or fire.\n- Before wiring, make sure that the power supply is off. Otherwise, you run the risk of electric shock or\nfire.\n- Perform wiring only after installing the inverter. Otherwise, you run the risk of electric s",
+          "full_match": "power supply is off. Otherwise, you run the risk of electric shock or\n"
+        },
+        {
+          "page": 4,
+          "context": "ult.\n\uff01 CAUTION\n- Make sure that the voltage of AC power supply matches the rated voltage of your inverter. Otherwise,\nyou run the risk of injury or fire.\n- Do not input single-phase power into the inverter. Otherwise,",
+          "full_match": "power supply matches the rated voltage of your inverter. Otherwise,\n"
+        },
+        {
+          "page": 4,
+          "context": "sk of injury or fire.\n- Do not input single-phase power into the inverter. Otherwise, you run the risk of fire.\n- Do not connect AC power supply to any of the output terminals (U, V, and W). Otherwise, you run th",
+          "full_match": "power into the inverter. Otherwise, you run the risk of fire.\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 5,
+          "context": "ing the inverter to operate a standard motor at a frequency of over 60 Hz, check the allowable\nmotor speeds with the manufacturers of the motor and the machine to be driven and obtain their\nconse",
+          "full_match": "frequency of over 60 Hz, check the allowable\n"
+        },
+        {
+          "page": 7,
+          "context": "ess.\nb. Voltage imbalance must be \u00b13% or less.\nc. Frequency variation must be \u00b14% or less.\nd. Total harmonic distortion (THD) of voltage must be \u00b110% or less.\n2. Installation requirement\na. A",
+          "full_match": "Frequency variation must be \u00b14% or less.\n"
+        },
+        {
+          "page": 7,
+          "context": "to the following table (Table 1).\nb. The carrier frequency must be set according to the following table to meet an EMC requirement\n(Table 1).\nc. The main circuit wiring must be separated from the control circuit wiring.\n4. Environm",
+          "full_match": "frequency must be set according to the following table to meet an EMC requirement\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 5,
+          "context": ".\n- The inverter allows you to easily control the speed of motor or machine operations. Before operating\nthe inverter, confirm the capacity and ratings of the motor or machine controlled by the inverter.\nO",
+          "full_match": "speed of motor or machine operations. Before operating\n"
+        },
+        {
+          "page": 5,
+          "context": "requency of over 60 Hz, check the allowable\nmotor speeds with the manufacturers of the motor and the machine to be driven and obtain their\nconsent before starting inverter operation. Otherwise, you run the risk of damage to the motor and\nm",
+          "full_match": "speeds with the manufacturers of the motor and the machine to be driven and obtain their\n"
+        },
+        {
+          "page": 8,
+          "context": "nhance the motor capability\nthroughout its entire speed range.\n1. Only 75C CU or equivalent wires must be used for wiring.\n2. Inverter models with the suffix \"L\" (",
+          "full_match": "speed range.\n"
+        }
+      ],
+      "communication": [
+        {
+          "page": 12,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 66\n4.2.66 Communication line disconnection signal (NDc) (C021 to C026, C077)\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 66\n4.2.67 Cooling-fan speed drop signal (WAF) (C021 to C026, b092 to d022)\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 -",
+          "full_match": "Communication line disconnection signal (NDc) (C021 to C026, C077)\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 66\n"
+        },
+        {
+          "page": 14,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 \u2013 113\n4.4 Communication Functions\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 116\n4.4.1 Communication in ASCII mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "Communication Functions\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7"
+        },
+        {
+          "page": 14,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 116\n4.4.1 Communication in ASCII mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 108\n4.4.2 Communication in Modbus-RTU mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "Communication in ASCII mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7"
+        }
+      ],
+      "modbus": [
+        {
+          "page": 14,
+          "context": "\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 108\n4.4.2 Communication in Modbus-RTU mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 120\nChapter 5 Error Codes\n5.1 Error Codes and Troubleshooting\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+          "full_match": "Modbus-RTU mode\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b74 - 120\n"
+        }
+      ],
+      "rs485": [
+        {
+          "page": 28,
+          "context": "tor output\n(PWM output)\nSP\nCM1\nThermistor\nTH SN\nH RS485\nRP\nFrequency\ns 5 e 0 t 0 ti n to g 2 c , i 0 rc 0 u 0 i \u2126 t 0 to 10 VDC (12 bits) O SN F re o s r i",
+          "full_match": "RS485\n"
+        }
+      ]
+    },
+    "HITACHI-SJ700N.pdf": {},
+    "Hitachi-SH1-Register-Address.pdf": {
+      "communication": [
+        {
+          "page": 1,
+          "context": "CHARPTER 5 CANOPEN COMMUNICATION FUNCTION\nBitmapping of Status word\nInverter Bit6 Bit5 Bit3 Bit2 Bit1 Bit0\nSwitch On Quick Fault Operation Swi",
+          "full_match": "COMMUNICATION FUNCTION\n"
+        },
+        {
+          "page": 1,
+          "context": "6061h modes_of_operation_display INTEGER8\n5.7.14 Communication Object\nIndex Sub-Index Object Data Format\n1000h Device type(=0x00010192) UNSIGNED32\n1001h Error register UN",
+          "full_match": "Communication Object\n"
+        },
+        {
+          "page": 2,
+          "context": "CHARPTER 5 CANOPEN COMMUNICATION FUNCTION\nIndex Sub-Index Object Data Format\n1006h Communication cycle period UNSIGNED32\n1007h SYNC windows le",
+          "full_match": "COMMUNICATION FUNCTION\n"
+        }
+      ],
+      "register": [
+        {
+          "page": 1,
+          "context": "h Device type(=0x00010192) UNSIGNED32\n1001h Error register UNSIGNED8\n1003h Pre-defined Error Field UNSIGNED32\n1005h COB-ID of sync PDO UNSIGNED32\n18",
+          "full_match": "register UNSIGNED8\n"
+        },
+        {
+          "page": 30,
+          "context": "nation address 1 2\n2322 0 CF-25 EzCOM destination register 1 2\n2323 0 CF-26 EzCOM source register 1 2\n2324 0 CF-27 EzCOM destination address 2 2\n2325 0 CF-28 EzCOM",
+          "full_match": "register 1 2\n"
+        },
+        {
+          "page": 30,
+          "context": "estination register 1 2\n2323 0 CF-26 EzCOM source register 1 2\n2324 0 CF-27 EzCOM destination address 2 2\n2325 0 CF-28 EzCOM destination register 2 2\n2326 0 CF-29",
+          "full_match": "register 1 2\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 1,
+          "context": "ter Bit6 Bit5 Bit3 Bit2 Bit1 Bit0\nSwitch On Quick Fault Operation Switch Ready to\nDisable Stop Enable On Switch On\nNot Ready to Switch On 0 \u00d7 0 0 0 0\nSwitch On Disabled 1 \u00d7 0 0 0 0\nR",
+          "full_match": "Fault Operation Switch Ready to\n"
+        },
+        {
+          "page": 1,
+          "context": "ched On 0 1 0 0 1 1\nOperation Enabled 0 1 0 1 1 1\nFault 0 \u00d7 1 1 1 1\nFault Reaction Active 0 \u00d7 1 1 1 1\nQuick Stop 0 0 0 1 1 1\n5.7.13 Device Profile Area\nIndex Sub-Index",
+          "full_match": "Fault 0 \u00d7 1 1 1 1\n"
+        },
+        {
+          "page": 1,
+          "context": "1\nOperation Enabled 0 1 0 1 1 1\nFault 0 \u00d7 1 1 1 1\nFault Reaction Active 0 \u00d7 1 1 1 1\nQuick Stop 0 0 0 1 1 1\n5.7.13 Device Profile Area\nIndex Sub-Index Object name Data type\n6007h abort-",
+          "full_match": "Fault Reaction Active 0 \u00d7 1 1 1 1\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 1,
+          "context": "n STRUCT\n0 Number of entries(=2) INTEGER8\n1 delta-speed UNSIGNED32\n2 delta-time UNSIGNED16\n6049h vl_velocity_deceleration STRUCT\n0 Number of entries(=2) INTEGER8\n1 del",
+          "full_match": "speed UNSIGNED32\n"
+        },
+        {
+          "page": 1,
+          "context": "n STRUCT\n0 Number of entries(=2) INTEGER8\n1 delta-speed UNSIGNED32\n2 delta-time UNSIGNED16\n6060h modes_of_operation INTEGER8\n6061h modes_of_operation_display INTEGER8",
+          "full_match": "speed UNSIGNED32\n"
+        },
+        {
+          "page": 8,
+          "context": "0 dC-02 Rated current monitor 2\n203C 0 dC-07 Main speed reference monitor 2\n203D 0 dC-08 Sub speed reference monitor 2\n203E 0 dC-10 RUN command reference monitor 2\n203F 0 dC-15",
+          "full_match": "speed reference monitor 2\n"
+        }
+      ],
+      "baud rate": [
+        {
+          "page": 6,
+          "context": "LED and ERR LED display errors\nCheck whether the baud rates are the same and whether the addresses of each node are different. Inspect\nwhether the DIP switch is on the right position, whether the master baud rate and the address are se",
+          "full_match": "baud rates are the same and whether the addresses of each node are different. Inspect\n"
+        },
+        {
+          "page": 6,
+          "context": "itch is on the right position, whether the master baud rate and the address are set\ncorrectly.\nInspect whether the terminal resistors are only connected to the bus terminations. Power",
+          "full_match": "baud rate and the address are set\n"
+        },
+        {
+          "page": 30,
+          "context": "tive), 2nd-motor\n2315 0 CF-01 RS485 communication baud rate 2\nselection\n2316 0 CF-02 RS485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity",
+          "full_match": "baud rate 2\n"
+        }
+      ],
+      "baud": [
+        {
+          "page": 6,
+          "context": "LED and ERR LED display errors\nCheck whether the baud rates are the same and whether the addresses of each node are different. Inspect\nwhether the DIP switch is on the right position, whether the master baud rate and the address are se",
+          "full_match": "baud rates are the same and whether the addresses of each node are different. Inspect\n"
+        },
+        {
+          "page": 6,
+          "context": "itch is on the right position, whether the master baud rate and the address are set\ncorrectly.\nInspect whether the terminal resistors are only connected to the bus terminations. Power",
+          "full_match": "baud rate and the address are set\n"
+        },
+        {
+          "page": 30,
+          "context": "tive), 2nd-motor\n2315 0 CF-01 RS485 communication baud rate 2\nselection\n2316 0 CF-02 RS485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity",
+          "full_match": "baud rate 2\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 6,
+          "context": "stors are only connected to the bus terminations. Power off all the\nequipment and measure the resistance value between CANH and CANL, the normal value range should\nbetw",
+          "full_match": "Power off all the\n"
+        },
+        {
+          "page": 7,
+          "context": "dA-18 Output Voltage monitor 2\n200B 0 dA-30 Input power monitor 2\n200C 0 dA-32 Accumulated input power monitor 4\n200D 0 dA-34 Output power monitor 2\n200E 0 dA-36 Accu",
+          "full_match": "power monitor 2\n"
+        },
+        {
+          "page": 7,
+          "context": "ut power monitor 2\n200C 0 dA-32 Accumulated input power monitor 4\n200D 0 dA-34 Output power monitor 2\n200E 0 dA-36 Accumulated output power monitor 4\n200F 0 dA-40 DC",
+          "full_match": "power monitor 4\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 7,
+          "context": "ndex Sub-index Code Name size\n2001 0 dA-01 Output frequency monitor 2\n2002 0 dA-02 Output current monitor 2\n2003 0 dA-03 Rotation direction monitor 2\n2004 0 dA-04 Frequen",
+          "full_match": "frequency monitor 2\n"
+        },
+        {
+          "page": 7,
+          "context": "0 dA-03 Rotation direction monitor 2\n2004 0 dA-04 Frequency reference monitor 2\n2005 0 dA-06 Output frequency scale monitor 4\n2006 0 dA-15 Torque reference monitor 2\n2007 0 dA-16 T",
+          "full_match": "Frequency reference monitor 2\n"
+        },
+        {
+          "page": 7,
+          "context": "Frequency reference monitor 2\n2005 0 dA-06 Output frequency scale monitor 4\n2006 0 dA-15 Torque reference monitor 2\n2007 0 dA-16 Torque limit monitor 2\n2008 0 dA-17 Torque moni",
+          "full_match": "frequency scale monitor 4\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 7,
+          "context": "01 Output frequency monitor 2\n2002 0 dA-02 Output current monitor 2\n2003 0 dA-03 Rotation direction monitor 2\n2004 0 dA-04 Frequency reference monitor 2\n2005 0 dA-06 Ou",
+          "full_match": "current monitor 2\n"
+        },
+        {
+          "page": 8,
+          "context": "dC-01 Inverter duty monitor 2\n203B 0 dC-02 Rated current monitor 2\n203C 0 dC-07 Main speed reference monitor 2\n203D 0 dC-08 Sub speed reference monitor 2\n203E 0 dC-10",
+          "full_match": "current monitor 2\n"
+        },
+        {
+          "page": 8,
+          "context": "requency monitor,trip 1st 4\n2057 0 dE-11-3 output current monitor,trip 1st 2\n2058 0 dE-11-4 PN voltage(DC) monitor,trip 1st 2\n2059 0 dE-11-5 INV status monitor,trip 1st 2\n205A 0",
+          "full_match": "current monitor,trip 1st 2\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 7,
+          "context": "2008 0 dA-17 Torque monitor 2\n2009 0 dA-18 Output Voltage monitor 2\n200B 0 dA-30 Input power monitor 2\n200C 0 dA-32 Accumulated input power monitor 4\n200D 0 dA-34 Outpu",
+          "full_match": "Voltage monitor 2\n"
+        },
+        {
+          "page": 7,
+          "context": "ccumulated output power monitor 4\n200F 0 dA-40 DC voltage monitor 2\n2010 0 dA-41 Braking resistor load factor monitor 2\n2011 0 dA-42 Electronic thermal load factor moni",
+          "full_match": "voltage monitor 2\n"
+        },
+        {
+          "page": 8,
+          "context": "tput current monitor,trip 1st 2\n2058 0 dE-11-4 PN voltage(DC) monitor,trip 1st 2\n2059 0 dE-11-5 INV status monitor,trip 1st 2\n205A 0 dE-11-6 LAD status monitor,trip 1st 2\n205B 0 dE-",
+          "full_match": "voltage(DC) monitor,trip 1st 2\n"
+        }
+      ],
+      "parity": [
+        {
+          "page": 30,
+          "context": "ode 2\nallocation\n2317 0 CF-03 RS485 communication parity 2\nselection\n2318 0 CF-04 RS485 communication stop-bit 2\nselection\n2319 0 CF-05 RS485 communication 2\nc",
+          "full_match": "parity 2\n"
+        }
+      ],
+      "rs485": [
+        {
+          "page": 30,
+          "context": "(Forward 2\nregenerative), 2nd-motor\n2315 0 CF-01 RS485 communication baud rate 2\nselection\n2316 0 CF-02 RS485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity",
+          "full_match": "RS485 communication baud rate 2\n"
+        },
+        {
+          "page": 30,
+          "context": "communication baud rate 2\nselection\n2316 0 CF-02 RS485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity 2\nselection\n2318 0 CF-04 RS485 communication stop",
+          "full_match": "RS485 communication Node 2\n"
+        },
+        {
+          "page": 30,
+          "context": "S485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity 2\nselection\n2318 0 CF-04 RS485 communication stop-bit 2\nselection\n2319 0 CF-05 RS485 communication 2\nc",
+          "full_match": "RS485 communication parity 2\n"
+        }
+      ]
+    }
+  },
+  "TEK DRIVE": {
+    "TDS-V8-Instruction-Manual.pdf": {},
+    "TDS-F8-Instruction-Manual.pdf": {}
+  },
+  "YASKAWA": {
+    "YASKAWA A1000 USER MANUAL.pdf": {
+      "modbus": [
+        {
+          "page": 1,
+          "context": "tions\nAA\nSpecifications\nParameter List BB\nMEMOBUS/Modbus CC\nCommunications\nDD\nStandards Compliance\nEE\nMANUAL NO. SIEP C710616 41H Quick Reference Sheet",
+          "full_match": "Modbus CC\n"
+        },
+        {
+          "page": 7,
+          "context": "......................................148\nMEMOBUS/Modbus Termination....................................................................................................148\nTerminal DM+ and DM- Output Signal Selection........................................................",
+          "full_match": "Modbus Termination.................................................................................."
+        },
+        {
+          "page": 9,
+          "context": "..............................................295\nModbus TCP/IP Parameters...........................................................................................................297\nPROFINET Parameters.................................................................................",
+          "full_match": "Modbus TCP/IP Parameters............................................................................"
+        }
+      ],
+      "communication": [
+        {
+          "page": 1,
+          "context": "pecifications\nParameter List BB\nMEMOBUS/Modbus CC\nCommunications\nDD\nStandards Compliance\nEE\nMANUAL NO. SIEP C710616 41H Quick Reference Sheet",
+          "full_match": "Communications\n"
+        },
+        {
+          "page": 9,
+          "context": "...................................289\nF6 and F7: Communication Option Card.........................................................................................289\nCC-Link Parameters..................................................................................",
+          "full_match": "Communication Option Card..........................................................................."
+        },
+        {
+          "page": 9,
+          "context": "....................326\nH5: MEMOBUS/Modbus Serial Communication.............................................................................328\nH6: Pulse Train Input/Output........................................................................",
+          "full_match": "Communication.............................................................................328\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 3,
+          "context": "ters for Specific Applications\nPreset parameter defaults are available for setting up applications. Refer to Application Selection on\npage 173.\nRun a Motor One Frame Larger\nThis drive can operate a motor one frame size larger when run",
+          "full_match": "faults are available for setting up applications. Refer to Application Selection on\n"
+        },
+        {
+          "page": 3,
+          "context": "e Life Monitors Maintenance\nMonitors on page 463.\nFault Display and Troubleshooting\nRefer to Drive Alarms, Faults, and Errors on page 399 and Refer to Troubleshooting without Fault Dis",
+          "full_match": "Fault Display and Troubleshooting\n"
+        },
+        {
+          "page": 3,
+          "context": "isplay and Troubleshooting\nRefer to Drive Alarms, Faults, and Errors on page 399 and Refer to Troubleshooting without Fault Display on page 449.\nStandards Compliance\nRefer to European Standards on page 738 and Refer to UL and CSA Standards on pa",
+          "full_match": "Faults, and Errors on page 399 and Refer to Troubleshooting without Fault Display on page 449.\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 7,
+          "context": "..........................................170\n4.5 Powering Up the Drive......................................................................................................172\nPowering Up the Drive and Operation Status Display..................................................",
+          "full_match": "Powering Up the Drive..............................................................................."
+        },
+        {
+          "page": 7,
+          "context": "..............................................172\nPowering Up the Drive and Operation Status Display.....................................................................172\n4.6 Application Selection...........................................................................",
+          "full_match": "Powering Up the Drive and Operation Status Display.................................................."
+        },
+        {
+          "page": 9,
+          "context": "................................331\nL2: Momentary Power Loss Ride-Thru............................................................................................338\nL3: Stall Prevention................................................................................",
+          "full_match": "Power Loss Ride-Thru................................................................................"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 8,
+          "context": "..................................246\nC6: Carrier Frequency.....................................................................................................................251\n5.4 d: Reference Settings ..........................................................................",
+          "full_match": "Frequency..........................................................................................."
+        },
+        {
+          "page": 8,
+          "context": "..........................................255\nd1: Frequency Reference................................................................................................................255\nd2: Frequency Upper/Lower Limits....................................................................",
+          "full_match": "Frequency Reference................................................................................."
+        },
+        {
+          "page": 8,
+          "context": "..........................................255\nd2: Frequency Upper/Lower Limits.................................................................................................257\nd3: Jump Frequency..................................................................................",
+          "full_match": "Frequency Upper/Lower Limits........................................................................"
+        }
+      ],
+      "speed": [
+        {
+          "page": 8,
+          "context": "........186\nParameter Settings during Inertia and Speed Control Loop Auto-Tuning: T3.................................188\n4.8 No-Load Operation Test Run......................................................................",
+          "full_match": "Speed Control Loop Auto-Tuning: T3.................................188\n"
+        },
+        {
+          "page": 8,
+          "context": "..........................................213\nb3: Speed Search............................................................................................................................216\nb4: Timer Function..................................................................................",
+          "full_match": "Speed Search........................................................................................"
+        },
+        {
+          "page": 8,
+          "context": "................................244\nC5: Automatic Speed Regulator (ASR)...........................................................................................246\nC6: Carrier Frequency...............................................................................",
+          "full_match": "Speed Regulator (ASR)..............................................................................."
+        }
+      ],
+      "current": [
+        {
+          "page": 10,
+          "context": "oPE02 Error Occurs When Lowering the Motor Rated Current Setting..........................................452\nMotor Stalls during Acceleration or Acceleration Time is Too Long...................................",
+          "full_match": "Current Setting..........................................452\n"
+        },
+        {
+          "page": 21,
+          "context": "and local safety regulations.\nBecause the leakage current exceeds 3.5 mA in models 4A0414 and larger, IEC/EN 61800-5-1 states that either the power\nsupply must be automatically disconnected in case of discontinuity of the protective earthing conduc",
+          "full_match": "current exceeds 3.5 mA in models 4A0414 and larger, IEC/EN 61800-5-1 states that either the power\n"
+        },
+        {
+          "page": 21,
+          "context": "errupters (GFCIs).\nThe drive can cause a residual current with a DC component in the protective earthing conductor. Where a residual current\noperated protective or monitoring device is used for protection in case of direct or indirect contac",
+          "full_match": "current with a DC component in the protective earthing conductor. Where a residual current\n"
+        }
+      ],
+      "register": [
+        {
+          "page": 15,
+          "context": ".................714\nReading Drive MEMOBUS/Modbus Register Contents..................................................................714\nLoopback Test.......................................................................................",
+          "full_match": "Register Contents..................................................................714\n"
+        },
+        {
+          "page": 15,
+          "context": "..........................714\nWriting to Multiple Registers............................................................................................................715\nC.9 MEMOBUS/Modbus Data Table.......................................................................",
+          "full_match": "Registers..........................................................................................."
+        },
+        {
+          "page": 15,
+          "context": "........................................729\nAlarm Register Contents.................................................................................................................731\nC.10Enter Command...................................................................................",
+          "full_match": "Register Contents..................................................................................."
+        }
+      ],
+      "voltage": [
+        {
+          "page": 15,
+          "context": ".......................................738\nCE Low Voltage Directive Compliance............................................................................................738\nEMC Guidelines Compliance...........................................................................",
+          "full_match": "Voltage Directive Compliance........................................................................"
+        },
+        {
+          "page": 21,
+          "context": "rge indicator LED will extinguish\nwhen the DC bus voltage is below 50 Vdc. To prevent electric shock, wait for at least the time specified on the warning label,\nonce all indicators are OFF, measure for unsafe voltages to confirm the drive is safe prior to servi",
+          "full_match": "voltage is below 50 Vdc. To prevent electric shock, wait for at least the time specified on the warn"
+        },
+        {
+          "page": 21,
+          "context": ",\nonce all indicators are OFF, measure for unsafe voltages to confirm the drive is safe prior to servicing.\nFailure to comply will result in death or serious injury.\nWARNING\nSudden Movement Hazard\nSystem may",
+          "full_match": "voltages to confirm the drive is safe prior to servicing.\n"
+        }
+      ]
+    }
+  },
+  "SCHNEIDER": {
+    "ATV320_Modbus_manual_EN_NVE41308_01.pdf": {
+      "modbus": [
+        {
+          "page": 1,
+          "context": "ed Drives for Synchronous and\nAsynchronous Motors\nModbus Serial Link Manual\n04/2016\nwww.schneider-electric.com",
+          "full_match": "Modbus Serial Link Manual\n"
+        },
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . . . . . . . 15\n2.1 Modbus Functions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16\nModbus Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Modbus Functions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . . . . . . . . . 16\nModbus Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17\nSupported Modbus Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Modbus Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        }
+      ],
+      "speed": [
+        {
+          "page": 1,
+          "context": "320\nNVE41308 04/2016\nAltivar Machine 320\nVariable Speed Drives for Synchronous and\nAsynchronous Motors\nModbus Serial Link Manual\n04/2016\nwww.schneider-electric.com",
+          "full_match": "Speed Drives for Synchronous and\n"
+        },
+        {
+          "page": 7,
+          "context": "lection, Installation and Operation of Adjustable-Speed\nDrive Systems.\nNOTICE\nDESTRUCTION DUE TO INCORRECT MAINS VOLTAGE\nBefore switching on and configuring",
+          "full_match": "Speed\n"
+        },
+        {
+          "page": 10,
+          "context": "standards include:\n\uf06c IEC 61800 series: Adjustable speed electrical power drive systems\n\uf06c IEC 61508 Ed.2 series: Functional safety of electrical/electronic/programmable electronic safety-r",
+          "full_match": "speed electrical power drive systems\n"
+        }
+      ],
+      "baud rate": [
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . . . . . 32\n[Modbus baud rate] (tbr). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32\n[Modbus format] (tFO) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "baud rate] (tbr). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "page": 30,
+          "context": "n Parameters 31\n[Modbus Address] (Add) 32\n[Modbus baud rate] (tbr) 32\n[Modbus format] (tFO) 32\n[ModbusTimeout] (tto) 33\n30 NVE41308 04/2016",
+          "full_match": "baud rate] (tbr) 32\n"
+        }
+      ],
+      "baud": [
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . . . . . 32\n[Modbus baud rate] (tbr). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32\n[Modbus format] (tFO) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "baud rate] (tbr). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "page": 30,
+          "context": "n Parameters 31\n[Modbus Address] (Add) 32\n[Modbus baud rate] (tbr) 32\n[Modbus format] (tFO) 32\n[ModbusTimeout] (tto) 33\n30 NVE41308 04/2016",
+          "full_match": "baud rate] (tbr) 32\n"
+        }
+      ],
+      "communication": [
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . 30\nConfiguring the Communication Parameters. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31\n[Modbus Address] (Add). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Communication Parameters. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+        },
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . 34\nLocal Configuration of the Communication Scanner. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34\n4.3 Monitoring the Communication Scanner. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Communication Scanner. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34\n"
+        },
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . 34\n4.3 Monitoring the Communication Scanner. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36\nIntroduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Communication Scanner. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+        }
+      ],
+      "register": [
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . . . . . . . . . 45\nCmd Register CMd . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46\nStop Commands . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Register CMd . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+        },
+        {
+          "page": 13,
+          "context": "03hex Read N output words Maximum PDU length: 63\nRegisters words\nWrite One Output Word 06 06hex Write 1 output word \u2212\nWrite Multiple 16 10hex Write N output word Max",
+          "full_match": "Registers words\n"
+        },
+        {
+          "page": 13,
+          "context": "10hex Write N output word Maximum PDU length: 61\nRegisters words\nRead/write Multiple 23 17hex Read/write multiple registers Maximum PDU length: 20\nRegisters words (W",
+          "full_match": "Registers words\n"
+        }
+      ],
+      "power": [
+        {
+          "page": 3,
+          "context": ". . . . . . . . . . . . . 50\nSequence for a Drive Powered by the Power Stage Supply. . . . . . . . . . . . . . . . . . . . . . . . . 51\nSequence for a Drive with Separate Control Stage. . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "full_match": "Powered by the Power Stage Supply. . . . . . . . . . . . . . . . . . . . . . . . . 51\n"
+        },
+        {
+          "page": 6,
+          "context": "orming work on the drive system:\n\uf06d Disconnect all power, including external control power that may be present.\n\uf06d Place a Do Not Turn On label on all power switches.\n\uf06d Lock all power switches in the open position",
+          "full_match": "power, including external control power that may be present.\n"
+        },
+        {
+          "page": 6,
+          "context": "be present.\n\uf06d Place a Do Not Turn On label on all power switches.\n\uf06d Lock all power switches in the open position.\n\uf06d Wait 15 minutes to allow the DC bus capacitors to",
+          "full_match": "power switches.\n"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 6,
+          "context": "ng the printed circuit boards, operate with mains voltage. Do\nnot touch. Use only electrically insulated tools.\n\uf06c Do not touch unshielded components or terminals",
+          "full_match": "voltage. Do\n"
+        },
+        {
+          "page": 6,
+          "context": "not touch unshielded components or terminals with voltage present.\n\uf06c Motors can generate voltage when the shaft is rotated. Prior to performing any type of work on the",
+          "full_match": "voltage present.\n"
+        },
+        {
+          "page": 6,
+          "context": "inals with voltage present.\n\uf06c Motors can generate voltage when the shaft is rotated. Prior to performing any type of work on the\ndrive system, block the motor shaft to prevent rotation.\n\uf06c AC voltage can couple voltage to unused c",
+          "full_match": "voltage when the shaft is rotated. Prior to performing any type of work on the\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 10,
+          "context": "to, terms such as error, error message, failure,\nfault, fault reset, protection, safe state, safety function, warning, warning message, and so on.\nAmong others, these standards include:\n\uf06c IEC 61800 series: Adjustable speed electrical power drive s",
+          "full_match": "fault, fault reset, protection, safe state, safety function, warning, warning message, and so on.\n"
+        },
+        {
+          "page": 21,
+          "context": "ring\n03hex ProductName ASCII String\nFor example\nDefault value to be detailed\nRequest\nSlave no. 2B Type of MEI Read Device Id Object Id CRC16\n0E 01 00\nLo Hi\n1byte 1byte 1byte 1by",
+          "full_match": "fault value to be detailed\n"
+        }
+      ],
+      "holding register": [
+        {
+          "page": 18,
+          "context": "ification\nDiagnostics 08 08hex Diagnostics \u2212\nRead Holding Registers\nRequest\nFunction code 1byte 03hex\nStarting address 2bytes 0000hex...FFFFhex\nQuantity of registers 2b",
+          "full_match": "Holding Registers\n"
+        },
+        {
+          "page": 20,
+          "context": "Modbus address\nQuantity 2 03hex Contain number of holding registers to be read\nWrite starting address 2 XXXXhex Always Modbus address\nQuantity 2 03hex Contain number of holding re",
+          "full_match": "holding registers to be read\n"
+        },
+        {
+          "page": 20,
+          "context": "Modbus address\nQuantity 2 03hex Contain number of holding registers to be written\nWrite byte count 1 06hex The byte count specifies the number of bytes to follow in\nthe field write r",
+          "full_match": "holding registers to be written\n"
+        }
+      ],
+      "frequency": [
+        {
+          "page": 19,
+          "context": "ave 2, using function 3, where:\n\uf06c SFr = Switching frequency = 4kHz (W3102 = 0028hex)\n\uf06c tFr = Maximum output frequency = 60Hz (W3103 = 0258hex)\n\uf06c HSP = High speed = 50Hz (W3104 = 01F4hex",
+          "full_match": "frequency = 4kHz (W3102 = 0028hex)\n"
+        },
+        {
+          "page": 19,
+          "context": "y = 4kHz (W3102 = 0028hex)\n\uf06c tFr = Maximum output frequency = 60Hz (W3103 = 0258hex)\n\uf06c HSP = High speed = 50Hz (W3104 = 01F4hex)\n\uf06c LSP = Low speed = 0Hz (W3105 = 0000hex)\nRequest\n02 03",
+          "full_match": "frequency = 60Hz (W3103 = 0258hex)\n"
+        }
+      ],
+      "rs485": [
+        {
+          "page": 26,
+          "context": "Common\n(1) Modbus signals\n(2) Supply for RS232 / RS485 converter or a remote terminal\nRS485 Bus Schematic\nThe RS485 standard allows variants of different characteristics:\n\uf06c Polarization",
+          "full_match": "RS485 converter or a remote terminal\n"
+        },
+        {
+          "page": 26,
+          "context": "for RS232 / RS485 converter or a remote terminal\nRS485 Bus Schematic\nThe RS485 standard allows variants of different characteristics:\n\uf06c Polarization\n\uf06c Line terminator\n\uf06c",
+          "full_match": "RS485 Bus Schematic\n"
+        },
+        {
+          "page": 26,
+          "context": "rter or a remote terminal\nRS485 Bus Schematic\nThe RS485 standard allows variants of different characteristics:\n\uf06c Polarization\n\uf06c Line terminator\n\uf06c Distribution of a reference potential\n\uf06c Number of slaves\n\uf06c Length",
+          "full_match": "RS485 standard allows variants of different characteristics:\n"
+        }
+      ],
+      "19200": [
+        {
+          "page": 27,
+          "context": "a third conductor\nMaximum length of bus 1000m at 19200bps with the Schneider Electric TSX CSA\u2022\u2022\u2022 cable\nMaximum number of stations (without repeater) 32 stations that are 31 slaves\nMaximum length of tap l",
+          "full_match": "19200bps with the Schneider Electric TSX CSA\u2022\u2022\u2022 cable\n"
+        }
+      ]
+    }
+  },
+  "DANAHE": {
+    "D31-USER-MANUAL.pdf": {
+      "frequency": [
+        {
+          "page": 1,
+          "context": "\u4e39\u90a3\u8d6b\nD31 Series Frequency Converter\nUser's Manual II\nV2020.7",
+          "full_match": "Frequency Converter\n"
+        },
+        {
+          "page": 3,
+          "context": "D31 Series Frequency Inverter\nUSER\u2019S MANUAL\nEnglish Version V2020.7\nDannahe Electric Science&Technology Co.,Ltd",
+          "full_match": "Frequency Inverter\n"
+        },
+        {
+          "page": 4,
+          "context": "...................... 5\n3.2. Type description of frequency inverter ........................................................................................................ 5\n3.3. Type of frequency inverter ....................................................................",
+          "full_match": "frequency inverter ................................................................................."
+        }
+      ],
+      "power": [
+        {
+          "page": 4,
+          "context": "....................................... 33\n5.2.2. Powering-on default mode ................................................................................................................... 33\n5.2.3. Parameter setting Mode.......................................................................",
+          "full_match": "Powering-on default mode ..........................................................................."
+        },
+        {
+          "page": 4,
+          "context": "......................................... 35\n5.3. Power on and confirmation of display status ............................................................................................ 35\n5.3.1. Local control mode ..........................................................................",
+          "full_match": "Power on and confirmation of display status ........................................................"
+        },
+        {
+          "page": 8,
+          "context": "breaker between the frequency converter and input power, otherwise it may cause fire.\nBefore wiring, make sure the frequency converter is power-off, and all the charging indicator is com",
+          "full_match": "power, otherwise it may cause fire.\n"
+        }
+      ],
+      "fault": [
+        {
+          "page": 4,
+          "context": "......................... 33\n5.2.2. Powering-on default mode ................................................................................................................... 33\n5.2.3. Parameter setting Mode.......................................................................",
+          "full_match": "fault mode ........................................................................................."
+        },
+        {
+          "page": 5,
+          "context": ".......................................... 57\n6.5 Fault protection parameter group ............................................................................................................... 77\n6.6 Fault protection parameter group ...............................................................",
+          "full_match": "Fault protection parameter group ..................................................................."
+        },
+        {
+          "page": 5,
+          "context": ".......................................... 77\n6.6 Fault protection parameter group ............................................................................................................... 87\n6.7 Keyboard panel parameter group .................................................................",
+          "full_match": "Fault protection parameter group ..................................................................."
+        }
+      ],
+      "modbus": [
+        {
+          "page": 5,
+          "context": ".......................................... 126\nA2\uff0eModbus protocol ..................................................................................................................................... 127\nA2.1 Description of Modbus-RTU message format ......................................................",
+          "full_match": "Modbus protocol ...................................................................................."
+        },
+        {
+          "page": 5,
+          "context": "......................... 127\nA2.1 Description of Modbus-RTU message format ...................................................................................... 127\nA2.2 Detailed message description of different commands.............................................",
+          "full_match": "Modbus-RTU message format .........................................................................."
+        },
+        {
+          "page": 13,
+          "context": "communication interface RS485 interface supports Modbus protocol.\nFor display of frequency setting, output frequency, fault code\nDisplay 4-digit LED digital display\na",
+          "full_match": "Modbus protocol.\n"
+        }
+      ],
+      "communication": [
+        {
+          "page": 5,
+          "context": "......................................... 102\n6.9 Communication function parameter group ............................................................................................... 111\n6.10 Process PID parameter group ...................................................................",
+          "full_match": "Communication function parameter group ............................................................."
+        },
+        {
+          "page": 5,
+          "context": "....................... 125\n8. APPENDIX A: SERIAL COMMUNICATION.................................................................... 126\nA1\uff0eRS-485 bus ......................................................................................",
+          "full_match": "COMMUNICATION.................................................................... 126\n"
+        },
+        {
+          "page": 5,
+          "context": "........................................ 132\nA2.5 Communication parameter ................................................................................................................... 133\n9. APPENDIX B: CONCISE PARAMETER LIST ..............................................................",
+          "full_match": "Communication parameter ............................................................................"
+        }
+      ],
+      "voltage": [
+        {
+          "page": 8,
+          "context": "ions before power- on\nDanger\nDo not carry out any voltage-endurance test as all the products have past the test before leaving the factory.\nDo not touch the driver and circuits with wet hands before and after power-on. Otherwise there is a",
+          "full_match": "voltage-endurance test as all the products have past the test before leaving the factory.\n"
+        },
+        {
+          "page": 8,
+          "context": "n\nBefore powering on, please confirm if the input voltage is consistent with the frequency converter\u2018s rated voltage,\nwhether the wiring of the power input terminal(R,S,T) and output terminals(U,V,W) are correct, check",
+          "full_match": "voltage is consistent with the frequency converter\u2018s rated voltage,\n"
+        },
+        {
+          "page": 12,
+          "context": "ries frequency inverter\nITEM SPECIFICATIONS\nRated voltage and frequency 3-phase 400V class: 380V-480V, 50Hz/60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: \uf0b115%\nOutput voltage Ma",
+          "full_match": "voltage and frequency 3-phase 400V class: 380V-480V, 50Hz/60Hz\n"
+        }
+      ],
+      "current": [
+        {
+          "page": 11,
+          "context": "utput transient Motor Line output transient\npower current power current\ncurrent current for current current for\n(kW) (A) (kW) (A)\n(A) 60s (A) (A) 60s (A)\nD31-0R75G/1R5P-T4",
+          "full_match": "current power current\n"
+        },
+        {
+          "page": 11,
+          "context": "Line output transient\npower current power current\ncurrent current for current current for\n(kW) (A) (kW) (A)\n(A) 60s (A) (A) 60s (A)\nD31-0R75G/1R5P-T4 0.75 3.6 2.3 3.5 1.5 6.4 4.1 4.9\nD31-1R5",
+          "full_match": "current current for current current for\n"
+        },
+        {
+          "page": 12,
+          "context": "0.5 Hz to 400 Hz\nMain output\n150% of rated output current for 60s, 200% of rated output\nOverload capacity\ncurrent for 2s\nModulation mode 3-phase PWM, 2-phase PWM\nV/f control for constant t",
+          "full_match": "current for 60s, 200% of rated output\n"
+        }
+      ],
+      "speed": [
+        {
+          "page": 12,
+          "context": "d panel or serial communication\nSetting method of speed Analog setting, keyboard, serial communication, UP/DOWN\ncommand speed setting from external terminal\nKeyboard: 0.1 Hz\nSpeed setting resolution\nAnalog settin",
+          "full_match": "speed Analog setting, keyboard, serial communication, UP/DOWN\n"
+        },
+        {
+          "page": 12,
+          "context": ", keyboard, serial communication, UP/DOWN\ncommand speed setting from external terminal\nKeyboard: 0.1 Hz\nSpeed setting resolution\nAnalog setting: 0.05/50Hz (10bit)\nControl\nperformance V/f",
+          "full_match": "speed setting from external terminal\n"
+        },
+        {
+          "page": 12,
+          "context": "d setting from external terminal\nKeyboard: 0.1 Hz\nSpeed setting resolution\nAnalog setting: 0.05/50Hz (10bit)\nControl\nperformance V/f control: \u00b12%\nSpeed control precision\nvecto",
+          "full_match": "Speed setting resolution\n"
+        }
+      ],
+      "rs485": [
+        {
+          "page": 13,
+          "context": "0VAC or 3A @ 30VDC\nSerial communication interface RS485 interface supports Modbus protocol.\nFor display of frequency setting, output frequency, fault code\nDisplay 4-digit LED digital display\na",
+          "full_match": "RS485 interface supports Modbus protocol.\n"
+        }
+      ]
+    }
+  }
+}

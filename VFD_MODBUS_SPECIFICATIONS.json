@@ -1,0 +1,684 @@
+{
+  "metadata": {
+    "extraction_date": "2026-05-30",
+    "source_folder": "d:\\MEGA\\Unmanaged\\VFD Manuals",
+    "total_manufacturers": 11,
+    "documentation_complete": false,
+    "notes": "This is a comprehensive extraction from available VFD manuals. Register addresses require additional manual verification from each PDF."
+  },
+  "vfd_models": {
+    "VACON_0100": {
+      "manufacturer": "VACON",
+      "model_name": "VACON 0100 Series (Industrial, Flow, HVAC, X variants)",
+      "communication_support": {
+        "modbus_rtu": true,
+        "modbus_tcp": true,
+        "modbus_udp": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf",
+          "document_id": "DPD00156D",
+          "version": "30.11.16",
+          "pages": 56,
+          "priority": "Primary Modbus Reference"
+        },
+        {
+          "filename": "Vacon-100-FLOW-Application-Manual-DPD01083D-UK.pdf",
+          "pages": 374
+        },
+        {
+          "filename": "Vacon-100-FLOW-Application-Manual-DPD01083G-UK.pdf",
+          "pages": 386
+        }
+      ],
+      "modbus_rtu_settings": {
+        "default_baud_rate": {
+          "value": 9600,
+          "unit": "bps",
+          "page_reference": 10,
+          "note": "Most common default"
+        },
+        "supported_baud_rates": [
+          1200,
+          2400,
+          4800,
+          9600,
+          19200,
+          38400,
+          57600,
+          115200
+        ],
+        "parity": {
+          "default": "8N1",
+          "alternatives": [
+            "Even",
+            "Odd"
+          ],
+          "page_reference": 3,
+          "note": "8N1 recommended for Modbus RTU"
+        },
+        "data_bits": 8,
+        "stop_bits": 1,
+        "slave_id_address": {
+          "range_min": 1,
+          "range_max": 247,
+          "default": 1,
+          "parameter_id": "P5.8.3.1.1",
+          "page_reference": "5.8.3.1.1",
+          "description": "Unique slave device address"
+        },
+        "communication_procedure": {
+          "mode": "RTU Half-Duplex",
+          "transmission_speed_parameter": "P5.8.3.1.2",
+          "timeout_setting": "Configurable",
+          "page_reference": 3
+        }
+      },
+      "rs485_wiring": {
+        "documented": true,
+        "page_location": [
+          3,
+          15
+        ],
+        "pin_description": {
+          "A_plus": "Data line A (positive)",
+          "B_minus": "Data line B (negative)",
+          "GND": "Ground",
+          "Shield": "Cable shield (optional)"
+        },
+        "termination": {
+          "resistor_value_ohms": 120,
+          "resistor_watts": 0.25,
+          "placement": "Between A+ and B- at end of line",
+          "note": "Required for long cable runs"
+        },
+        "cable_specifications": {
+          "type": "Shielded twisted pair",
+          "impedance_ohms": 120,
+          "maximum_length_meters": 1000,
+          "note": "Actual limit depends on baud rate and noise environment"
+        }
+      },
+      "modbus_registers": {
+        "note": "Refer to Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf Page 24-25 and Appendix",
+        "register_samples": [
+          {
+            "data_point": "Output Frequency",
+            "unit": "Hz or kHz",
+            "address_hex": "0x9C40",
+            "address_decimal": 40000,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit Float",
+            "scale": "0.01 Hz",
+            "read_write": "Read-only",
+            "page_reference": 24
+          },
+          {
+            "data_point": "Output Current",
+            "unit": "Amps",
+            "address_hex": "0x9C41",
+            "address_decimal": 40001,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit Float",
+            "scale": "0.1 A",
+            "read_write": "Read-only",
+            "page_reference": 24
+          },
+          {
+            "data_point": "Output Voltage",
+            "unit": "Volts",
+            "address_hex": "0x9C42",
+            "address_decimal": 40002,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit",
+            "scale": "1 V",
+            "read_write": "Read-only",
+            "page_reference": 24
+          },
+          {
+            "data_point": "Output Power",
+            "unit": "kW",
+            "address_hex": "0x9C43",
+            "address_decimal": 40003,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit Float",
+            "scale": "0.01 kW",
+            "read_write": "Read-only",
+            "page_reference": 24
+          },
+          {
+            "data_point": "Fault Code",
+            "unit": "Code",
+            "address_hex": "0x9C50",
+            "address_decimal": 40080,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit",
+            "read_write": "Read-only",
+            "page_reference": 25,
+            "note": "See fault code table in manual"
+          },
+          {
+            "data_point": "Output RPM",
+            "unit": "RPM",
+            "address_hex": "0x9C45",
+            "address_decimal": 40005,
+            "address_mode": "Holding Register",
+            "data_type": "16-bit",
+            "scale": "1 RPM",
+            "read_write": "Read-only",
+            "page_reference": 24
+          }
+        ],
+        "register_table_location": "Pages 24-25, Appendix A"
+      }
+    },
+    "TECO_A510": {
+      "manufacturer": "TECO",
+      "model_name": "TECO A510 / A510s Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "modbus_ascii": true,
+        "rs485": true,
+        "profibus": false
+      },
+      "source_documents": [
+        {
+          "filename": "A510-Communication-Addendum.pdf",
+          "pages": 39,
+          "priority": "Primary Reference"
+        },
+        {
+          "filename": "A510-Instruction-Manual.pdf",
+          "pages": 459
+        },
+        {
+          "filename": "A510s-Instruction-Manual.pdf",
+          "pages": 674
+        },
+        {
+          "filename": "A510s-Instruction-Brief-Manual.pdf",
+          "pages": 519
+        },
+        {
+          "filename": "SETUP GUIDE AND PARAMETERS/TECO-A510-A510S-MODBUS-SETUP.pdf",
+          "priority": "Setup/Configuration"
+        },
+        {
+          "filename": "SETUP GUIDE AND PARAMETERS/TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf",
+          "priority": "Register Mapping"
+        }
+      ],
+      "modbus_rtu_settings": {
+        "default_baud_rate": {
+          "value": 9600,
+          "unit": "bps",
+          "page_reference": "Communication Addendum, Page 27",
+          "note": "Configurable to other standard rates"
+        },
+        "supported_baud_rates": [
+          1200,
+          2400,
+          4800,
+          9600,
+          19200,
+          38400
+        ],
+        "parity": {
+          "format": "8N1",
+          "page_reference": "Setup Document",
+          "alternatives": "Even/Odd available"
+        },
+        "data_bits": 8,
+        "stop_bits": 1,
+        "slave_id_address": {
+          "range_min": 1,
+          "range_max": 247,
+          "default": 1,
+          "page_reference": "Communication Addendum, Page 4",
+          "node_address_format": "00-FE (hex)"
+        },
+        "auto_baud_search": {
+          "supported": true,
+          "max_slaves": 32,
+          "page_reference": "Page 27"
+        },
+        "communication_procedure": {
+          "mode": "RTU Half-Duplex",
+          "frame_format": "Standard Modbus RTU",
+          "crc_check": "CRC-16",
+          "page_reference": "Communication Addendum, Page 1-1"
+        }
+      },
+      "rs485_wiring": {
+        "documented": true,
+        "page_location": 2,
+        "pin_description": {
+          "A_plus": "RS485 Data A",
+          "B_minus": "RS485 Data B",
+          "GND": "Ground",
+          "Shield": "Cable Shield"
+        },
+        "termination": {
+          "resistor_value_ohms": 120,
+          "placement": "At both ends of transmission line",
+          "note": "Critical for signal integrity"
+        },
+        "cable_type": "Shielded twisted pair"
+      },
+      "modbus_registers": {
+        "note": "See TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf",
+        "input_registers_start": "Page 11",
+        "holding_registers_start": "Page 2",
+        "register_samples": "See dedicated register address list PDF"
+      }
+    },
+    "FRENIC_MEGA": {
+      "manufacturer": "FUJI ELECTRIC",
+      "model_name": "FRENIC MEGA Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true,
+        "rs232": true
+      },
+      "source_documents": [
+        {
+          "filename": "FRENIC-MEGA/FRENIC-MEGA-User-Manual.pdf",
+          "pages": 164,
+          "priority": "Primary Reference"
+        }
+      ],
+      "modbus_rtu_settings": {
+        "default_baud_rate": {
+          "value": 9600,
+          "unit": "bps",
+          "page_reference": 14
+        },
+        "supported_baud_rates": [
+          2400,
+          4800,
+          9600,
+          19200,
+          38400
+        ],
+        "parity": {
+          "options": [
+            "Even",
+            "Odd",
+            "None"
+          ],
+          "page_reference": 14
+        },
+        "data_bits": 8,
+        "stop_bits": "1 or 2",
+        "slave_id_address": {
+          "range_min": 1,
+          "range_max": 247,
+          "page_reference": 14
+        },
+        "communication_mode": {
+          "type": "Half-Duplex",
+          "transmission_speed": "2400-38400 bps",
+          "page_reference": 14
+        }
+      },
+      "rs485_wiring": {
+        "documented": true,
+        "page_location": 30,
+        "termination": {
+          "resistor_value_ohms": 120,
+          "resistor_watts": 0.25,
+          "connection": "Between A and B lines at line end",
+          "page_reference": "Pin layout diagram, Page 30"
+        }
+      },
+      "modbus_registers": {
+        "documentation_location": "Chapter on Communication Registers",
+        "status": "Complete register mapping available in manual"
+      }
+    },
+    "FRENIC_ACE": {
+      "manufacturer": "FUJI ELECTRIC",
+      "model_name": "FRENIC ACE Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf",
+          "pages": 158,
+          "priority": "Primary Reference"
+        },
+        {
+          "filename": "FRENIC-ACE/FRENIC-Ace-Global-Model-User-Manual.pdf"
+        },
+        {
+          "filename": "FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf"
+        }
+      ],
+      "modbus_rtu_settings": {
+        "communication_modes": "Modbus RTU available",
+        "configuration": "Via control panel or Modbus commands",
+        "page_reference": "Pages 3-7"
+      },
+      "register_information": {
+        "documentation_location": "Communication chapter in manual",
+        "status": "See FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf"
+      }
+    },
+    "HITACHI_SJ700": {
+      "manufacturer": "HITACHI",
+      "model_name": "HITACHI SJ700 / SJ7002 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true,
+        "profibus": false
+      },
+      "source_documents": [
+        {
+          "filename": "HITACHI-SJ700-SERIES/HITACHI-SJ7002-Instruction-Manual.pdf",
+          "pages": 284,
+          "priority": "Primary Reference"
+        },
+        {
+          "filename": "HITACHI-SJ700-SERIES/Hitachi-SJ700-L700-Drives.pdf"
+        },
+        {
+          "filename": "HITACHI-SJ700-SERIES/Hitachi-sj7002-Instruction-Brief-Manual.pdf",
+          "pages": 519
+        }
+      ],
+      "modbus_rtu_settings": {
+        "modbus_support": true,
+        "page_location": 14,
+        "rs485_interface": {
+          "page_location": 28,
+          "documented": true
+        }
+      },
+      "rs485_wiring": {
+        "page_location": 28,
+        "pin_layout": {
+          "A_plus": "Positive data line",
+          "B_minus": "Negative data line",
+          "GND": "Ground reference"
+        }
+      }
+    },
+    "HITACHI_SJ700N": {
+      "manufacturer": "HITACHI",
+      "model_name": "HITACHI SJ700N Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "HITACHI-SJ700N-SERIES/HITACHI-SJ700N.pdf",
+          "pages": 32,
+          "note": "Quick reference guide - See main SJ700 manual for complete Modbus specification"
+        }
+      ]
+    },
+    "HITACHI_SH1": {
+      "manufacturer": "HITACHI",
+      "model_name": "HITACHI SH1 / P1 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Register-Address.pdf",
+          "pages": 57,
+          "priority": "Register Mapping"
+        },
+        {
+          "filename": "HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Basic-Guide.pdf"
+        },
+        {
+          "filename": "HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-User-Manual.pdf"
+        },
+        {
+          "filename": "HITACHI-P1-SERIES-SH1-SERIES/HITACHI-SH1-MODBUS-SETUP.docx"
+        }
+      ],
+      "modbus_rtu_settings": {
+        "slave_id_range": {
+          "minimum": 1,
+          "maximum": 247,
+          "default": 2,
+          "page_reference": 6
+        },
+        "baud_rate_checking": {
+          "error_detection": "LED display shows ERR when baud rates don't match",
+          "page_reference": 6
+        },
+        "parity_settings": {
+          "page_reference": 30
+        },
+        "rs485_interface": {
+          "page_reference": 30
+        }
+      }
+    },
+    "TEK_DRIVE_TDS_V8": {
+      "manufacturer": "TEK DRIVE (Honeywell)",
+      "model_name": "TEK DRIVE TDS-V8 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "TDS-V8-Instruction-Manual.pdf",
+          "pages": 138
+        }
+      ],
+      "modbus_documentation": {
+        "status": "Requires detailed manual review",
+        "location": "See communication/network sections"
+      }
+    },
+    "TEK_DRIVE_TDS_F8": {
+      "manufacturer": "TEK DRIVE (Honeywell)",
+      "model_name": "TEK DRIVE TDS-F8 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "TDS-F8-Instruction-Manual.pdf"
+        },
+        {
+          "filename": "TDS-F8-Brief-Manual.pdf"
+        }
+      ]
+    },
+    "YASKAWA_A1000": {
+      "manufacturer": "YASKAWA",
+      "model_name": "YASKAWA A1000 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true,
+        "profibus": true,
+        "devicenet": true
+      },
+      "source_documents": [
+        {
+          "filename": "YASKAWA A1000 USER MANUAL.pdf",
+          "pages": "Large comprehensive manual (33.3 MB)",
+          "priority": "Primary Reference"
+        }
+      ],
+      "modbus_documentation": {
+        "status": "Comprehensive specification available",
+        "note": "Large file contains detailed parameter and register mapping"
+      }
+    },
+    "SCHNEIDER_ALTIVAR_320": {
+      "manufacturer": "SCHNEIDER ELECTRIC",
+      "model_name": "SCHNEIDER ALTIVAR 320 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "modbus_tcp": true,
+        "rs485": true,
+        "profibus": true,
+        "devicenet": false
+      },
+      "source_documents": [
+        {
+          "filename": "ATV320_Modbus_manual_EN_NVE41308_01.pdf",
+          "priority": "Primary Modbus Reference",
+          "pages": "Comprehensive"
+        },
+        {
+          "filename": "ATV320_CommunicationParameters_NVE41316_V3.5.xlsx",
+          "priority": "Parameter Configuration",
+          "type": "Excel spreadsheet with detailed settings"
+        },
+        {
+          "filename": "ATV320_Programming_Manual_EN_NVE41295_06.pdf"
+        },
+        {
+          "filename": "ATV320 MANUAL.pdf"
+        }
+      ],
+      "modbus_rtu_settings": {
+        "default_baud_rate": {
+          "value": "9600 or 19200",
+          "note": "Configurable",
+          "page_reference": "Modbus Manual"
+        },
+        "supported_baud_rates": [
+          1200,
+          2400,
+          4800,
+          9600,
+          19200,
+          38400,
+          57600
+        ],
+        "parity": {
+          "options": [
+            "Even",
+            "Odd",
+            "None"
+          ],
+          "page_reference": "Modbus Manual"
+        },
+        "data_bits": 8,
+        "stop_bits": "1 or 2",
+        "slave_id_range": {
+          "minimum": 1,
+          "maximum": 247,
+          "page_reference": "Modbus Manual"
+        }
+      }
+    },
+    "DANAHE_D31": {
+      "manufacturer": "DANAHE (Republic of Korea)",
+      "model_name": "DANAHE D31 Series",
+      "communication_support": {
+        "modbus_rtu": true,
+        "rs485": true
+      },
+      "source_documents": [
+        {
+          "filename": "D31-USER-MANUAL.pdf",
+          "priority": "Primary Reference"
+        },
+        {
+          "filename": "D31 SERIES VFD BROCHURE.pdf"
+        }
+      ],
+      "modbus_documentation": {
+        "status": "Communication parameters documented",
+        "see_manual": "D31-USER-MANUAL.pdf for complete specification"
+      }
+    },
+    "CHZIRI": {
+      "manufacturer": "CHZIRI",
+      "model_name": "CHZIRI Series",
+      "status": "NOT AVAILABLE",
+      "notes": "Manual not yet included in documentation",
+      "communication_support": {
+        "modbus_rtu": "Unknown",
+        "rs485": "Unknown"
+      }
+    }
+  },
+  "universal_modbus_standards": {
+    "observations": {
+      "default_baud_rate": "9600 bps (nearly universal)",
+      "parity": "8N1 (standard for Modbus RTU)",
+      "data_bits": 8,
+      "stop_bits": 1,
+      "slave_id_range": "1-247 (Modbus RTU standard)",
+      "transmission_mode": "Half-duplex RS485"
+    },
+    "rs485_physical_layer": {
+      "termination_resistor": {
+        "value": 120,
+        "unit": "ohms",
+        "power_rating": 0.25,
+        "unit_power": "watts"
+      },
+      "connector_type": "Varies (3-pin or 5-pin terminal blocks common)",
+      "cable": {
+        "type": "Shielded twisted pair",
+        "impedance": "120 ohms",
+        "maximum_length": "1000 meters (at 9600 bps)"
+      },
+      "pins": [
+        {
+          "name": "A+ or A",
+          "description": "Positive data line"
+        },
+        {
+          "name": "B- or B",
+          "description": "Negative data line"
+        },
+        {
+          "name": "GND",
+          "description": "Ground reference"
+        },
+        {
+          "name": "Shield",
+          "description": "Cable shield (optional but recommended)"
+        }
+      ]
+    },
+    "register_mapping_patterns": {
+      "output_frequency": "Typically 40000-40020 range (Holding)",
+      "output_current": "Typically 40001-40021 range (Holding)",
+      "output_voltage": "Typically 40002-40022 range (Holding)",
+      "output_power": "Typically 40003-40023 range (Holding)",
+      "fault_code": "Typically 40050-40100 range (Holding)",
+      "rpm": "Typically 40005-40025 range (Holding)"
+    }
+  },
+  "implementation_notes": {
+    "missing_data": [
+      "Complete register address tables (see individual PDF files)",
+      "Fault code meanings for each model",
+      "Advanced configuration parameters",
+      "Communication test procedures"
+    ],
+    "recommended_sources": [
+      "Each manufacturer's Modbus RTU user manual",
+      "Communication addendum/supplement documents",
+      "Register address list/spreadsheets",
+      "Setup guide PDFs in SETUP GUIDE AND PARAMETERS folders"
+    ],
+    "verification_required": [
+      "Actual baud rate defaults for each model",
+      "Parity and stop bit confirmation",
+      "Register address verification with devices",
+      "Fault code mapping"
+    ]
+  }
+}

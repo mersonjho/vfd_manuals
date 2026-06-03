@@ -1,0 +1,2934 @@
+{
+  "VACON": {
+    "Vacon-100-FLOW-Application-Manual-DPD01083D-UK.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": ":135) A fieldbus data mapping.\n(cid:135) An automatic reset.\n(cid:135) Different pre-heat modes to prevent condensation problems.\n(cid:135) A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": ":135) A fieldbus data mapping.\n(cid:135) An automatic reset.\n(cid:135) Different pre-heat modes to prevent condensation problems.\n(cid:135) A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": ":135) A fieldbus data mapping.\n(cid:135) An automatic reset.\n(cid:135) Different pre-heat modes to prevent condensation problems.\n(cid:135) A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": ":135) A fieldbus data mapping.\n(cid:135) An automatic reset.\n(cid:135) Different pre-heat modes to prevent condensation problems.\n(cid:135) A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x5e",
+          "address_decimal": "94",
+          "context": " mode wizard 87\n3 User interfaces 89\n3.1 Navigation on the keypad 89\n3.2 Using the graphical display 91\n3.2.1 Editing the values 91\n3.2.2 Resetting a ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": ":135) A fieldbus data mapping.\n(cid:135) An automatic reset.\n(cid:135) Different pre-heat modes to prevent condensation problems.\n(cid:135) A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 195782
+    },
+    "Vacon-100-FLOW-Application-Manual-DPD01083G-UK.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "in a multi-pump system 329\n10.16.5 Overpressure supervision 338\n10.16.6 Pump runtime counters 339\n10.16.7 Advanced settings 341\nLOCAL CONTACTS: HTTP://DRIVES.DANFOSS.COM/DANFOSS-DRIVES/LOCAL-CONTACTS/",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": "t important values quickly.\n• A fieldbus data mapping.\n• An automatic reset.\n• Different pre-heat modes to prevent condensation problems.\n• A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": "t important values quickly.\n• A fieldbus data mapping.\n• An automatic reset.\n• Different pre-heat modes to prevent condensation problems.\n• A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": "t important values quickly.\n• A fieldbus data mapping.\n• An automatic reset.\n• Different pre-heat modes to prevent condensation problems.\n• A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": "t important values quickly.\n• A fieldbus data mapping.\n• An automatic reset.\n• Different pre-heat modes to prevent condensation problems.\n• A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x5f",
+          "address_decimal": "95",
+          "context": " mode wizard 88\n3 User interfaces 90\n3.1 Navigation on the keypad 90\n3.2 Using the graphical display 92\n3.2.1 Editing the values 92\n3.2.2 Resetting a ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x140",
+          "address_decimal": "320",
+          "context": "t important values quickly.\n• A fieldbus data mapping.\n• An automatic reset.\n• Different pre-heat modes to prevent condensation problems.\n• A maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 95575
+    },
+    "Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf": {
+      "modbus_communication": {
+        "baud_rate": "9600",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "3",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "limit................................................................................................................29\n5.3.10Unit Identifier number....................................................",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "09C4",
+          "address_decimal": "2500",
+          "context": "n 4 hex (= 4)\nByte count 04 hex Byte count 4 hex (= 4)\nData HI 13 hex\nSpeed reference = 1388 hex (=5000 => 50.00%)\nDATA Data LO 88 hex\nData HI 09 hex\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "09C4",
+          "address_decimal": "2500",
+          "context": "n 4 hex (= 4)\nByte count 04 hex Byte count 4 hex (= 4)\nData HI 13 hex\nSpeed reference = 1388 hex (=5000 => 50.00%)\nDATA Data LO 88 hex\nData HI 09 hex\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "09C4",
+          "address_decimal": "2500",
+          "context": "n 4 hex (= 4)\nByte count 04 hex Byte count 4 hex (= 4)\nData HI 13 hex\nSpeed reference = 1388 hex (=5000 => 50.00%)\nDATA Data LO 88 hex\nData HI 09 hex\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "09C4",
+          "address_decimal": "2500",
+          "context": "n 4 hex (= 4)\nByte count 04 hex Byte count 4 hex (= 4)\nData HI 13 hex\nSpeed reference = 1388 hex (=5000 => 50.00%)\nDATA Data LO 88 hex\nData HI 09 hex\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x5",
+          "address_decimal": "5",
+          "context": ".............................................................................................................................4\n1.3 Earthing and earth ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "09C4",
+          "address_decimal": "2500",
+          "context": "n 4 hex (= 4)\nByte count 04 hex Byte count 4 hex (= 4)\nData HI 13 hex\nSpeed reference = 1388 hex (=5000 => 50.00%)\nDATA Data LO 88 hex\nData HI 09 hex\n",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 87183
+    },
+    "VACON-100-MODBUS-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "2378",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "2320",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "RS485-A and RS485-B manual didn’t suggest external terminating resistor it has ha switch for\nterminating resistor\nTERMINATION WIRING AND TERMINATING DIP SWITCH\n[PAGE 2]",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "S-485 port must be configured to use the Modbus RTU protocol.\n• Parameter Name: RS-485 protocol\n• Parameter ID: 2208\n• Panel Tree Path: P 5.8.1.1\n• De",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 2595
+    },
+    "VACON-100-REGISTER-ADDRESS-LIST.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "0-100.00%).\nFrequency\nTo get Hz, calculate:\n(Value / 10000) * Max\nFrequency.\nExample Modbus RTU Frames\nAssumptions:\n• Slave Address: 0x01 (default)\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "0-100.00%).\nFrequency\nTo get Hz, calculate:\n(Value / 10000) * Max\nFrequency.\nExample Modbus RTU Frames\nAssumptions:\n• Slave Address: 0x01 (default)\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "0-100.00%).\nFrequency\nTo get Hz, calculate:\n(Value / 10000) * Max\nFrequency.\nExample Modbus RTU Frames\nAssumptions:\n• Slave Address: 0x01 (default)\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "0-100.00%).\nFrequency\nTo get Hz, calculate:\n(Value / 10000) * Max\nFrequency.\nExample Modbus RTU Frames\nAssumptions:\n• Slave Address: 0x01 (default)\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "000 RUN/STOP Read/Write 1-bit -\n0=Stop, 1=Run.\nControl Word, bit 1.\n0001 Direction Read/Write 1-bit - 0=Forward,\n1=Reverse.\nControl Word, bit 2.\n0002 ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "0-100.00%).\nFrequency\nTo get Hz, calculate:\n(Value / 10000) * Max\nFrequency.\nExample Modbus RTU Frames\nAssumptions:\n• Slave Address: 0x01 (default)\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 8086
+    }
+  },
+  "TECO": {
+    "A510-Communication-Addendum.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "and Data Frame .............................................................................. 1-1\n1.0.2 Register and Data Format .......................................................................",
+        "termination_info": "220 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x12c",
+          "address_decimal": "300",
+          "context": " G12-00 H-WORD\n2511H G12-00 L-WORD\nNote: Write a zero into the register for not used bit; do not write data to a reserved register.\n** If the maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x12c",
+          "address_decimal": "300",
+          "context": " G12-00 H-WORD\n2511H G12-00 L-WORD\nNote: Write a zero into the register for not used bit; do not write data to a reserved register.\n** If the maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x12c",
+          "address_decimal": "300",
+          "context": " G12-00 H-WORD\n2511H G12-00 L-WORD\nNote: Write a zero into the register for not used bit; do not write data to a reserved register.\n** If the maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x12c",
+          "address_decimal": "300",
+          "context": " G12-00 H-WORD\n2511H G12-00 L-WORD\nNote: Write a zero into the register for not used bit; do not write data to a reserved register.\n** If the maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Data (Read / Write)\nRegister No. Bit Content\n2500H Reserved\n0 Operation Command 1 : Run 0 : Stop\n1 Reverse Command 1 : Reverse 0 : Forward\n2 External ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x12c",
+          "address_decimal": "300",
+          "context": " G12-00 H-WORD\n2511H G12-00 L-WORD\nNote: Write a zero into the register for not used bit; do not write data to a reserved register.\n** If the maximum ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 38859
+    },
+    "A510-Instruction-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "38400",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "........................................................................................................................................................ 1-2\n1.3 Before Operation ......................",
+        "termination_info": "120 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-21\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-21\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-21\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-21\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xa",
+          "address_decimal": "10",
+          "context": "......................................................................................................................... 9-6\n10. Troubleshooting and ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-21\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 73856
+    },
+    "A510s-Instruction-Brief-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "........................................................................................................................................................ 1-2\n1.3 Before Operation ......................",
+        "termination_info": "120 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-24\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-24\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-24\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-24\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xa",
+          "address_decimal": "10",
+          "context": ".................................................................................................................. 9-5\nChapter 10 Troubleshooting and ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "................................................................................................................................... 3-24\n3.11 Input / ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 75483
+    },
+    "A510s-Instruction-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "2",
+        "pin_description": "........................................................................................................................................................ 1-1\n1.3 Before Operation ......................",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 2"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "3-28\n3.10.2 Power Terminals (For Enhanced E & G type) ............................................................................. 3-32\n3.11 Input / ",
+          "page": "2",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "3-28\n3.10.2 Power Terminals (For Enhanced E & G type) ............................................................................. 3-32\n3.11 Input / ",
+          "page": "2",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "3-28\n3.10.2 Power Terminals (For Enhanced E & G type) ............................................................................. 3-32\n3.11 Input / ",
+          "page": "2",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "3-28\n3.10.2 Power Terminals (For Enhanced E & G type) ............................................................................. 3-32\n3.11 Input / ",
+          "page": "2",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xa",
+          "address_decimal": "10",
+          "context": ".................................................................................................................. 9-5\nChapter 10 Troubleshooting and ",
+          "page": "2",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x3",
+          "address_decimal": "3",
+          "context": "3-28\n3.10.2 Power Terminals (For Enhanced E & G type) ............................................................................. 3-32\n3.11 Input / ",
+          "page": "2",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 97690
+    },
+    "TECO-A510-A510S-MODBUS-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "9600",
+        "parity": "8N1",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "1",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "The communication parameters are located in Parameter Group 09. The A510s uses an RJ45 connector\nfor its built-in RS485 port, labeled S(+) / S(-).\n1. Enable Modbus RTU Communication\nParameter 09-00: P",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x20",
+          "address_decimal": "32",
+          "context": ") and configure it for:\nProtocol: Modbus RTU\nPort: COM port of your USB-to-RS485 converter\nSettings: 9600, 8, None, 1\nSlave ID: 1\nTest Poll:\nRead the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x20",
+          "address_decimal": "32",
+          "context": ") and configure it for:\nProtocol: Modbus RTU\nPort: COM port of your USB-to-RS485 converter\nSettings: 9600, 8, None, 1\nSlave ID: 1\nTest Poll:\nRead the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x20",
+          "address_decimal": "32",
+          "context": ") and configure it for:\nProtocol: Modbus RTU\nPort: COM port of your USB-to-RS485 converter\nSettings: 9600, 8, None, 1\nSlave ID: 1\nTest Poll:\nRead the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x20",
+          "address_decimal": "32",
+          "context": ") and configure it for:\nProtocol: Modbus RTU\nPort: COM port of your USB-to-RS485 converter\nSettings: 9600, 8, None, 1\nSlave ID: 1\nTest Poll:\nRead the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "10s uses an RJ45 connector\nfor its built-in RS485 port, labeled S(+) / S(-).\n1. Enable Modbus RTU Communication\nParameter 09-00: Protocol Selection\nDe",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x20",
+          "address_decimal": "32",
+          "context": ") and configure it for:\nProtocol: Modbus RTU\nPort: COM port of your USB-to-RS485 converter\nSettings: 9600, 8, None, 1\nSlave ID: 1\nTest Poll:\nRead the ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 3283
+    },
+    "TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "01",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Command (06/10) ±100% (% of rated torque)\nWrite Speed limit (% of\n2503H 9475 Speed Limit 16-bit ±120 = ±120%\n(06/10) max speed)\nWrite 0–1000 → Analog ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Command (06/10) ±100% (% of rated torque)\nWrite Speed limit (% of\n2503H 9475 Speed Limit 16-bit ±120 = ±120%\n(06/10) max speed)\nWrite 0–1000 → Analog ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Command (06/10) ±100% (% of rated torque)\nWrite Speed limit (% of\n2503H 9475 Speed Limit 16-bit ±120 = ±120%\n(06/10) max speed)\nWrite 0–1000 → Analog ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Command (06/10) ±100% (% of rated torque)\nWrite Speed limit (% of\n2503H 9475 Speed Limit 16-bit ±120 = ±120%\n(06/10) max speed)\nWrite 0–1000 → Analog ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x9d9",
+          "address_decimal": "2521",
+          "context": "egister Register Name Data R/W Description\n(Dec) (Hex) Type\n9505 2521H Error 16-bit Read Active fault code. Value corresponds\nCode to the list below.\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "Command (06/10) ±100% (% of rated torque)\nWrite Speed limit (% of\n2503H 9475 Speed Limit 16-bit ±120 = ±120%\n(06/10) max speed)\nWrite 0–1000 → Analog ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 6647
+    }
+  },
+  "FRENIC": {
+    "FRENIC-Ace-Global-Model-User-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ctor (MC) in the inverter input (primary) circuit ................................................. 1-9\n[ 7 ] Magnetic contactor (MC) in the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ctor (MC) in the inverter input (primary) circuit ................................................. 1-9\n[ 7 ] Magnetic contactor (MC) in the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ctor (MC) in the inverter input (primary) circuit ................................................. 1-9\n[ 7 ] Magnetic contactor (MC) in the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ctor (MC) in the inverter input (primary) circuit ................................................. 1-9\n[ 7 ] Magnetic contactor (MC) in the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x5",
+          "address_decimal": "5",
+          "context": "codes table ..................................................................................................................... 5-4\n5.2.3 Factory de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ctor (MC) in the inverter input (primary) circuit ................................................. 1-9\n[ 7 ] Magnetic contactor (MC) in the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 174284
+    },
+    "FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1e",
+          "address_decimal": "30",
+          "context": "Use of the product for long periods of time without\nreplacement could result in malfunction or damage, and an accident or fire could occur.\n• Contact ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1e",
+          "address_decimal": "30",
+          "context": "Use of the product for long periods of time without\nreplacement could result in malfunction or damage, and an accident or fire could occur.\n• Contact ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1e",
+          "address_decimal": "30",
+          "context": "Use of the product for long periods of time without\nreplacement could result in malfunction or damage, and an accident or fire could occur.\n• Contact ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1e",
+          "address_decimal": "30",
+          "context": "Use of the product for long periods of time without\nreplacement could result in malfunction or damage, and an accident or fire could occur.\n• Contact ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x5",
+          "address_decimal": "5",
+          "context": "-1\n5.2.2 Function codes table ··································································································· 5-3\n5.2.3 Factory de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1e",
+          "address_decimal": "30",
+          "context": "Use of the product for long periods of time without\nreplacement could result in malfunction or damage, and an accident or fire could occur.\n• Contact ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 146526
+    },
+    "FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "Inverter overload ................................................................................................................... 6-17\n[ 31 ] 0pl ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "Inverter overload ................................................................................................................... 6-17\n[ 31 ] 0pl ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "Inverter overload ................................................................................................................... 6-17\n[ 31 ] 0pl ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "Inverter overload ................................................................................................................... 6-17\n[ 31 ] 0pl ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x8",
+          "address_decimal": "8",
+          "context": "·························································································· 5-29\n[ 1 ] Frequency setting by keypad (F01 = 0 (Factory de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "Inverter overload ................................................................................................................... 6-17\n[ 31 ] 0pl ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 167025
+    },
+    "FRENIC-Eco-Parameter-List.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "detected (C1OFF)\n60 (1060): Sequenced start motor 1, inverter-driven (M1_I)\n61 (1061): Sequenced start motor 1, commercial-power driven (M1_L)\n62 (1062): Sequenced start motor 2, inverter-driven (M2_I",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0xc8",
+          "address_decimal": "200",
+          "context": "0.0 Hz\nF04 Base frequency\n25.0 to 120.0 Hz 50.0 Hz\nF05 Rated voltage at base frequency 0: Output a voltage in proportion to input voltage\n80 to 240V: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0xc8",
+          "address_decimal": "200",
+          "context": "0.0 Hz\nF04 Base frequency\n25.0 to 120.0 Hz 50.0 Hz\nF05 Rated voltage at base frequency 0: Output a voltage in proportion to input voltage\n80 to 240V: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0xc8",
+          "address_decimal": "200",
+          "context": "0.0 Hz\nF04 Base frequency\n25.0 to 120.0 Hz 50.0 Hz\nF05 Rated voltage at base frequency 0: Output a voltage in proportion to input voltage\n80 to 240V: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0xc8",
+          "address_decimal": "200",
+          "context": "0.0 Hz\nF04 Base frequency\n25.0 to 120.0 Hz 50.0 Hz\nF05 Rated voltage at base frequency 0: Output a voltage in proportion to input voltage\n80 to 240V: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": " setting range Default setting Actual setting\nH03 Data initialization 0: Disable initialization\n1: Initialize all function code data to the factory de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0xc8",
+          "address_decimal": "200",
+          "context": "0.0 Hz\nF04 Base frequency\n25.0 to 120.0 Hz 50.0 Hz\nF05 Rated voltage at base frequency 0: Output a voltage in proportion to input voltage\n80 to 240V: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 29977
+    },
+    "FRENIC-MEGA-User-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "1",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "methods, the inverter function can be expanded to such a level where RS-485\ncommunications can be used. Use of RJ-45 connector for connection with the keypad permits\nremote operation from the keypad.\n",
+        "termination_info": "112 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": ".......6-4\n6.6.3 Lock the FRENIC-Eco panel..........................................................................................6-4\n6.6.4 Digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": ".......6-4\n6.6.3 Lock the FRENIC-Eco panel..........................................................................................6-4\n6.6.4 Digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": ".......6-4\n6.6.3 Lock the FRENIC-Eco panel..........................................................................................6-4\n6.6.4 Digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": ".......6-4\n6.6.3 Lock the FRENIC-Eco panel..........................................................................................6-4\n6.6.4 Digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": "s.....................................................................................................................6-5\n6.6.7 Reading and resetting ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x6",
+          "address_decimal": "6",
+          "context": ".......6-4\n6.6.3 Lock the FRENIC-Eco panel..........................................................................................6-4\n6.6.4 Digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 117484
+    }
+  },
+  "TEK DRIVE": {
+    "TDS-F8-Brief-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "19200",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "to the AC motor drive.\n After switch off the mains supply, dangerous voltage can still be present in the VFD.\nWhen opening the VFD for installing and/or commissioning activities wait at least 5\nminut",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "for installing and/or commissioning activities wait at least 5\nminutes to allow the buffer capacitor to discharge.\n\nNever connect the AC motor drive ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "for installing and/or commissioning activities wait at least 5\nminutes to allow the buffer capacitor to discharge.\n\nNever connect the AC motor drive ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "for installing and/or commissioning activities wait at least 5\nminutes to allow the buffer capacitor to discharge.\n\nNever connect the AC motor drive ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "for installing and/or commissioning activities wait at least 5\nminutes to allow the buffer capacitor to discharge.\n\nNever connect the AC motor drive ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x41",
+          "address_decimal": "65",
+          "context": "----------------------------------------------------------------------------------63\n5. Warning/ Fault Condition, the possible Cause and Remedies\n5-1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "for installing and/or commissioning activities wait at least 5\nminutes to allow the buffer capacitor to discharge.\n\nNever connect the AC motor drive ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 71168
+    },
+    "TDS-F8-Instruction-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 873
+    },
+    "TDS-V8-Instruction-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 154853
+    },
+    "TDS-F8-MODBUS-Communication-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mand comes from RS-485 port.\nParameter (2-02)= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mand comes from RS-485 port.\nParameter (2-02)= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mand comes from RS-485 port.\nParameter (2-02)= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mand comes from RS-485 port.\nParameter (2-02)= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "U mode protocol.\n(3) Communication Format setting: via setting of parameters of the 9th group:\n(i) Parameter (9-01) = 1~255 …Communication address (de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mand comes from RS-485 port.\nParameter (2-02)= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 28499
+    },
+    "tds-v8-modbus-instuction.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "procedures:\n(1) Power ON the inverter, then setup RS-485 related parameters and connect the\nRS-485 cable. Communication with the controller is now enabled.\n(2) During wiring the cable, if the inverter",
+        "termination_info": "1 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mmand comes from RS-485 port.\nParameter Sn-05= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mmand comes from RS-485 port.\nParameter Sn-05= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mmand comes from RS-485 port.\nParameter Sn-05= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mmand comes from RS-485 port.\nParameter Sn-05= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "de protocol.\n(3) Communication Format setting: via setting of parameters Sn-36, Sn-37 and Sn-38:\n(i) Parameter Sn-36 = 1~31 …Communication address (de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1e5",
+          "address_decimal": "485",
+          "context": "mmand comes from RS-485 port.\nParameter Sn-05= 2 ------ Frequency Command comes from RS-485 port.\n(iv) For setting up that the signal of the inverter ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 31616
+    },
+    "TDS-V8-MODBUS-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "0",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "31",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "the RS-485 cables to terminals S(+) and S(-) and configuring the\nparameters:\nPower Cycle: Ensure you power the inverter off and on again to activate the new\ncommunication settings (Sn-37, Sn-38).\nChec",
+        "termination_info": "120 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "dbus master.\nTest with Modbus Software: Use a Modbus master tool (e.g., ModScan, Simply\nModbus) to read a well-known register.\nExample Test: Read the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "dbus master.\nTest with Modbus Software: Use a Modbus master tool (e.g., ModScan, Simply\nModbus) to read a well-known register.\nExample Test: Read the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "dbus master.\nTest with Modbus Software: Use a Modbus master tool (e.g., ModScan, Simply\nModbus) to read a well-known register.\nExample Test: Read the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "dbus master.\nTest with Modbus Software: Use a Modbus master tool (e.g., ModScan, Simply\nModbus) to read a well-known register.\nExample Test: Read the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ds and frequency references via Modbus,\nyou must set the command sources to the RS-485 port.\nFOR VFD CONTROL:\nParameter Sn-04: Run Source selection\nDe",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "dbus master.\nTest with Modbus Software: Use a Modbus master tool (e.g., ModScan, Simply\nModbus) to read a well-known register.\nExample Test: Read the ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 3855
+    },
+    "TDS-V8-REGISTER-ADDRESS-LIST.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "d.\n0003H (3) Reserved - - - Reserved.\n0004H (4) Reserved - - - Reserved.\n0005H (5) Reserved - - - Reserved.\n0006H (6) Reserved - - - Reserved.\nBit 0: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "d.\n0003H (3) Reserved - - - Reserved.\n0004H (4) Reserved - - - Reserved.\n0005H (5) Reserved - - - Reserved.\n0006H (6) Reserved - - - Reserved.\nBit 0: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "d.\n0003H (3) Reserved - - - Reserved.\n0004H (4) Reserved - - - Reserved.\n0005H (5) Reserved - - - Reserved.\n0006H (6) Reserved - - - Reserved.\nBit 0: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "d.\n0003H (3) Reserved - - - Reserved.\n0004H (4) Reserved - - - Reserved.\n0005H (5) Reserved - - - Reserved.\n0006H (6) Reserved - - - Reserved.\nBit 0: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "e Description\nName Type g/Unit\n(Hex/Dec) (Read/Write)\nControl\nRegisters\n(Read/Write)\nBit 0: 0=STOP, 1=RUN\nBit 1: 0=Forward, 1=Reverse\nBit 2: External ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "d.\n0003H (3) Reserved - - - Reserved.\n0004H (4) Reserved - - - Reserved.\n0005H (5) Reserved - - - Reserved.\n0006H (6) Reserved - - - Reserved.\nBit 0: ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 17473
+    }
+  },
+  "HITACHI": {
+    "Hitachi-SH1-Basic-Guide.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "Chapter 3: Operation Setting and Examples\nof I/O Adjustment\nChapter 4: Settings\nChapter 5: Troubleshooting\nChapter 6: Maintenance and Inspection\nChapter 7: Specifications\nIndex\nIf you have any inquiry",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ust the analog input(Ai1/Ai2) ................................ 3-5\nRun key using on the keypad ................................ 3-2 Adjust the analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ust the analog input(Ai1/Ai2) ................................ 3-5\nRun key using on the keypad ................................ 3-2 Adjust the analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ust the analog input(Ai1/Ai2) ................................ 3-5\nRun key using on the keypad ................................ 3-2 Adjust the analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ust the analog input(Ai1/Ai2) ................................ 3-5\nRun key using on the keypad ................................ 3-2 Adjust the analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "001",
+          "context": "is is a common terminal for digital\nCOM input terminals (1,2,3,4,5,6,7,8,9,A and\nm (common)\no B). Three COM terminals are available.\nC\n■ Terminal’s de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "ust the analog input(Ai1/Ai2) ................................ 3-5\nRun key using on the keypad ................................ 3-2 Adjust the analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 174389
+    },
+    "Hitachi-SH1-Register-Address.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "2",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "communication baud rate 2\nselection\n2316 0 CF-02 RS485 communication Node 2\nallocation\n2317 0 CF-03 RS485 communication parity 2\nselection\n2318 0 CF-04 RS485 communication stop-bit 2\nselection\n2319 0 ",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x2",
+          "address_decimal": "2",
+          "context": "ionary in the following table is “0”. For further information, please refer\nto the inverter user’s guide.\nIndex Sub-index Code Name size\n2001 0 dA-01 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x2",
+          "address_decimal": "2",
+          "context": "ionary in the following table is “0”. For further information, please refer\nto the inverter user’s guide.\nIndex Sub-index Code Name size\n2001 0 dA-01 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x2",
+          "address_decimal": "2",
+          "context": "ionary in the following table is “0”. For further information, please refer\nto the inverter user’s guide.\nIndex Sub-index Code Name size\n2001 0 dA-01 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x2",
+          "address_decimal": "2",
+          "context": "ionary in the following table is “0”. For further information, please refer\nto the inverter user’s guide.\nIndex Sub-index Code Name size\n2001 0 dA-01 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ot Ready to Switch On 0 × 0 0 0 0\nSwitch On Disabled 1 × 0 0 0 0\nReady to Switch On 0 1 0 0 0 1\nSwitched On 0 1 0 0 1 1\nOperation Enabled 0 1 0 1 1 1\n",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x2",
+          "address_decimal": "2",
+          "context": "ionary in the following table is “0”. For further information, please refer\nto the inverter user’s guide.\nIndex Sub-index Code Name size\n2001 0 dA-01 ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 93317
+    },
+    "Hitachi-SH1-User-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "and\nP.41\n(cid:34)ccess(cid:80)(cid:83)(cid:74)es\n对应“广泛应用” Option cassette P.42\n的灵活性\n功能丰富多彩，满足多种领域的广泛应用。\n可对应广泛用途\n起重 卷绕 金属加工 挤出成型 搬运 (cid:55)(cid:72)(cid:91)(cid:87)(cid:76)(cid:79)(cid:72) (cid:40)(cid",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x54",
+          "address_decimal": "84",
+          "context": "91)imum operation is available for precise metal processing. For P(cid:48) motor, also up to (cid:23)(cid:19)(cid:19)(cid:43)(cid:93).\n(cid:11)actual ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x54",
+          "address_decimal": "84",
+          "context": "91)imum operation is available for precise metal processing. For P(cid:48) motor, also up to (cid:23)(cid:19)(cid:19)(cid:43)(cid:93).\n(cid:11)actual ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x54",
+          "address_decimal": "84",
+          "context": "91)imum operation is available for precise metal processing. For P(cid:48) motor, also up to (cid:23)(cid:19)(cid:19)(cid:43)(cid:93).\n(cid:11)actual ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x54",
+          "address_decimal": "84",
+          "context": "91)imum operation is available for precise metal processing. For P(cid:48) motor, also up to (cid:23)(cid:19)(cid:19)(cid:43)(cid:93).\n(cid:11)actual ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eceleration /02 (Setting from Option-2) /02 (Setting from Option-3) 00\ntime input selection\n/04 (Setting b(cid:92) programing function)\n**B(cid:92) de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x54",
+          "address_decimal": "84",
+          "context": "91)imum operation is available for precise metal processing. For P(cid:48) motor, also up to (cid:23)(cid:19)(cid:19)(cid:43)(cid:93).\n(cid:11)actual ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 280046
+    },
+    "Hitachi-SJ700-L700-Drives.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "change. remains higher than under-voltage trip level.\nRead SJ300 Parameter by SRW remote operator and write\nEmergency stop\nthem in to SJ700 User selected function\nShuts down the inverter by hardware, ",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ternal analog\nXA(1) : 4-20mA (OI terminal) input\nXA(2) : 0-10V (O2 terminal)\nGeneral-purpose\nMaximum of 8 point(Y(00)-Y(05)) output terminal\nExternal ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ternal analog\nXA(1) : 4-20mA (OI terminal) input\nXA(2) : 0-10V (O2 terminal)\nGeneral-purpose\nMaximum of 8 point(Y(00)-Y(05)) output terminal\nExternal ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ternal analog\nXA(1) : 4-20mA (OI terminal) input\nXA(2) : 0-10V (O2 terminal)\nGeneral-purpose\nMaximum of 8 point(Y(00)-Y(05)) output terminal\nExternal ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ternal analog\nXA(1) : 4-20mA (OI terminal) input\nXA(2) : 0-10V (O2 terminal)\nGeneral-purpose\nMaximum of 8 point(Y(00)-Y(05)) output terminal\nExternal ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "F2, HFUF2, HFF2\nSetting the output frequency increment/decrement values. R0 T0\nR S T U V W (R0) (T0)\nPower on The contents of a basic mode display.(de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "ternal analog\nXA(1) : 4-20mA (OI terminal) input\nXA(2) : 0-10V (O2 terminal)\nGeneral-purpose\nMaximum of 8 point(Y(00)-Y(05)) output terminal\nExternal ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 286794
+    },
+    "Hitachi-sj7002-Instruction-Brief-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "！ WARNING\n- Be sure to ground the inverter. Otherwise, you run the risk of electric shock or fire.\n- Commit wiring work to a qualified electrician. Otherwise, you run the risk of electric shock or fir",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x18",
+          "address_decimal": "24",
+          "context": "beforehand P . ower supply for T R 0 0 機 FUN 能 C 1 2 記 ST 憶 R PD Braking resistor\nJumper (optional)\ncontrol circuit DC24V RB bar (Models with 22 kW\nDe",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 189717
+    },
+    "HITACHI-SJ7002-Instruction-Manual.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "！ WARNING\n- Be sure to ground the inverter. Otherwise, you run the risk of electric shock or fire.\n- Commit wiring work to a qualified electrician. Otherwise, you run the risk of electric shock or fir",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x18",
+          "address_decimal": "24",
+          "context": " e n e n e p c a t g o e r c 2 a - b 2 l 0 e ) s beforehand P . ower supply for T R 0 0 機 FUN 能 C 1 2 記 STR 憶 PD Braking resistor\nJumper (optional)\nDe",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "d001",
+          "address_decimal": "53249",
+          "context": "1 Monitor Mode····························································································································4 - 1\n4.1.1 ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 201453
+    },
+    "HITACHI-SJ7000-SJ7000N-MODBUS-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "8N1",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "120 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1004",
+          "address_decimal": "4100",
+          "context": " parameters and set A002 and A001 to 03.\nVerification:\n• Master Settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1.\n• Test Command: Read the ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1004",
+          "address_decimal": "4100",
+          "context": " parameters and set A002 and A001 to 03.\nVerification:\n• Master Settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1.\n• Test Command: Read the ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1004",
+          "address_decimal": "4100",
+          "context": " parameters and set A002 and A001 to 03.\nVerification:\n• Master Settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1.\n• Test Command: Read the ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1004",
+          "address_decimal": "4100",
+          "context": " parameters and set A002 and A001 to 03.\nVerification:\n• Master Settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1.\n• Test Command: Read the ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "address_hex": "0x1004",
+          "address_decimal": "4100",
+          "context": " parameters and set A002 and A001 to 03.\nVerification:\n• Master Settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1.\n• Test Command: Read the ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 3840
+    },
+    "HITACHI-SJ7000-SJ7000N-REGISTER-ADDRESS-LIST.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "1",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x10",
+          "address_decimal": "16",
+          "context": "MODBUS RTU REGISTER MAP FOR DRIVES\nRegister Register Name Data R/W Description\nAddress Address Type\n(Dec) (Hex)\n4097 1001h Output UINT16 R d001 (High)",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x10",
+          "address_decimal": "16",
+          "context": "MODBUS RTU REGISTER MAP FOR DRIVES\nRegister Register Name Data R/W Description\nAddress Address Type\n(Dec) (Hex)\n4097 1001h Output UINT16 R d001 (High)",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x10",
+          "address_decimal": "16",
+          "context": "MODBUS RTU REGISTER MAP FOR DRIVES\nRegister Register Name Data R/W Description\nAddress Address Type\n(Dec) (Hex)\n4097 1001h Output UINT16 R d001 (High)",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x10",
+          "address_decimal": "16",
+          "context": "MODBUS RTU REGISTER MAP FOR DRIVES\nRegister Register Name Data R/W Description\nAddress Address Type\n(Dec) (Hex)\n4097 1001h Output UINT16 R d001 (High)",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "t's address and quantity.\no 01 10 11 01 00 02\no CRC Calculation for 01 10 11 01 00 02: 0x41 0xCF\no Full Frame: 01 10 11 01 00 02 41 CF\n4. Read Active ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x10",
+          "address_decimal": "16",
+          "context": "MODBUS RTU REGISTER MAP FOR DRIVES\nRegister Register Name Data R/W Description\nAddress Address Type\n(Dec) (Hex)\n4097 1001h Output UINT16 R d001 (High)",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 9674
+    },
+    "Hitachi-SJ7002-RS485-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "1",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "format 1-to-N connection (N: Maximum of 32 [inverters])\nwith the digital operator\nOverrun, framing, BCC, Overrun, framing,\nError check vertical parity, and CRC-16, and\nlongitudinal parity errors longi",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eached) R 1: ON, 0: OFF\n0015h FA2 (set frequency overreached) R 1: ON, 0: OFF\n0016h OL (overload notice advance signal (1)) R 1: ON, 0: OFF\n0017h OD (",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eached) R 1: ON, 0: OFF\n0015h FA2 (set frequency overreached) R 1: ON, 0: OFF\n0016h OL (overload notice advance signal (1)) R 1: ON, 0: OFF\n0017h OD (",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eached) R 1: ON, 0: OFF\n0015h FA2 (set frequency overreached) R 1: ON, 0: OFF\n0016h OL (overload notice advance signal (1)) R 1: ON, 0: OFF\n0017h OD (",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eached) R 1: ON, 0: OFF\n0015h FA2 (set frequency overreached) R 1: ON, 0: OFF\n0016h OL (overload notice advance signal (1)) R 1: ON, 0: OFF\n0017h OD (",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xe",
+          "address_decimal": "14",
+          "context": "or 8 Overload restricted 8\nUndervoltage protection 9 SON or FOC operation in progress 9\nCT error 10\nCPU error 11\nExternal trip 12\nUSP error 13\nGround-",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "eached) R 1: ON, 0: OFF\n0015h FA2 (set frequency overreached) R 1: ON, 0: OFF\n0016h OL (overload notice advance signal (1)) R 1: ON, 0: OFF\n0017h OD (",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 102114
+    }
+  },
+  "DANAHE": {
+    "D31 SERIES  VFD BROCHURE.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 3298
+    },
+    "D31-USER-MANUAL.pdf": {
+      "modbus_communication": {
+        "baud_rate": "2",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0-247",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": ".......................................................................................... 19\n4.1. Installation of frequency inverter ..................................................................",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: 15%\nOutput voltage Maximum output voltage equals to input voltage\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: 15%\nOutput voltage Maximum output voltage equals to input voltage\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: 15%\nOutput voltage Maximum output voltage equals to input voltage\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: 15%\nOutput voltage Maximum output voltage equals to input voltage\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x21",
+          "address_decimal": "33",
+          "context": "lection...................................................................................................................... 33\n5.2.2. Powering-on de",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "60Hz\nMain\nInput Allowable value of change Voltage: 380V-15% ~ 480V+10%; Frequency: 15%\nOutput voltage Maximum output voltage equals to input voltage\n",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 101185
+    },
+    "D31 MODBUS COMMUNICATION SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "0",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "FD12",
+          "address_decimal": "64786",
+          "context": "ead 2 0~21 2\nf817 Module datas read 3 0~21 12\nf818 Module datas read 4 0~21 18\nf819 Module datas read 5 0~21 8\n0: Off\n1: Status Information (FD03)\n2: ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "FD12",
+          "address_decimal": "64786",
+          "context": "ead 2 0~21 2\nf817 Module datas read 3 0~21 12\nf818 Module datas read 4 0~21 18\nf819 Module datas read 5 0~21 8\n0: Off\n1: Status Information (FD03)\n2: ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "FD12",
+          "address_decimal": "64786",
+          "context": "ead 2 0~21 2\nf817 Module datas read 3 0~21 12\nf818 Module datas read 4 0~21 18\nf819 Module datas read 5 0~21 8\n0: Off\n1: Status Information (FD03)\n2: ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "FD12",
+          "address_decimal": "64786",
+          "context": "ead 2 0~21 2\nf817 Module datas read 3 0~21 12\nf818 Module datas read 4 0~21 18\nf819 Module datas read 5 0~21 8\n0: Off\n1: Status Information (FD03)\n2: ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": " Setting Range Default\nf804 Modbus transger waiting time 0~2.00s 0.00\nNO. Parameter Name Setting Range Default\nf805 Modbus behaviour on communication ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "FD12",
+          "address_decimal": "64786",
+          "context": "ead 2 0~21 2\nf817 Module datas read 3 0~21 12\nf818 Module datas read 4 0~21 18\nf819 Module datas read 5 0~21 8\n0: Off\n1: Status Information (FD03)\n2: ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 4633
+    },
+    "D31 Modbus REGISTER ADDRESS MAPPING.pdf": {
+      "modbus_communication": {
+        "baud_rate": "2",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0-247",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "method is adopted. The array sequence of the\ncorresponding pins of RJ45 interface is shown as below:\n8 1\nFigure A.1 RJ45 front view\nTable A.1 Pin output signal allocation\nPin Signal description\n1 Rese",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "FA16",
+          "address_decimal": "64022",
+          "context": " setting. Hexadecimal setting:\n0-15 50Hz(50Hz)x100 = 50001388Hz 0.0\nIt is if setting: 50Hz, write 1388H in the FA08 address\n4) Communication analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "FA16",
+          "address_decimal": "64022",
+          "context": " setting. Hexadecimal setting:\n0-15 50Hz(50Hz)x100 = 50001388Hz 0.0\nIt is if setting: 50Hz, write 1388H in the FA08 address\n4) Communication analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "FA16",
+          "address_decimal": "64022",
+          "context": " setting. Hexadecimal setting:\n0-15 50Hz(50Hz)x100 = 50001388Hz 0.0\nIt is if setting: 50Hz, write 1388H in the FA08 address\n4) Communication analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "FA16",
+          "address_decimal": "64022",
+          "context": " setting. Hexadecimal setting:\n0-15 50Hz(50Hz)x100 = 50001388Hz 0.0\nIt is if setting: 50Hz, write 1388H in the FA08 address\n4) Communication analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "f702",
+          "address_decimal": "63234",
+          "context": " parameter ―Running command selection‖ is f001, so the corresponding\ncommunication address is 0001;\nAnother example: The display code of parameter ―De",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "FA16",
+          "address_decimal": "64022",
+          "context": " setting. Hexadecimal setting:\n0-15 50Hz(50Hz)x100 = 50001388Hz 0.0\nIt is if setting: 50Hz, write 1388H in the FA08 address\n4) Communication analog ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 58969
+    }
+  },
+  "YASKAWA": {
+    "YASKAWA A1000 USER MANUAL.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x92",
+          "address_decimal": "146",
+          "context": "...145\nSinking/Sourcing Mode Selection for Safe Disable Inputs..............................................................146\nUsing the Pulse Train ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x92",
+          "address_decimal": "146",
+          "context": "...145\nSinking/Sourcing Mode Selection for Safe Disable Inputs..............................................................146\nUsing the Pulse Train ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x92",
+          "address_decimal": "146",
+          "context": "...145\nSinking/Sourcing Mode Selection for Safe Disable Inputs..............................................................146\nUsing the Pulse Train ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x92",
+          "address_decimal": "146",
+          "context": "...145\nSinking/Sourcing Mode Selection for Safe Disable Inputs..............................................................146\nUsing the Pulse Train ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x18f",
+          "address_decimal": "399",
+          "context": "ts require maintenance. Refer to Performance Life Monitors Maintenance\nMonitors on page 463.\nFault Display and Troubleshooting\nRefer to Drive Alarms, ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x92",
+          "address_decimal": "146",
+          "context": "...145\nSinking/Sourcing Mode Selection for Safe Disable Inputs..............................................................146\nUsing the Pulse Train ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 268221
+    },
+    "YASKAWA A1000 Modbus REGISTER ADDRESS MAPPING .pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "1",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "Follow the instructions below to connect the drive to a MEMOBUS/Modbus network.\n1. With the power shut off, connect the communications cable to the drive and the master. Use terminals TB5 for\nMEMOBUS/",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "– A1000 Technical Manual\n[PAGE 8]\nC.4 MEMOBUS/Modbus Setup Parameters\nn H5-10: Unit Selection for MEMOBUS/Modbus Register 0025H\nSets the unit for the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "– A1000 Technical Manual\n[PAGE 8]\nC.4 MEMOBUS/Modbus Setup Parameters\nn H5-10: Unit Selection for MEMOBUS/Modbus Register 0025H\nSets the unit for the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "– A1000 Technical Manual\n[PAGE 8]\nC.4 MEMOBUS/Modbus Setup Parameters\nn H5-10: Unit Selection for MEMOBUS/Modbus Register 0025H\nSets the unit for the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "– A1000 Technical Manual\n[PAGE 8]\nC.4 MEMOBUS/Modbus Setup Parameters\nn H5-10: Unit Selection for MEMOBUS/Modbus Register 0025H\nSets the unit for the ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": ": Communication Fault Detection Selection\nEnables or disables the CE detection for communications.\nNo. Name Setting Range Default\nH5-05 Communication ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x19",
+          "address_decimal": "0025",
+          "context": "– A1000 Technical Manual\n[PAGE 8]\nC.4 MEMOBUS/Modbus Setup Parameters\nn H5-10: Unit Selection for MEMOBUS/Modbus Register 0025H\nSets the unit for the ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 64954
+    },
+    "YASKAWA-A1000 Modbus communication SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "odbus communication with\nDate & Rev No 30.5.2014/A\nA1000\nControl word Bit pattern:\nbit no. Description Value\n0 FWD Run /Stop 1\n1 REV Run 0\n2 External ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 4653
+    }
+  },
+  "SCHNEIDER": {
+    "ATV320 MANUAL.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "Modbus Services\nThe Modbus TCP option supports the following Modbus services:\nFunction Name Code Description Remarks\nRead holding registers 03 Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "Modbus Services\nThe Modbus TCP option supports the following Modbus services:\nFunction Name Code Description Remarks\nRead holding registers 03 Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "Modbus Services\nThe Modbus TCP option supports the following Modbus services:\nFunction Name Code Description Remarks\nRead holding registers 03 Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "Modbus Services\nThe Modbus TCP option supports the following Modbus services:\nFunction Name Code Description Remarks\nRead holding registers 03 Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x31",
+          "address_decimal": "49",
+          "context": "Application Profile with Modbus TCP . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48\nConfiguring Communication Detected ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "Modbus Services\nThe Modbus TCP option supports the following Modbus services:\nFunction Name Code Description Remarks\nRead holding registers 03 Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 111889
+    },
+    "ATV320 safety function manual EN.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "n GDL\nSS1 stop, Freewheel stop, Ramp stop, STO function triggered\nWhile the function is activated,\n If the safety function SS1 is triggered, digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "n GDL\nSS1 stop, Freewheel stop, Ramp stop, STO function triggered\nWhile the function is activated,\n If the safety function SS1 is triggered, digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "n GDL\nSS1 stop, Freewheel stop, Ramp stop, STO function triggered\nWhile the function is activated,\n If the safety function SS1 is triggered, digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "n GDL\nSS1 stop, Freewheel stop, Ramp stop, STO function triggered\nWhile the function is activated,\n If the safety function SS1 is triggered, digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x35",
+          "address_decimal": "53",
+          "context": "\nLimitations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52\nDetected ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x1",
+          "address_decimal": "1",
+          "context": "n GDL\nSS1 stop, Freewheel stop, Ramp stop, STO function triggered\nWhile the function is activated,\n If the safety function SS1 is triggered, digital ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 102121
+    },
+    "ATV320D11M3C_DATASHEET_PH_en-PH.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x36",
+          "address_decimal": "54",
+          "context": "odule, Ethernet Powerlink\nCommunication module, EtherNet/IP\nCommunication module, DeviceNet\n[Us] rated supply voltage 200...240 V - 15...10 %\nNominal ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x36",
+          "address_decimal": "54",
+          "context": "odule, Ethernet Powerlink\nCommunication module, EtherNet/IP\nCommunication module, DeviceNet\n[Us] rated supply voltage 200...240 V - 15...10 %\nNominal ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x36",
+          "address_decimal": "54",
+          "context": "odule, Ethernet Powerlink\nCommunication module, EtherNet/IP\nCommunication module, DeviceNet\n[Us] rated supply voltage 200...240 V - 15...10 %\nNominal ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x36",
+          "address_decimal": "54",
+          "context": "odule, Ethernet Powerlink\nCommunication module, EtherNet/IP\nCommunication module, DeviceNet\n[Us] rated supply voltage 200...240 V - 15...10 %\nNominal ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "address_hex": "0x36",
+          "address_decimal": "54",
+          "context": "odule, Ethernet Powerlink\nCommunication module, EtherNet/IP\nCommunication module, DeviceNet\n[Us] rated supply voltage 200...240 V - 15...10 %\nNominal ",
+          "page": "Unknown",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 8215
+    },
+    "ATV320_Modbus_manual_EN_NVE41308_01.pdf": {
+      "modbus_communication": {
+        "baud_rate": "36",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "0",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "in accordance with the EMC requirements.\n Do not operate the product with unknown or unsuitable settings or data.\n Perform a comprehensive commissioning test.\nFailure to follow these instructions ca",
+        "termination_info": "650 ohm resistor",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1",
+          "Page 1",
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "rted Modbus Functions\nThe drive supports the following Modbus functions:\nFunction Name Code Description Remarks\nDec. Hex\nRead Holding 03 03hex Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "rted Modbus Functions\nThe drive supports the following Modbus functions:\nFunction Name Code Description Remarks\nDec. Hex\nRead Holding 03 03hex Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "rted Modbus Functions\nThe drive supports the following Modbus functions:\nFunction Name Code Description Remarks\nDec. Hex\nRead Holding 03 03hex Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "rted Modbus Functions\nThe drive supports the following Modbus functions:\nFunction Name Code Description Remarks\nDec. Hex\nRead Holding 03 03hex Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xf",
+          "address_decimal": "15",
+          "context": "able 7, 9, 10, 12 2 - Switch X X X 0 X 0000hex\nvoltage on\ndisabled\nQuick stop 11 6 - Quick X X 0 1 X 0002hex\nstop\nactive\n7, 10 2 - Switch\non\ndisabled\n",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x3f",
+          "address_decimal": "63",
+          "context": "rted Modbus Functions\nThe drive supports the following Modbus functions:\nFunction Name Code Description Remarks\nDec. Hex\nRead Holding 03 03hex Read N ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 77610
+    },
+    "ATV320_Programming_Manual_EN_NVE41295_06.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x90",
+          "address_decimal": "144",
+          "context": ".........................................102\n1.3.4.3[Full]FULL––[Motorcontrol]DRC–.....................................120\n1.3.4.4[Full]FULL––[Inputs/",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x90",
+          "address_decimal": "144",
+          "context": ".........................................102\n1.3.4.3[Full]FULL––[Motorcontrol]DRC–.....................................120\n1.3.4.4[Full]FULL––[Inputs/",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x90",
+          "address_decimal": "144",
+          "context": ".........................................102\n1.3.4.3[Full]FULL––[Motorcontrol]DRC–.....................................120\n1.3.4.4[Full]FULL––[Inputs/",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x90",
+          "address_decimal": "144",
+          "context": ".........................................102\n1.3.4.3[Full]FULL––[Motorcontrol]DRC–.....................................120\n1.3.4.4[Full]FULL––[Inputs/",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x142",
+          "address_decimal": "322",
+          "context": "FunctionBlocks]FBM–.................................194\n1.3.4.7[Full]FULL––[Applicationfunction]FUN–..........................202\n1.3.4.8[Full]FULL––[",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x90",
+          "address_decimal": "144",
+          "context": ".........................................102\n1.3.4.3[Full]FULL––[Motorcontrol]DRC–.....................................120\n1.3.4.4[Full]FULL––[Inputs/",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 90148
+    },
+    "ATVR PROGRAMMING MANUAL.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "NOT DOCUMENTED",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "1",
+        "pin_description": "in accordance with the EMC requirements.\n• Do not operate the product with unknown or unsuitable settings or data.\n• Perform a comprehensive commissioning test.\nFailure to follow these instructions ca",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x7d",
+          "address_decimal": "125",
+          "context": "........................89\n[MOTOR CONTROL] .............................................................................................105\n[INPUTS / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x7d",
+          "address_decimal": "125",
+          "context": "........................89\n[MOTOR CONTROL] .............................................................................................105\n[INPUTS / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x7d",
+          "address_decimal": "125",
+          "context": "........................89\n[MOTOR CONTROL] .............................................................................................105\n[INPUTS / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x7d",
+          "address_decimal": "125",
+          "context": "........................89\n[MOTOR CONTROL] .............................................................................................105\n[INPUTS / ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0xfa",
+          "address_decimal": "250",
+          "context": "........................................ 236\nTRAVERSE CONTROL................................................................................... 237\n[",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x7d",
+          "address_decimal": "125",
+          "context": "........................89\n[MOTOR CONTROL] .............................................................................................105\n[INPUTS / ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 76291
+    },
+    "ALTIVAR-320D11M3C-MODBUS-SETUP.pdf": {
+      "modbus_communication": {
+        "baud_rate": "NOT DOCUMENTED",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "1",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "NOT_FOUND": true
+        },
+        "Output Current": {
+          "NOT_FOUND": true
+        },
+        "Output Voltage": {
+          "NOT_FOUND": true
+        },
+        "Output Power": {
+          "NOT_FOUND": true
+        },
+        "Fault Code": {
+          "NOT_FOUND": true
+        },
+        "Output RPM": {
+          "NOT_FOUND": true
+        }
+      },
+      "text_length": 1707
+    },
+    "ALTIVAR-320D11M3C-REGISTER-ADDRESS-LIST.pdf": {
+      "modbus_communication": {
+        "baud_rate": "6003",
+        "parity": "NOT DOCUMENTED",
+        "data_bits": "NOT DOCUMENTED",
+        "stop_bits": "NOT DOCUMENTED",
+        "slave_id_range": "1",
+        "communication_procedure": "NOT DOCUMENTED",
+        "page_references": [
+          "Page 1"
+        ]
+      },
+      "rs485_wiring": {
+        "page_location": "NOT DOCUMENTED",
+        "pin_description": "NOT DOCUMENTED",
+        "termination_info": "NOT DOCUMENTED",
+        "special_notes": "NOT DOCUMENTED",
+        "page_references": []
+      },
+      "register_addresses": {
+        "Output Frequency": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "s Timeout (0.1 to\n6005 1775 TTO UINT16 0.1 s/LSB R/WS\n30.0 s)\n[PAGE 1]\nModbus RTU Example Frames & CRC\nAssumptions for examples:\n• Drive Address: 1\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Current": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "s Timeout (0.1 to\n6005 1775 TTO UINT16 0.1 s/LSB R/WS\n30.0 s)\n[PAGE 1]\nModbus RTU Example Frames & CRC\nAssumptions for examples:\n• Drive Address: 1\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Voltage": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "s Timeout (0.1 to\n6005 1775 TTO UINT16 0.1 s/LSB R/WS\n30.0 s)\n[PAGE 1]\nModbus RTU Example Frames & CRC\nAssumptions for examples:\n• Drive Address: 1\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output Power": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "s Timeout (0.1 to\n6005 1775 TTO UINT16 0.1 s/LSB R/WS\n30.0 s)\n[PAGE 1]\nModbus RTU Example Frames & CRC\nAssumptions for examples:\n• Drive Address: 1\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Fault Code": {
+          "address_hex": "0x1bd1",
+          "address_decimal": "7121",
+          "context": "6 01 F4 8A 3F\n• Response: Echoes the write request\no 01 06 21 36 01 F4 → CRC Calculation → 8A 3F\no Full Frame: 01 06 21 36 01 F4 8A 3F\n4. Read Active ",
+          "page": "1",
+          "NOT_FOUND": false
+        },
+        "Output RPM": {
+          "address_hex": "0x0",
+          "address_decimal": "0",
+          "context": "s Timeout (0.1 to\n6005 1775 TTO UINT16 0.1 s/LSB R/WS\n30.0 s)\n[PAGE 1]\nModbus RTU Example Frames & CRC\nAssumptions for examples:\n• Drive Address: 1\n• ",
+          "page": "1",
+          "NOT_FOUND": false
+        }
+      },
+      "text_length": 4928
+    }
+  }
+}

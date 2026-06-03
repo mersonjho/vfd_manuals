@@ -1,11 +1,11 @@
 import './globals.css';
 import 'yet-another-react-lightbox/styles.css';
 import Providers from '../components/providers';
-import SiteHeader from '../components/site-header';
+import AppShell from '../components/app-shell';
 
 export const metadata = {
-  title: 'VFD Manual Monitoring',
-  description: 'Monitor and browse VFD manuals',
+  title: 'VFD Manual Hub',
+  description: 'VFD Modbus Communication & Manual Reference',
 };
 
 export default function RootLayout({ children }) {
@@ -13,8 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>
-          <SiteHeader />
-          <main className="mx-auto w-full max-w-screen-xl px-4 py-6">{children}</main>
+          <AppShell>{children}</AppShell>
         </Providers>
       </body>
     </html>

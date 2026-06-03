@@ -3,33 +3,154 @@
     {
       "id": "CHZIRI",
       "title": "ACHZIRI",
-      "description": "",
-      "images": [
-      ],
+      "description": "CHZIRI (China) - ZVF300 Series. 1 units deployed across 1 production areas. Voltage: 220VAC.",
+      "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "CHZIRI" },
-        { "label": "Model", "value": "ZVF300H" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "CHZIRI (China)"
+        },
+        {
+          "label": "Model Family",
+          "value": "ZVF300 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "1"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (terminal block)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "EE Room 1 (Milling Area)"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set P3.02 (Local address) = desired slave ID (1-247)",
+        "Set P3.00 (Communication baud rate) = 9600 bps",
+        "Set P3.01 (Data format) = 8N1 (No parity)",
+        "RS-485 terminals: A_plus=RS485+ / A, B_minus=RS485- / B",
+        "⚠️ External 120Ω termination resistors REQUIRED at both ends"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 2 control + 5 monitor registers documented. | Fault Codes: 7 fault codes documented. | Quick Test: Master settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF300H-MODBUS-SETUP.pdf" },
-        { "label": "Register list", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-REGISTER-ADDRESS-LIST.pdf"},
-        { "label": "Rs485 setup", "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-RS485-SETUP.pdf" },
-        { "label": "Catalog", "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-Series-Catalog.pdf" },
-        { "label": "User Manual", "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-User-Manual.pdf" }
-      ]
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF300H-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register list",
+          "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "Rs485 setup",
+          "url": "/manuals/CHZIRI/guide/CHZIRI-ZVF-300H-RS485-SETUP.pdf"
+        },
+        {
+          "label": "Catalog",
+          "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-Series-Catalog.pdf"
+        },
+        {
+          "label": "User Manual",
+          "url": "/manuals/CHZIRI/CHZIRI-ZVF300H-User-Manual.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1",
+        "slaveIdParam": "P3.02 (Local address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set P0.01 = 2 (Command via Modbus)",
+          "2. Set P0.03 = 9 (Frequency via Modbus)",
+          "3. Set P3.00 = 3 (9600 bps)",
+          "4. Set P3.01 = 0 (8N1, No Parity)",
+          "5. Set P3.02 = desired slave address (1-247)",
+          "6. Power cycle to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word",
+            "address": "3200H"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "3201H"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "3000H",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Output Current",
+            "address": "3001H",
+            "unit": "0.1 A",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "3002H",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "3003H",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Status Word",
+            "address": "3004H",
+            "unit": "Bitfield",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "OC": "Over Current",
+        "OV": "Over Voltage",
+        "UV": "Under Voltage",
+        "OH": "Over Heat",
+        "OL": "Overload",
+        "GF": "Ground Fault",
+        "CE": "Communication Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "RS485+ / A",
+          "B_minus": "RS485- / B"
+        },
+        "connectorTypes": [],
+        "builtInTermination": false,
+        "requiresExternalTermination": true,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "Between RS485+ and RS485- at BOTH ends",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "readCommand": "01 03 30 00 00 01 [CRC16] (read Output Frequency 3000H)",
+        "description": "Master settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1"
+      }
     },
     {
       "id": "FRENIC-ACE",
       "title": "FRENIC-ACE",
-      "description": "",
+      "description": "Fuji Electric (Japan) - FRENIC ACE Series. 3 units deployed across 1 production areas. Voltage: 220VAC / 440VAC.",
       "images": [
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
@@ -37,27 +158,190 @@
         "/manuals/FRENIC/RS485-PINOUT.png"
       ],
       "details": [
-        { "label": "Manufacturer", "value": "FRENIC" },
-        { "label": "Model", "value": "ACE" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "Fuji Electric (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "FRENIC ACE Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "3"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (RJ-45 Port 1 standard, Terminal Port 2 optional), CANopen"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Medium Batch"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set y01 (Station address, Port 1) / y11 (Port 2) = desired slave ID (1-247)",
+        "Set y04 (Baud rate, Port 1) / y14 (Port 2) = 9600 bps",
+        "Set y06 (Parity/Stop bits, Port 1) / y16 (Port 2) = 8N1 (No parity)",
+        "Set y98 (Run command source via RS-485) = Modbus (Set y98 = 1 to enable Run command via RS-485)",
+        "Set y99 (Frequency command source via RS-485) = Modbus (Set y99 = 1 to enable frequency command via RS-485)",
+        "Connector: RJ-45 (Port 1) - DX+ (pin 1/2), DX- (pin 5/6), GND (pin 7/8)",
+        "Connector: Terminal Block (Port 2) - DX+ terminal, DX- terminal, SD terminal",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 4 control + 7 monitor registers documented. | Fault Codes: 18 fault codes documented. | Quick Test: Read Output Frequency (M06) to verify Modbus communication | FRENIC requires sending 'LE' (Link Enable) command via RS-485 to activate remote control. Without LE, keypad retains priority.",
       "pdf": "",
       "pdfs": [
-        { "label": "User Manual", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Global-Model-User-Manual.pdf" },
-        { "label": "Instruction Manual", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf" },
-        { "label": "RS485 Setup", "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf" }
-      ]
+        {
+          "label": "User Manual",
+          "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Global-Model-User-Manual.pdf"
+        },
+        {
+          "label": "Instruction Manual",
+          "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-Instruction-Manual-INR-SI47-1733f-E.pdf"
+        },
+        {
+          "label": "RS485 Setup",
+          "url": "/manuals/FRENIC/FRENIC-ACE/FRENIC-Ace-User-Manual-E-24A7-E-0043.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 19200,
+        "parity": "8N1",
+        "slaveIdParam": "y01 (Station address, Port 1) / y11 (Port 2)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set y01 = desired slave address (1-247)",
+          "2. Set y03 = 0 (Modbus RTU protocol)",
+          "3. Set y04 = 2 (9600 bps ← changes from default 19200)",
+          "4. Set y06 = 0 (8N1 format)",
+          "5. Set y02 = 1 if drive at bus end (enable built-in termination)",
+          "6. Set y98 = 1 (Run command via RS-485)",
+          "7. Set y99 = 1 (Frequency via RS-485)",
+          "8. Set y08 = 2.0s (comm fault timeout, or 0 to disable)",
+          "9. Set y09 = 0 or as needed (fault behavior)",
+          "10. Send LE command (Enable Link) to activate RS-485 control"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run/Stop (Function S06)",
+            "address": "S06 (Coil 0001H)"
+          },
+          {
+            "name": "Frequency Reference (Function S05)",
+            "address": "S05 (Register)"
+          },
+          {
+            "name": "Fault Reset (Function S08)",
+            "address": "S08"
+          },
+          {
+            "name": "Link Enable (LE)",
+            "address": "LE command"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency (M06)",
+            "address": "M06",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current (M07)",
+            "address": "M07",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage (M08)",
+            "address": "M08",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Output Power (M10)",
+            "address": "M10",
+            "unit": "0.01 kW",
+            "scale": ""
+          },
+          {
+            "name": "Motor Speed (M09)",
+            "address": "M09",
+            "unit": "1 RPM",
+            "scale": ""
+          },
+          {
+            "name": "Status (M14)",
+            "address": "M14",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Trip Code (M20)",
+            "address": "M20",
+            "unit": "UINT16",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "0c1-0c3": "Over Current (OC1-OC3)",
+        "0u1-0u3": "Over Voltage (OU1-OU3)",
+        "lu": "Under Voltage (LU)",
+        "0h1-0h2": "Over Heat (OH1-OH2)",
+        "0l1-0l4": "Overload (OL1-OL4)",
+        "ef": "Ground Fault (EF)",
+        "er1": "Memory Error",
+        "er2": "Keypad Communication Error",
+        "er3": "CPU Error",
+        "er4": "Option Communication Error",
+        "er8/erp": "RS-485 Communication Error (Port 1/Port 2)",
+        "ert": "CAN Communication Error",
+        "pbf": "Charger Circuit Fault",
+        "cof": "PID Feedback Wire Break",
+        "dbh": "Braking Resistor Overheat",
+        "dba": "Braking Transistor Error",
+        "ecf": "EN Circuit Failure",
+        "ecl": "Customized Logic Failure"
+      },
+      "wiringSummary": {
+        "terminals": {},
+        "connectorTypes": [
+          {
+            "type": "RJ-45 (Port 1)",
+            "pins": "DX+ (pin 1/2), DX- (pin 5/6), GND (pin 7/8)",
+            "note": "Standard RS-485 on keypad port, always available"
+          },
+          {
+            "type": "Terminal Block (Port 2)",
+            "pins": "DX+ terminal, DX- terminal, SD terminal",
+            "note": "Available only on specific models (FRN-E2S-4C)"
+          }
+        ],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair, Cat5e (for RJ-45) or terminal (for block)",
+        "note": ""
+      },
+      "quickTest": {
+        "description": "Read Output Frequency (M06) to verify Modbus communication",
+        "note": "Ensure RJ-45 cable is properly connected. Default baud is 19200 unless changed.",
+        "readCommand": "01 03 [M06 address] 00 01 [CRC16]"
+      }
     },
     {
       "id": "FRENIC-ECO",
       "title": "FRENIC-ECO",
-      "description": "",
+      "description": "Fuji Electric (Japan) - FRENIC ECO Series. 0 units deployed across 1 production areas. Voltage: 220VAC / 440VAC.",
       "images": [
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
@@ -65,25 +349,118 @@
         "/manuals/FRENIC/RS485-PINOUT.png"
       ],
       "details": [
-        { "label": "Manufacturer", "value": "FRENIC" },
-        { "label": "Model", "value": "ECO" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "Fuji Electric (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "FRENIC ECO Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "0"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (RJ-45)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Reference Only"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set y01 = desired slave ID (1-247)",
+        "Set y04 = 9600 bps",
+        "Set y06 = 8N1 (No parity)",
+        "Connector: RJ-45 - DX+, DX-, GND",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 2 control + 3 monitor registers documented. | Fault Codes: 3 fault codes documented. | Note: FRENIC ECO shares the same communication parameter structure (y-codes) as FRENIC ACE.",
       "pdf": "",
       "pdfs": [
-        { "label": "Parameter List", "url": "/manuals/FRENIC/FRENIC-ECO/FRENIC-Eco-Parameter-List.pdf" }
-      ]
+        {
+          "label": "Parameter List",
+          "url": "/manuals/FRENIC/FRENIC-ECO/FRENIC-Eco-Parameter-List.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 19200,
+        "parity": "8N1",
+        "slaveIdParam": "y01",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set y01 = slave address",
+          "2. Set y03 = 0 (Modbus RTU)",
+          "3. Set y04 = 2 (9600 bps, to match network standard)",
+          "4. Set y06 = 0 (8N1)",
+          "5. Set y02 = 1 if at bus end (built-in termination ON)",
+          "6. Set y98 = 1, y99 = 1 for RS-485 control"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run/Stop",
+            "address": "S06 (Coil)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "S05 (Register)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "M06",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Output Current",
+            "address": "M07",
+            "unit": "0.1 A",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "M08",
+            "unit": "1 V",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "er8": "RS-485 Communication Error",
+        "0c1-0c3": "Over Current",
+        "0u1-0u3": "Over Voltage"
+      },
+      "wiringSummary": {
+        "terminals": {},
+        "connectorTypes": [
+          {
+            "type": "RJ-45",
+            "pins": "DX+, DX-, GND"
+          }
+        ],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair, Cat5e",
+        "note": ""
+      },
+      "quickTest": {}
     },
     {
       "id": "FRENIC-MEGA",
       "title": "FRENIC-MEGA",
-      "description": "",
+      "description": "Fuji Electric (Japan) - FRENIC MEGA Series. 2 units deployed across 1 production areas. Voltage: 220VAC / 440VAC.",
       "images": [
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH.png",
         "/manuals/FRENIC/RESISTOR-TERMINATION-DIP-SWITCH-LAYOUT.png",
@@ -91,132 +468,850 @@
         "/manuals/FRENIC/RS485-PINOUT.png"
       ],
       "details": [
-        { "label": "Manufacturer", "value": "FRENIC" },
-        { "label": "Model", "value": "MEGA" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "Fuji Electric (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "FRENIC MEGA Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "2"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (RJ-45), Optional: Profibus, CANopen"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set y01 = desired slave ID (1-247)",
+        "Set y04 = 9600 bps",
+        "Set y06 = 8N1 (No parity)",
+        "Connector: RJ-45 - DX+, DX-, GND",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 2 control + 3 monitor registers documented. | Fault Codes: 2 fault codes documented. | Note: FRENIC MEGA shares the same communication parameter structure (y-codes) as FRENIC ACE and ECO.",
       "pdf": "",
       "pdfs": [
-        { "label": "User Manual", "url": "/manuals/FRENIC/FRENIC-MEGA/FRENIC-MEGA-User-Manual.pdf" }
-      ]
+        {
+          "label": "User Manual",
+          "url": "/manuals/FRENIC/FRENIC-MEGA/FRENIC-MEGA-User-Manual.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 19200,
+        "parity": "8N1",
+        "slaveIdParam": "y01",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set y01 = slave address",
+          "2. Set y03 = 0 (Modbus RTU)",
+          "3. Set y04 = 2 (9600 bps)",
+          "4. Set y06 = 0 (8N1)",
+          "5. Set y02 = 1 if at bus end (built-in termination ON)",
+          "6. Set y98 = 1, y99 = 1 for RS-485 control"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run/Stop",
+            "address": "S06 (Coil)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "S05 (Register)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "M06",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Output Current",
+            "address": "M07",
+            "unit": "0.1 A",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "M08",
+            "unit": "1 V",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "er8": "RS-485 Communication Error (Port 1)",
+        "erp": "RS-485 Error (Port 2)"
+      },
+      "wiringSummary": {
+        "terminals": {},
+        "connectorTypes": [
+          {
+            "type": "RJ-45",
+            "pins": "DX+, DX-, GND"
+          }
+        ],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair, Cat5e",
+        "note": ""
+      },
+      "quickTest": {}
     },
     {
       "id": "TECO",
       "title": "TECO",
-      "description": "",
-      "images": [
-      ],
+      "description": "TECO (Taiwan) - A510 Series. 25 units deployed across 5 production areas. Voltage: 220VAC / 440VAC.",
+      "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "TECO" },
-        { "label": "Model", "value": "A510/S" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "TECO (Taiwan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "A510 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "25"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (S+/S- terminals)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area, Medium Batch, Milling Area, New Platform, Old Platform"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set Sn-36 = desired slave ID (1-247)",
+        "Set Sn-37 = 9600 bps",
+        "Set Sn-38 = 8N1 (No parity)",
+        "Set Sn-04 = 2 (Set to 2 = Operation Command from RS-485 port)",
+        "Set Sn-05 = 2 (Set to 2 = Frequency Command from RS-485 port)",
+        "⚠️ POWER CYCLE the VFD after changing communication parameters",
+        "RS-485 terminals: A_plus=S(+), B_minus=S(-)",
+        "⚠️ External 120Ω termination resistors REQUIRED at both ends"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 4 control + 7 monitor registers documented. | Fault Codes: 11 fault codes documented. | Quick Test: Verify with Modbus master tool (ModScan, Simply Modbus, etc.)",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/TECO/guide/TECO-A510-A510S-MODBUS-SETUP.pdf" },
-        { "label": "Register list", "url": "/manuals/TECO/guide/TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf" },
-        { "label": "A510 Communication", "url": "/manuals/TECO/A510-Communication-Addendum.pdf" },
-        { "label": "A510 Instruction", "url": "/manuals/TECO/A510-Instruction-Manual.pdf" },
-        { "label": "A510 Brief Manual", "url": "/manuals/TECO/A510s-Instruction-Brief-Manual.pdf" },
-        { "label": "A510s Instruction", "url": "/manuals/TECO/A510s-Instruction-Manual.pdf" }
-      ]
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/TECO/guide/TECO-A510-A510S-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register list",
+          "url": "/manuals/TECO/guide/TECO-A510-A510S-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "A510 Communication",
+          "url": "/manuals/TECO/A510-Communication-Addendum.pdf"
+        },
+        {
+          "label": "A510 Instruction",
+          "url": "/manuals/TECO/A510-Instruction-Manual.pdf"
+        },
+        {
+          "label": "A510 Brief Manual",
+          "url": "/manuals/TECO/A510s-Instruction-Brief-Manual.pdf"
+        },
+        {
+          "label": "A510s Instruction",
+          "url": "/manuals/TECO/A510s-Instruction-Manual.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "Sn-36",
+        "powerCycleRequired": true,
+        "quickSteps": [
+          "1. Set Sn-36 = desired slave address (1-31)",
+          "2. Set Sn-37 = 3 (9600 bps)",
+          "3. Set Sn-38 = 0 (8N1, No Parity)",
+          "4. Set Sn-04 = 2 (Run command via RS-485)",
+          "5. Set Sn-05 = 2 (Frequency command via RS-485)",
+          "6. Power cycle the inverter",
+          "7. Verify: LED shows blinking ‘CE-r’ when waiting for Modbus data"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run/Stop",
+            "address": "0001H (Coil 1)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "0002H (Register 2)"
+          },
+          {
+            "name": "Fault Reset",
+            "address": "0004H (Coil 4)"
+          },
+          {
+            "name": "Forward/Reverse",
+            "address": "0001H Bit 1"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word",
+            "address": "0020H (32)",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency",
+            "address": "0025H (37)",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current",
+            "address": "0027H (39)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage",
+            "address": "0026H (38)",
+            "unit": "1 V",
+            "scale": "× 1"
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "0028H (40)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Frequency Command (Monitor)",
+            "address": "0024H (36)",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Digital Input Status",
+            "address": "002CH (44)",
+            "unit": "Bitfield",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "OC": "Over Current - Check motor load and cable integrity",
+        "OV": "Over Voltage - Check input supply and deceleration time",
+        "UV1": "Under Voltage - Verify power supply stability",
+        "OH": "Over Heat - Improve ventilation, check ambient temperature",
+        "OL1": "Motor Overload - Reduce load, check mechanical friction",
+        "OL2": "Inverter Overload - Reduce load or increase capacity",
+        "OL3": "Over Torque - Check mechanical binding",
+        "GF": "Ground Fault - Check motor winding isolation",
+        "CE-r": "RS-485 Communication Error - Verify wiring, baud rate, and address",
+        "EEPROM": "EEPROM Fault - Possible hardware issue",
+        "CPU": "CPU A/D Fault - Hardware fault"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "S(+)",
+          "B_minus": "S(-)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": false,
+        "requiresExternalTermination": true,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "Between S(+) and S(-) at BOTH ends of the RS-485 bus",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "description": "Verify with Modbus master tool (ModScan, Simply Modbus, etc.)",
+        "readOutputFrequency": "01 03 00 25 00 01 [CRC16] → Response should contain frequency value",
+        "note": "LED display stops blinking 'CE-r' once communication is established"
+      }
     },
     {
       "id": "DANAHE",
       "title": "DANAHE",
-      "description": "",
-      "images": [
-      ],
+      "description": "DANAHE (China) - D31 Series. 1 units deployed across 1 production areas. Voltage: 220VAC.",
+      "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "DANAHE" },
-        { "label": "Model", "value": "D31" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "DANAHE (China)"
+        },
+        {
+          "label": "Model Family",
+          "value": "D31 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "1"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (terminal A+/B-)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set f902 (Local address) = desired slave ID (1-247)",
+        "Set f900 (Communication baud rate) = 9600 bps",
+        "Set f901 (Communication data format) = 8N1 (No parity)",
+        "RS-485 terminals: A_plus=A+ (RS-485 Positive), B_minus=B- (RS-485 Negative), GND=GND (Signal Ground)",
+        "⚠️ External 120Ω termination resistors REQUIRED at both ends"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 2 control + 11 monitor registers documented. | Fault Codes: 7 fault codes documented. | Quick Test: Master: address=1, baud=9600, data=8, parity=None, stop=1 | Note: Supports function codes 03H (Read), 06H (Write single), 10H (Write multiple). Max 5 words per read/write.",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/DANAHE/guide/D31%20MODBUS%20COMMUNICATION%20SETUP.pdf" },
-        { "label": "Register mapping", "url": "/manuals/DANAHE/guide/D31%20Modbus%20REGISTER%20ADDRESS%20MAPPING.pdf" },
-        { "label": "D31 Brochure", "url": "/manuals/DANAHE/D31%20SERIES%20%20VFD%20BROCHURE.pdf" },
-        { "label": "D31 User Manual", "url": "/manuals/DANAHE/D31-USER-MANUAL.pdf" }
-      ]
-    }
-    ,
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/DANAHE/guide/D31%20MODBUS%20COMMUNICATION%20SETUP.pdf"
+        },
+        {
+          "label": "Register mapping",
+          "url": "/manuals/DANAHE/guide/D31%20Modbus%20REGISTER%20ADDRESS%20MAPPING.pdf"
+        },
+        {
+          "label": "D31 Brochure",
+          "url": "/manuals/DANAHE/D31%20SERIES%20%20VFD%20BROCHURE.pdf"
+        },
+        {
+          "label": "D31 User Manual",
+          "url": "/manuals/DANAHE/D31-USER-MANUAL.pdf"
+        },
+        {
+          "label": "Modbus Setup Guide (Quick Reference)",
+          "url": "/manuals/DANAHE/guide/D31 MODBUS COMMUNICATION SETUP.pdf"
+        },
+        {
+          "label": "Register Address Mapping",
+          "url": "/manuals/DANAHE/guide/D31 Modbus REGISTER ADDRESS MAPPING.pdf"
+        },
+        {
+          "label": "D31 Brochure",
+          "url": "/manuals/DANAHE/D31 SERIES  VFD BROCHURE.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1",
+        "slaveIdParam": "f902 (Local address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set F001 = 2 (RUN command via communication)",
+          "2. Set F002 = 9 (Frequency via Modbus)",
+          "3. Set f900 = 3 (9600 bps)",
+          "4. Set f901 = 0 (8N1, No Parity)",
+          "5. Set f902 = desired slave address (1-247)",
+          "6. Power cycle to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word",
+            "address": "FA05"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "FA08"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Real-time Status",
+            "address": "FD03",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Real-time Frequency",
+            "address": "FD12",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Actual Output Frequency",
+            "address": "FE18",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "FE10",
+            "unit": "0.01% of rated",
+            "scale": ""
+          },
+          {
+            "name": "Output Current",
+            "address": "FE08",
+            "unit": "0.01% of rated",
+            "scale": ""
+          },
+          {
+            "name": "Output Power",
+            "address": "FE29",
+            "unit": "0.01 kW",
+            "scale": ""
+          },
+          {
+            "name": "Motor Speed",
+            "address": "FE50",
+            "unit": "1 RPM",
+            "scale": ""
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "FE09",
+            "unit": "0.01%",
+            "scale": ""
+          },
+          {
+            "name": "Fault Monitoring",
+            "address": "FC39",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Digital Input Status",
+            "address": "FE11",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Digital Output Status",
+            "address": "FE12",
+            "unit": "Bitfield",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "OC": "Over Current",
+        "OV": "Over Voltage",
+        "UV": "Under Voltage",
+        "OH": "Over Heat",
+        "OL": "Overload",
+        "GF": "Ground Fault",
+        "CE": "Communication Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "A+ (RS-485 Positive)",
+          "B_minus": "B- (RS-485 Negative)",
+          "GND": "GND (Signal Ground)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": false,
+        "requiresExternalTermination": true,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "Between A+ and B- at BOTH ends",
+        "cableType": "Shielded twisted pair",
+        "note": "Up to 31 slaves on one RS-485 link"
+      },
+      "quickTest": {
+        "readCommand": "01 03 FD 12 00 01 [CRC16] (read Real-time Frequency FD12)",
+        "description": "Master: address=1, baud=9600, data=8, parity=None, stop=1"
+      }
+    },
     {
       "id": "HITACHI-SH1",
       "title": "HITACHI SH1 / P1 SERIES",
-      "description": "",
+      "description": "HITACHI (Japan) - SH1 / P1 Series. 2 units deployed across 1 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "HITACHI" },
-        { "label": "Model", "value": "SH1 / P1" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "HITACHI (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "SH1 / P1 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "2"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (RJ-45 or terminal block), CANopen"
+        },
+        {
+          "label": "Production Areas",
+          "value": "EE Room 4 (Putty Expansion Platform)"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set CF-02 (RS-485 address) = desired slave ID (1-247)",
+        "Set CF-01 (RS-485 baud rate) = 9600 bps",
+        "Set CF-03 (RS-485 parity) = 8N1 (No parity)",
+        "Set CA-71 (RUN command source) = Modbus (Set to Modbus/RS-485 for communication control)",
+        "Set PA-02 (Frequency reference source) = Modbus (Set to Modbus/RS-485)",
+        "RS-485 terminals: A_plus=RJ-45 or terminal A+, B_minus=RJ-45 or terminal B-",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 2 control + 6 monitor registers documented. | Fault Codes: 8 fault codes documented. | Quick Test: Read status word 6041h or output frequency to verify | Note: SH1 uses CiA402-based control word (6040h) and status word (6041h)",
       "pdf": "",
       "pdfs": [
-        { "label": "Basic Guide", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Basic-Guide.pdf" },
-        { "label": "Register Address", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Register-Address.pdf" },
-        { "label": "User Manual", "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-User-Manual.pdf" }
-      ]
+        {
+          "label": "Basic Guide",
+          "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Basic-Guide.pdf"
+        },
+        {
+          "label": "Register Address",
+          "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-Register-Address.pdf"
+        },
+        {
+          "label": "User Manual",
+          "url": "/manuals/HITACHI/HITACHI-P1-SERIES-SH1-SERIES/Hitachi-SH1-User-Manual.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1",
+        "slaveIdParam": "CF-02 (RS-485 address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set CF-01 = 1 (9600 bps)",
+          "2. Set CF-02 = desired slave address (1-247)",
+          "3. Set CF-03 = 0 (8N1, No Parity)",
+          "4. Set CA-71 = Modbus/RS-485",
+          "5. Set PA-02 = Modbus/RS-485",
+          "6. Power cycle to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word (6040h)",
+            "address": "6040H"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "via CANopen/Modbus mapping"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word (6041h)",
+            "address": "6041H",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency (dA-01)",
+            "address": "2001H",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current (dA-02)",
+            "address": "2002H",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Frequency Reference Monitor (dA-04)",
+            "address": "2004H",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "RUN Command Reference (dC-10)",
+            "address": "203EH",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency Signed (dA-12)",
+            "address": "2438H",
+            "unit": "0.01 Hz",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "E01": "Over Current",
+        "E02": "Overload",
+        "E07": "Over Voltage",
+        "E09": "Under Voltage",
+        "E12": "External Fault",
+        "E14": "Ground Fault",
+        "E40": "Communication Error",
+        "E43": "Operator Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "RJ-45 or terminal A+",
+          "B_minus": "RJ-45 or terminal B-"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "readCommand": "01 03 20 01 00 01 [CRC16] (read Output Frequency dA-01)",
+        "description": "Read status word 6041h or output frequency to verify"
+      }
     },
     {
       "id": "HITACHI-SJ700",
       "title": "HITACHI SJ700 SERIES",
-      "description": "",
+      "description": "HITACHI (Japan) - SJ700 / SJ700N Series. 5 units deployed across 4 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "HITACHI" },
-        { "label": "Model", "value": "SJ700" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "HITACHI (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "SJ700 / SJ700N Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "5"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (terminal block), Optional: Profibus, CANopen"
+        },
+        {
+          "label": "Production Areas",
+          "value": "EE Room 2, EE Room 3, New Platform, Old Platform"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set C072 (Communication station number) = desired slave ID (1-247)",
+        "Set C071 (Communication speed selection) = 9600 bps",
+        "Set C074 (Parity) + C075 (Stop bits) = 8N1 (No parity)",
+        "Set A002 = 03 (Modbus) (Set A002=03 for run command via Modbus)",
+        "Set A001 = 03 (Modbus) (Set A001=03 for frequency reference via Modbus)",
+        "RS-485 terminals: A_plus=SP (Send/Receive +), B_minus=SN (Send/Receive -)",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 4 control + 5 monitor registers documented. | Fault Codes: 16 fault codes documented. | Quick Test: Master settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1",
       "pdf": "",
       "pdfs": [
-        { "label": "SJ700/L700 Drives", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-SJ700-L700-Drives.pdf" },
-        { "label": "Instruction Brief", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-sj7002-Instruction-Brief-Manual.pdf" },
-        { "label": "Instruction Manual", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/HITACHI-SJ7002-Instruction-Manual.pdf" },
-        { "label": "Modbus Setup", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-MODBUS-SETUP.pdf" },
-        { "label": "Register Address List", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-REGISTER-ADDRESS-LIST.pdf" },
-        { "label": "RS485 Setup", "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/Hitachi-SJ7002-RS485-SETUP.pdf" }
-      ]
+        {
+          "label": "SJ700/L700 Drives",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-SJ700-L700-Drives.pdf"
+        },
+        {
+          "label": "Instruction Brief",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/Hitachi-sj7002-Instruction-Brief-Manual.pdf"
+        },
+        {
+          "label": "Instruction Manual",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/HITACHI-SJ7002-Instruction-Manual.pdf"
+        },
+        {
+          "label": "Modbus Setup",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register Address List",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/HITACHI-SJ7000-SJ7000N-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "RS485 Setup",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP%20GUIDE%20AND%20PARAMETERS/Hitachi-SJ7002-RS485-SETUP.pdf"
+        },
+        {
+          "label": "Modbus Setup Guide (Quick Reference)",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP GUIDE AND PARAMETERS/HITACHI-SJ7000-SJ7000N-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register Address List",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP GUIDE AND PARAMETERS/HITACHI-SJ7000-SJ7000N-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "RS-485 Setup Guide",
+          "url": "/manuals/HITACHI/HITACHI-SJ700-SERIES/SETUP GUIDE AND PARAMETERS/Hitachi-SJ7002-RS485-SETUP.pdf"
+        },
+        {
+          "label": "SJ700N Manual",
+          "url": "/manuals/HITACHI/HITACHI-SJ700N-SERIES/HITACHI-SJ700N.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "C072 (Communication station number)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set C071 = 04 (9600 bps)",
+          "2. Set C072 = desired slave address (1-32)",
+          "3. Set C074 = 00 (No parity)",
+          "4. Set C075 = 1 (1 stop bit) for 8N1",
+          "5. Set A001 = 03 (Frequency via Modbus)",
+          "6. Set A002 = 03 (Run command via Modbus)",
+          "7. Cycle power to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run Command",
+            "address": "4610 (0x1202)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "1101H & 1102H (F001)"
+          },
+          {
+            "name": "Run/Stop Coil",
+            "address": "0001H (Coil)"
+          },
+          {
+            "name": "Fault Reset Coil",
+            "address": "0004H (Coil)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "1001H & 1002H (d001)",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current",
+            "address": "1003H (d002)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Trip Factor (Fault Code)",
+            "address": "0012H (d081)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Parity Error Status",
+            "address": "4917 (0x1335)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "1004-1006H range",
+            "unit": "1 V",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "E01": "Over Current (OC1-OC3)",
+        "E02": "Over Current (OC4)",
+        "E03": "Overload (OL1/OL2)",
+        "E04": "Overload (TH)",
+        "E07": "Over Voltage (OV)",
+        "E09": "Under Voltage (UV)",
+        "E10": "CT Error",
+        "E12": "External Fault (EXT)",
+        "E14": "Ground Fault (GFF)",
+        "E21": "Inverter Thermal Trip",
+        "E23": "Gate Array Error",
+        "E30": "Driver Error",
+        "E35": "Thermistor Error",
+        "E40": "Communication Error (Modbus)",
+        "E43": "Operator Connection Error",
+        "E60": "Option Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "SP (Send/Receive +)",
+          "B_minus": "SN (Send/Receive -)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "readCommand": "01 03 10 03 00 01 [CRC16] (read Output Current from slave 1)",
+        "description": "Master settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1"
+      }
     },
     {
       "id": "HITACHI-SJ700N",
       "title": "HITACHI SJ700N SERIES",
-      "description": "",
+      "description": "HITACHI (Japan) - SJ700N Series. 5 units deployed across 4 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "HITACHI" },
-        { "label": "Model", "value": "SJ700N" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "HITACHI (Japan)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "5"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (terminal block), Optional: Profibus, CANopen"
+        },
+        {
+          "label": "Production Areas",
+          "value": "EE Room 2, EE Room 3, New Platform, Old Platform"
+        },
+        {
+          "label": "Model Family",
+          "value": "SJ700N Series"
+        }
       ],
       "installation": [
         "Mount the drive in a well-ventilated cabinet.",
@@ -226,139 +1321,1068 @@
       "remarks": "Commission with default parameters, adjust ramp times on site.",
       "pdf": "",
       "pdfs": [
-        { "label": "User Manual", "url": "/manuals/HITACHI/HITACHI-SJ700N-SERIES/HITACHI-SJ700N.pdf" }
-      ]
-    }
-    ,
+        {
+          "label": "User Manual",
+          "url": "/manuals/HITACHI/HITACHI-SJ700N-SERIES/HITACHI-SJ700N.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "C072 (Communication station number)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set C071 = 04 (9600 bps)",
+          "2. Set C072 = desired slave address (1-32)",
+          "3. Set C074 = 00 (No parity)",
+          "4. Set C075 = 1 (1 stop bit) for 8N1",
+          "5. Set A001 = 03 (Frequency via Modbus)",
+          "6. Set A002 = 03 (Run command via Modbus)",
+          "7. Cycle power to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run Command",
+            "address": "4610 (0x1202)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "1101H & 1102H (F001)"
+          },
+          {
+            "name": "Run/Stop Coil",
+            "address": "0001H (Coil)"
+          },
+          {
+            "name": "Fault Reset Coil",
+            "address": "0004H (Coil)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "1001H & 1002H (d001)",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current",
+            "address": "1003H (d002)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Trip Factor (Fault Code)",
+            "address": "0012H (d081)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Parity Error Status",
+            "address": "4917 (0x1335)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "1004-1006H range",
+            "unit": "1 V",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "E01": "Over Current (OC1-OC3)",
+        "E02": "Over Current (OC4)",
+        "E03": "Overload (OL1/OL2)",
+        "E04": "Overload (TH)",
+        "E07": "Over Voltage (OV)",
+        "E09": "Under Voltage (UV)",
+        "E10": "CT Error",
+        "E12": "External Fault (EXT)",
+        "E14": "Ground Fault (GFF)",
+        "E21": "Inverter Thermal Trip",
+        "E23": "Gate Array Error",
+        "E30": "Driver Error",
+        "E35": "Thermistor Error",
+        "E40": "Communication Error (Modbus)",
+        "E43": "Operator Connection Error",
+        "E60": "Option Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "SP (Send/Receive +)",
+          "B_minus": "SN (Send/Receive -)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "readCommand": "01 03 10 03 00 01 [CRC16] (read Output Current from slave 1)",
+        "description": "Master settings: Address=1, Baud=9600, Data=8, Parity=None, Stop=1"
+      }
+    },
     {
       "id": "SCHNEIDER-ATV320",
       "title": "SCHNEIDER ALTIVAR ATV320",
-      "description": "",
+      "description": "Schneider Electric (France) - Altivar 320 Series. 5 units deployed across 1 production areas. Voltage: 220VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "SCHNEIDER" },
-        { "label": "Model", "value": "ATV320" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "Schneider Electric (France)"
+        },
+        {
+          "label": "Model Family",
+          "value": "Altivar 320 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "5"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (Modbus RTU), Ethernet (Modbus TCP)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Medium Batch"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set Add (Modbus address) = desired slave ID (1-247)",
+        "Set tbr (Modbus baud rate) = 9600 bps",
+        "Set tFO (Modbus format) = 8N1 (No parity)",
+        "RS-485 terminals: A_plus=RJ-45 or terminal D1 (A+), B_minus=RJ-45 or terminal D0 (B-)",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 4 control + 7 monitor registers documented. | Fault Codes: 10 fault codes documented. | Quick Test: Read Output Frequency (RFR = 3202) to verify communication | Note: ATV320 factory defaults: 19200 bps, 8E1. Change to 9600, 8N1 to match your network standard.",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-MODBUS-SETUP.pdf" },
-        { "label": "Register address list", "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-REGISTER-ADDRESS-LIST.pdf" },
-        { "label": "Manual", "url": "/manuals/SCHNEIDER/ATV320%20MANUAL.pdf" },
-        { "label": "Safety function manual", "url": "/manuals/SCHNEIDER/ATV320%20safety%20function%20manual%20EN.pdf" },
-        { "label": "D11M3C Datasheet (PH)", "url": "/manuals/SCHNEIDER/ATV320D11M3C_DATASHEET_PH_en-PH.pdf" },
-        { "label": "Modbus manual", "url": "/manuals/SCHNEIDER/ATV320_Modbus_manual_EN_NVE41308_01.pdf" },
-        { "label": "Programming manual", "url": "/manuals/SCHNEIDER/ATV320_Programming_Manual_EN_NVE41295_06.pdf" },
-        { "label": "ATVR programming manual", "url": "/manuals/SCHNEIDER/ATVR%20PROGRAMMING%20MANUAL.pdf" }
-      ]
-    }
-    ,
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register address list",
+          "url": "/manuals/SCHNEIDER/guide/ALTIVAR-320D11M3C-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "Manual",
+          "url": "/manuals/SCHNEIDER/ATV320%20MANUAL.pdf"
+        },
+        {
+          "label": "Safety function manual",
+          "url": "/manuals/SCHNEIDER/ATV320%20safety%20function%20manual%20EN.pdf"
+        },
+        {
+          "label": "D11M3C Datasheet (PH)",
+          "url": "/manuals/SCHNEIDER/ATV320D11M3C_DATASHEET_PH_en-PH.pdf"
+        },
+        {
+          "label": "Modbus manual",
+          "url": "/manuals/SCHNEIDER/ATV320_Modbus_manual_EN_NVE41308_01.pdf"
+        },
+        {
+          "label": "Programming manual",
+          "url": "/manuals/SCHNEIDER/ATV320_Programming_Manual_EN_NVE41295_06.pdf"
+        },
+        {
+          "label": "ATVR programming manual",
+          "url": "/manuals/SCHNEIDER/ATVR%20PROGRAMMING%20MANUAL.pdf"
+        },
+        {
+          "label": "ATV320 User Manual",
+          "url": "/manuals/SCHNEIDER/ATV320 MANUAL.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 19200,
+        "parity": "8E1",
+        "slaveIdParam": "Add (Modbus address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Navigate to CONF → FULL → COMMUNICATION → Modbus",
+          "2. Set Add = desired slave address (1-247)",
+          "3. Set tbr = 9600 (match network standard)",
+          "4. Set tFO = 8n1 (match network standard)",
+          "5. Cycle power to apply changes"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word (CMD - CiA402)",
+            "address": "8501 (0x2135)"
+          },
+          {
+            "name": "Extended Control Word (CMI)",
+            "address": "8504 (0x2138)"
+          },
+          {
+            "name": "Frequency Reference (LFR)",
+            "address": "8502 (0x2136)"
+          },
+          {
+            "name": "Fault Reset (RSF)",
+            "address": "7124 (0x1BD4)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word (ETA - CiA402)",
+            "address": "3201 (0x0C81)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency (RFR)",
+            "address": "3202 (0x0C82)",
+            "unit": "0.1 Hz",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Current (LCR)",
+            "address": "3204 (0x0C84)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage",
+            "address": "3205 (0x0C85)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Output Power (OPR)",
+            "address": "3206 (0x0C86)",
+            "unit": "0.01 kW",
+            "scale": ""
+          },
+          {
+            "name": "Motor Speed (SPD)",
+            "address": "3203 (0x0C83)",
+            "unit": "1 RPM",
+            "scale": ""
+          },
+          {
+            "name": "Active Fault Code (LFT)",
+            "address": "7121 (0x1BD1)",
+            "unit": "UINT16",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "0x0000": "No Fault",
+        "0x2310": "Over Current (OCF)",
+        "0x2330": "Motor Short Circuit (SCF3)",
+        "0x3210": "Over Voltage (SOF)",
+        "0x3220": "Under Voltage (USF)",
+        "0x4210": "Drive Overheat (OHF)",
+        "0x4310": "Motor Overload (OLF)",
+        "0x5110": "Modbus Communication Fault (SLF1)",
+        "0x7110": "External Fault (EPF1/EPF2)",
+        "0x7310": "Ground Fault (GFF)"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "RJ-45 or terminal D1 (A+)",
+          "B_minus": "RJ-45 or terminal D0 (B-)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "description": "Read Output Frequency (RFR = 3202) to verify communication",
+        "readCommand": "01 03 0C 82 00 01 [CRC16]",
+        "note": "ATV320 factory defaults to 19200/8E1. Change to 9600/8N1 to match network."
+      }
+    },
     {
       "id": "TEK-F8",
       "title": "TEK DRIVE TDS-F8",
-      "description": "",
+      "description": "TEK DRIVE (Taiwan) - TDS-F8 Series. 1 units deployed across 1 production areas. Voltage: 220VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "TEK DRIVE" },
-        { "label": "Model", "value": "TDS-F8" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "TEK DRIVE (Taiwan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "TDS-F8 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "1"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (S+/S- terminals)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set 09-01 = desired slave ID (1-247)",
+        "Set 09-02 = 9600 bps",
+        "Set 09-03 = 8N1 (No parity)",
+        "Set 02-01 = 2 (Set to 2 = Operation Command from RS-485)",
+        "Set 02-02 = 2 (Set to 2 = Frequency Command from RS-485)",
+        "⚠️ POWER CYCLE the VFD after changing communication parameters",
+        "RS-485 terminals: A_plus=S(+), B_minus=S(-)",
+        "⚠️ External 120Ω termination resistors REQUIRED at both ends"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 3 control + 4 monitor registers documented. | Fault Codes: 8 fault codes documented. | Quick Test: Read Output Frequency to verify Modbus communication",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus Communication Manual", "url": "/manuals/TEK%20DRIVE/guide/TDS-F8/TDS-F8-MODBUS-Communication-Manual.pdf" },
-        { "label": "F8 Brief Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf" },
-        { "label": "F8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf" },
-        { "label": "V8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf" },
-        { "label": "AC Motor", "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf" }
-      ]
+        {
+          "label": "Modbus Communication Manual",
+          "url": "/manuals/TEK%20DRIVE/guide/TDS-F8/TDS-F8-MODBUS-Communication-Manual.pdf"
+        },
+        {
+          "label": "F8 Brief Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf"
+        },
+        {
+          "label": "F8 Instruction Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "V8 Instruction Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "AC Motor",
+          "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf"
+        },
+        {
+          "label": "Modbus Communication Manual",
+          "url": "/manuals/TEK DRIVE/guide/TDS-F8/TDS-F8-MODBUS-Communication-Manual.pdf"
+        },
+        {
+          "label": "TDS-F8 Instruction Manual",
+          "url": "/manuals/TEK DRIVE/TDS-F8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "TDS-F8 Brief Manual",
+          "url": "/manuals/TEK DRIVE/TDS-F8-Brief-Manual.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "09-01",
+        "powerCycleRequired": true,
+        "quickSteps": [
+          "1. Set 09-01 = desired slave address (1-31)",
+          "2. Set 09-02 = 3 (9600 bps)",
+          "3. Set 09-03 = 0 (8N1, No Parity)",
+          "4. Set 02-01 = 2 (Run command via RS-485)",
+          "5. Set 02-02 = 2 (Frequency command via RS-485)",
+          "6. Set 09-04 and 09-05 as needed (fault behavior)",
+          "7. Power cycle the inverter"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run/Stop",
+            "address": "0001H (1)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "0002H (2)"
+          },
+          {
+            "name": "Fault Reset",
+            "address": "0004H (4)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Output Frequency",
+            "address": "0025H (37)",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Output Current",
+            "address": "0027H (39)",
+            "unit": "0.1 A",
+            "scale": ""
+          },
+          {
+            "name": "Output Voltage",
+            "address": "0026H (38)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Status Word",
+            "address": "0020H (32)",
+            "unit": "Bitfield",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "OC": "Over Current",
+        "OV": "Over Voltage",
+        "UV1": "Under Voltage",
+        "OH": "Over Heat",
+        "OL1": "Motor Overload",
+        "OL2": "Inverter Overload",
+        "GF": "Ground Fault",
+        "CE-r": "RS-485 Communication Error"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "S(+)",
+          "B_minus": "S(-)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": false,
+        "requiresExternalTermination": true,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "Between S(+) and S(-) at BOTH ends",
+        "cableType": "Shielded twisted pair",
+        "note": "Up to 31 inverters on one RS-485 link"
+      },
+      "quickTest": {
+        "readCommand": "01 03 00 25 00 01 [CRC16]",
+        "description": "Read Output Frequency to verify Modbus communication"
+      }
     },
     {
       "id": "TEK-V8",
       "title": "TEK DRIVE TDS-V8",
-      "description": "",
+      "description": "TEK DRIVE (Taiwan) - TDS-V8 Series. 13 units deployed across 2 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "TEK DRIVE" },
-        { "label": "Model", "value": "TDS-V8" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "TEK DRIVE (Taiwan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "TDS-V8 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "13"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (S+/S- terminals)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area, Medium Batch"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set Sn-36 = desired slave ID (1-247)",
+        "Set Sn-37 = 9600 bps",
+        "Set Sn-38 = 8N1 (No parity)",
+        "Set Sn-04 = 2 (Set to 2 = Operation Command from RS-485 port)",
+        "Set Sn-05 = 2 (Set to 2 = Frequency Command from RS-485 port)",
+        "⚠️ POWER CYCLE the VFD after changing communication parameters",
+        "RS-485 terminals: A_plus=S(+), B_minus=S(-)",
+        "⚠️ External 120Ω termination resistors REQUIRED at both ends"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 3 control + 9 monitor registers documented. | Fault Codes: 10 fault codes documented. | Quick Test: Read Output Frequency (0025H) to verify communication",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus instruction", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/tds-v8-modbus-instuction.pdf" },
-        { "label": "Modbus setup", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-MODBUS-SETUP.pdf" },
-        { "label": "Register address list", "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-REGISTER-ADDRESS-LIST.pdf" },
-        { "label": "F8 Brief Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf" },
-        { "label": "F8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf" },
-        { "label": "V8 Instruction Manual", "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf" },
-        { "label": "AC Motor", "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf" }
-      ]
-    }
-    ,
+        {
+          "label": "Modbus instruction",
+          "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/tds-v8-modbus-instuction.pdf"
+        },
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register address list",
+          "url": "/manuals/TEK%20DRIVE/guide/TDS-V8/TDS-V8-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "F8 Brief Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-F8-Brief-Manual.pdf"
+        },
+        {
+          "label": "F8 Instruction Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-F8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "V8 Instruction Manual",
+          "url": "/manuals/TEK%20DRIVE/TDS-V8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "AC Motor",
+          "url": "/manuals/TEK%20DRIVE/TEK-Drive-AC-Motor.pdf"
+        },
+        {
+          "label": "Modbus Setup Guide (Quick Reference)",
+          "url": "/manuals/TEK DRIVE/guide/TDS-V8/TDS-V8-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register Address List",
+          "url": "/manuals/TEK DRIVE/guide/TDS-V8/TDS-V8-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "TDS-V8 Instruction Manual",
+          "url": "/manuals/TEK DRIVE/TDS-V8-Instruction-Manual.pdf"
+        },
+        {
+          "label": "Modbus Instruction Details",
+          "url": "/manuals/TEK DRIVE/guide/TDS-V8/tds-v8-modbus-instuction.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "Sn-36",
+        "powerCycleRequired": true,
+        "quickSteps": [
+          "1. Set Sn-36 = desired slave address (1-31)",
+          "2. Set Sn-37 = 3 (9600 bps)",
+          "3. Set Sn-38 = 0 (8N1, No Parity)",
+          "4. Set Sn-04 = 2 (Run command via RS-485)",
+          "5. Set Sn-05 = 2 (Frequency command via RS-485)",
+          "6. Optional: Set Cn-27 (comm fault time) and Sn-39 (fault stop method)",
+          "7. Power cycle the inverter",
+          "8. Check LED display: blinking 'CE-r' = waiting for Modbus data"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word (Run/Stop)",
+            "address": "0000H (0)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "0001H (1)"
+          },
+          {
+            "name": "Output Terminal Control",
+            "address": "0007H (7)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word 1",
+            "address": "0020H (32)",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency",
+            "address": "0025H (37)",
+            "unit": "0.01% of Cn-02",
+            "scale": "30000 = 100%"
+          },
+          {
+            "name": "Output Current",
+            "address": "0027H (39)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage",
+            "address": "0026H (38)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "0028H (40)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Frequency Command (Monitor)",
+            "address": "0024H (36)",
+            "unit": "0.01%",
+            "scale": ""
+          },
+          {
+            "name": "Analog Input VIN",
+            "address": "0029H (41)",
+            "unit": "10V = 100.0%",
+            "scale": ""
+          },
+          {
+            "name": "Analog Input AIN",
+            "address": "002AH (42)",
+            "unit": "20mA = 100.0%",
+            "scale": ""
+          },
+          {
+            "name": "Digital Input Status",
+            "address": "002CH (44)",
+            "unit": "Bitfield",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "UV1": "Under Voltage",
+        "OC": "Over Current",
+        "OV": "Over Voltage",
+        "OH": "Over Heat",
+        "OL1": "Motor Overload",
+        "OL2": "Inverter Overload",
+        "OL3": "Over Torque",
+        "GF": "Ground Fault",
+        "CE-r": "RS-485 Communication Error",
+        "EEPROM": "EEPROM Fault"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "S(+)",
+          "B_minus": "S(-)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": false,
+        "requiresExternalTermination": true,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "Between S(+) and S(-) at BOTH ends of the RS-485 bus",
+        "cableType": "Shielded twisted pair",
+        "note": "NO BUILT-IN TERMINATION. MUST use external 120Ω resistors at both ends."
+      },
+      "quickTest": {
+        "description": "Read Output Frequency (0025H) to verify communication",
+        "readCommand": "01 03 00 25 00 01 [CRC16]"
+      }
+    },
     {
       "id": "VACON-100",
       "title": "VACON 100",
-      "description": "",
+      "description": "VACON / Danfoss (Finland) - VACON 100 Series (Industrial, Flow, HVAC, X). 11 units deployed across 6 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "VACON" },
-        { "label": "Model", "value": "100" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "VACON / Danfoss (Finland)"
+        },
+        {
+          "label": "Model Family",
+          "value": "VACON 100 Series (Industrial, Flow, HVAC, X)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "11"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (RJ-45 or terminal block), Ethernet (Modbus TCP/UDP)"
+        },
+        {
+          "label": "Production Areas",
+          "value": "Small Batch Area, Medium Batch, Milling Area, EE Room 1, EE Room 2, New Platform"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set P5.8.3.1.1 (Slave address) = desired slave ID (1-247)",
+        "Set P5.8.3.1.2 (Communication speed) = 9600 bps",
+        "Set P5.8.3.1.3 (Communication format) = 8N1 (No parity)",
+        "RS-485 terminals: A_plus=RJ-45 pin or terminal A+, B_minus=RJ-45 pin or terminal B-",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 5 control + 8 monitor registers documented. | Fault Codes: 12 fault codes documented. | Quick Test: Read Output Frequency register to verify communication",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/VACON/guide/VACON-100-MODBUS-SETUP.pdf" },
-        { "label": "Register address list", "url": "/manuals/VACON/guide/VACON-100-REGISTER-ADDRESS-LIST.pdf" },
-        { "label": "Flow Application Manual (D)", "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083D-UK.pdf" },
-        { "label": "Flow Application Manual (G)", "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083G-UK.pdf" },
-        { "label": "Modbus User Manual", "url": "/manuals/VACON/Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf" }
-      ]
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/VACON/guide/VACON-100-MODBUS-SETUP.pdf"
+        },
+        {
+          "label": "Register address list",
+          "url": "/manuals/VACON/guide/VACON-100-REGISTER-ADDRESS-LIST.pdf"
+        },
+        {
+          "label": "Flow Application Manual (D)",
+          "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083D-UK.pdf"
+        },
+        {
+          "label": "Flow Application Manual (G)",
+          "url": "/manuals/VACON/Vacon-100-FLOW-Application-Manual-DPD01083G-UK.pdf"
+        },
+        {
+          "label": "Modbus User Manual",
+          "url": "/manuals/VACON/Vacon-100-Modbus-User-Manual-DPD00156D-UK.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1",
+        "slaveIdParam": "P5.8.3.1.1 (Slave address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set P5.8.3.1.1 = desired slave address (1-247)",
+          "2. Set P5.8.3.1.2 = 9600 (baud rate)",
+          "3. Set P5.8.3.1.3 = 8N1 (format)",
+          "4. Set P5.8.3.1.4 = Modbus RTU",
+          "5. Set P3.2.1 = Fieldbus (for Modbus control of Run/Ref)",
+          "6. Power cycle recommended"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Control Word (CiA402)",
+            "address": "8501 (0x2135)"
+          },
+          {
+            "name": "Extended Control Word",
+            "address": "8504 (0x2138)"
+          },
+          {
+            "name": "Frequency Reference (LFR)",
+            "address": "8502 (0x2136)"
+          },
+          {
+            "name": "Fault Reset Command",
+            "address": "7124 (0x1BD4)"
+          },
+          {
+            "name": "Run/Enable",
+            "address": "Control Word 8501"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word (CiA402)",
+            "address": "3201 (0x0C81)",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency (RFR)",
+            "address": "3202 (0x0C82)",
+            "unit": "0.1 Hz",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Current",
+            "address": "3203 (0x0C83)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage",
+            "address": "3204 (0x0C84)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Output Power",
+            "address": "3205 (0x0C85)",
+            "unit": "0.01 kW",
+            "scale": ""
+          },
+          {
+            "name": "Motor Speed (RPM)",
+            "address": "3210 (0x0C8A)",
+            "unit": "1 RPM",
+            "scale": ""
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "3215 (0x0C8F)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Active Fault Code",
+            "address": "7121 (0x1BD1)",
+            "unit": "UINT16",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "0x0000": "No Fault",
+        "0x0001": "Over Current",
+        "0x0002": "Over Voltage",
+        "0x0003": "Under Voltage",
+        "0x0004": "Over Temperature",
+        "0x0005": "Motor Overload",
+        "0x0006": "Inverter Overload",
+        "0x0009": "Earth/Ground Fault",
+        "0x000B": "Brake Chopper Fault",
+        "0x000F": "Communication Fault (Fieldbus)",
+        "0x0011": "External Fault",
+        "0x0028": "Encoder Fault"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "RJ-45 pin or terminal A+",
+          "B_minus": "RJ-45 pin or terminal B-"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair, Cat5e or better",
+        "note": ""
+      },
+      "quickTest": {
+        "description": "Read Output Frequency register to verify communication",
+        "readCommand": "01 03 0C 82 00 01 [CRC16]",
+        "expectedResponse": "01 03 02 [XX XX] [CRC16] where XX XX = frequency × 10"
+      }
     },
     {
       "id": "YASKAWA-A1000",
       "title": "YASKAWA A1000",
-      "description": "",
+      "description": "YASKAWA (Japan) - A1000 Series. 3 units deployed across 1 production areas. Voltage: 220VAC / 440VAC.",
       "images": [],
       "details": [
-        { "label": "Manufacturer", "value": "YASKAWA" },
-        { "label": "Model", "value": "A1000" },
-        { "label": "Voltage", "value": "N/A" }
+        {
+          "label": "Manufacturer",
+          "value": "YASKAWA (Japan)"
+        },
+        {
+          "label": "Model Family",
+          "value": "A1000 Series"
+        },
+        {
+          "label": "Voltage",
+          "value": "220VAC / 440VAC"
+        },
+        {
+          "label": "Units Deployed",
+          "value": "3"
+        },
+        {
+          "label": "Communication",
+          "value": "RS-485 (terminal block), Optional: Ethernet, CANopen, Profibus"
+        },
+        {
+          "label": "Production Areas",
+          "value": "EE Room 1 (Milling Area)"
+        }
       ],
       "installation": [
-        "Mount the drive in a well-ventilated cabinet.",
-        "Ensure proper grounding and cable shielding.",
-        "Follow torque specs on terminals."
+        "Set H5-01 (Serial communication address) = desired slave ID (1-247)",
+        "Set H5-02 (Communication speed selection) = 9600 bps",
+        "Set H5-03 (Communication parity) = 8N1 (No parity)",
+        "Set b1-02 (Run command selection) = 2 (Set b1-02 = 2 for Serial Communication (Modbus) run command)",
+        "Set b1-01 (Frequency reference selection) = 2 (Set b1-01 = 2 for Serial Communication (Modbus) frequency reference)",
+        "RS-485 terminals: A_plus=R+ (Send/Receive +), B_minus=R- (Send/Receive -), GND=IG (Signal Ground)",
+        "✅ Built-in termination available (enable via DIP switch or parameter)"
       ],
-      "remarks": "Commission with default parameters, adjust ramp times on site.",
+      "remarks": "Register Map: 6 control + 11 monitor registers documented. | Fault Codes: 16 fault codes documented. | Quick Test: Use Modbus master to read any known monitor register",
       "pdf": "",
       "pdfs": [
-        { "label": "Modbus setup", "url": "/manuals/YASKAWA/guide/YASKAWA-A1000%20Modbus%20communication%20SETUP.pdf" },
-        { "label": "Register address mapping", "url": "/manuals/YASKAWA/guide/YASKAWA%20A1000%20Modbus%20REGISTER%20ADDRESS%20MAPPING%20.pdf" },
-        { "label": "User Manual", "url": "/manuals/YASKAWA/YASKAWA%20A1000%20USER%20MANUAL.pdf" }
-      ]
+        {
+          "label": "Modbus setup",
+          "url": "/manuals/YASKAWA/guide/YASKAWA-A1000%20Modbus%20communication%20SETUP.pdf"
+        },
+        {
+          "label": "Register address mapping",
+          "url": "/manuals/YASKAWA/guide/YASKAWA%20A1000%20Modbus%20REGISTER%20ADDRESS%20MAPPING%20.pdf"
+        },
+        {
+          "label": "User Manual",
+          "url": "/manuals/YASKAWA/YASKAWA%20A1000%20USER%20MANUAL.pdf"
+        },
+        {
+          "label": "Modbus Setup Guide (Quick Reference)",
+          "url": "/manuals/YASKAWA/guide/YASKAWA-A1000 Modbus communication SETUP.pdf"
+        },
+        {
+          "label": "Register Address Mapping",
+          "url": "/manuals/YASKAWA/guide/YASKAWA A1000 Modbus REGISTER ADDRESS MAPPING .pdf"
+        },
+        {
+          "label": "A1000 User Manual",
+          "url": "/manuals/YASKAWA/YASKAWA A1000 USER MANUAL.pdf"
+        }
+      ],
+      "modbusSummary": {
+        "baudRate": 9600,
+        "parity": "8N1 (No Parity)",
+        "slaveIdParam": "H5-01 (Serial communication address)",
+        "powerCycleRequired": false,
+        "quickSteps": [
+          "1. Set H5-01 = desired slave address (1-247)",
+          "2. Set H5-02 = 3 (9600 bps)",
+          "3. Set H5-03 = 0 (8N1, No Parity)",
+          "4. Set b1-01 = 2 (Frequency via Serial Comm)",
+          "5. Set b1-02 = 2 (Run command via Serial Comm)",
+          "6. Set H5-04 = 3 (Alarm only on comm fault - optional)",
+          "7. Set H5-09 = 2.0s (comm fault detection time - optional)",
+          "8. Power cycle to apply"
+        ]
+      },
+      "registerSummary": {
+        "control": [
+          {
+            "name": "Run Command",
+            "address": "0001H (1)"
+          },
+          {
+            "name": "Frequency Reference",
+            "address": "0002H (2)"
+          },
+          {
+            "name": "Fault Reset",
+            "address": "0005H (5)"
+          },
+          {
+            "name": "Forward/Reverse",
+            "address": "0001H Bit"
+          },
+          {
+            "name": "External Fault EF0",
+            "address": "0003H (3)"
+          },
+          {
+            "name": "Multi-Function Inputs",
+            "address": "0009H-000FH (9-15)"
+          }
+        ],
+        "monitor": [
+          {
+            "name": "Status Word",
+            "address": "0020H (32)",
+            "unit": "Bitfield",
+            "scale": ""
+          },
+          {
+            "name": "Output Frequency",
+            "address": "0031H (49)",
+            "unit": "0.01 Hz",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Output Current",
+            "address": "0033H (51)",
+            "unit": "0.1 A",
+            "scale": "÷ 10"
+          },
+          {
+            "name": "Output Voltage",
+            "address": "0035H (53)",
+            "unit": "1 V",
+            "scale": "× 1"
+          },
+          {
+            "name": "Output Power",
+            "address": "0037H (55)",
+            "unit": "0.01 kW",
+            "scale": "÷ 100"
+          },
+          {
+            "name": "Motor Speed (RPM)",
+            "address": "0044H (68)",
+            "unit": "1 RPM",
+            "scale": ""
+          },
+          {
+            "name": "DC Bus Voltage",
+            "address": "0040H (64)",
+            "unit": "1 V",
+            "scale": ""
+          },
+          {
+            "name": "Torque Reference",
+            "address": "0046H (70)",
+            "unit": "0.1%",
+            "scale": ""
+          },
+          {
+            "name": "Frequency Reference Monitor",
+            "address": "0030H (48)",
+            "unit": "0.01 Hz",
+            "scale": ""
+          },
+          {
+            "name": "Fault Code",
+            "address": "0070H (112)",
+            "unit": "UINT16",
+            "scale": ""
+          },
+          {
+            "name": "Alarm Code",
+            "address": "0071H (113)",
+            "unit": "UINT16",
+            "scale": ""
+          }
+        ]
+      },
+      "faultSummary": {
+        "OC": "Over Current",
+        "OV": "Over Voltage (DC Bus)",
+        "UV1": "Under Voltage (DC Bus)",
+        "OH": "Over Heat (Heatsink)",
+        "OL1": "Motor Overload",
+        "OL2": "Inverter Overload",
+        "GF": "Ground Fault",
+        "SC": "Short Circuit",
+        "PF": "Input Phase Loss",
+        "LF": "Output Phase Loss",
+        "CE": "Modbus Communication Error",
+        "BUS": "Option Communication Error",
+        "EF0-EF7": "External Fault",
+        "CPF": "Control Circuit Fault",
+        "rr": "Braking Resistor Overheat",
+        "ov": "Over Voltage (AC Input)"
+      },
+      "wiringSummary": {
+        "terminals": {
+          "A_plus": "R+ (Send/Receive +)",
+          "B_minus": "R- (Send/Receive -)",
+          "GND": "IG (Signal Ground)"
+        },
+        "connectorTypes": [],
+        "builtInTermination": true,
+        "requiresExternalTermination": false,
+        "terminationValue": "120Ω 0.25W",
+        "terminationPlacement": "",
+        "cableType": "Shielded twisted pair",
+        "note": ""
+      },
+      "quickTest": {
+        "readCommand": "01 03 00 31 00 01 [CRC16] (read Output Frequency 0031H from slave 1)",
+        "description": "Use Modbus master to read any known monitor register"
+      }
     }
   ]
 }
